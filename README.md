@@ -3,7 +3,7 @@
 
 ## Introduction
 - This tool is intended to combine all update operations into one simple command.
-- You may choose whether to include R and Python updates.
+- You may choose whether to include specific updates.
 
 ## How to setup
 - **Install:** connect to internet and execute the below command in terminal
