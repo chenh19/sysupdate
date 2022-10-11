@@ -25,7 +25,7 @@ esac
 
 # ask whether to include Python update
 echo ""
-read -n1 -s -r -p "$(echo -e $TEXT_YELLOW'Would you like to include Python packages update? [y/n/c]'$TEXT_RESET)"$' \n' choice
+read -n1 -s -r -p "$(echo -e $TEXT_YELLOW'Would you like to include Python packages update by Conda? [y/n/c]'$TEXT_RESET)"$' \n' choice
 case "$choice" in
     y|Y ) echo -e 'conda update --all -y && echo ""' >> ~/.update.sh;;
     * )   ;;
@@ -33,7 +33,7 @@ esac
 
 # ask whether to include kernel update
 echo ""
-read -n1 -s -r -p "$(echo -e $TEXT_YELLOW'Would you like to include Linux kernel update (UKUU)? [y/n/c]'$TEXT_RESET)"$' \n' choice
+read -n1 -s -r -p "$(echo -e $TEXT_YELLOW'Would you like to include Linux kernel update by UKUU? [y/n/c]'$TEXT_RESET)"$' \n' choice
 case "$choice" in
     y|Y ) echo -e 'sudo ukuu --scripted --install-latest && echo ""' >> ~/.update.sh;;
     * )   ;;
