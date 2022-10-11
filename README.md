@@ -1,2 +1,20 @@
-# sysupdate
-Full system update in one command
+# Full system update in one command
+*Current version: v1.0.0*
+
+## Introduction
+- This tool is intended to combine all update operations into one simple command.
+- You may choose whether to include R and Python updates.
+
+## How to setup
+- **Install:** connect to internet and execute the below command in terminal
+```
+bash <(wget -qO- https://raw.githubusercontent.com/chenh19/sysupdate/main/install.sh)
+```
+
+- **Uninstall:** connect to internet and execute the below command in terminal  
+```
+bash <(wget -qO- https://raw.githubusercontent.com/chenh19/sysupdate/main/uninstall.sh)
+```
+
+## How to use
+- Simply execute ```sysupdate``` command in terminal.
