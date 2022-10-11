@@ -17,7 +17,7 @@ bash <(wget -qO- https://raw.githubusercontent.com/chenh19/sysupdate/main/uninst
 ```
 
 ## How to use
-- Full system update
+- **Full system update:**
 ```
 sysupdate
 ```
