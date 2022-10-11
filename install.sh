@@ -43,7 +43,7 @@ esac
 echo -e 'sudo apt-get autoremove -y && sudo apt-get clean && echo ""' >> ~/.update.sh
 echo -e 'echo "System up to date." && echo ""' >> ~/.update.sh
 
-# add alias in bash
+# add alias in bash configuration
 [ ! -f ~/.bashrc] ] && touch ~/.bashrc
 if ! grep -q "alias sysupdate='bash ~/.update.sh'" ~/.bashrc ; then echo -e "alias sysupdate='bash ~/.update.sh'" >> ~/.bashrc ; fi
 
