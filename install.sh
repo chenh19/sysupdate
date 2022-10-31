@@ -10,6 +10,11 @@ TEXT_RESET='\e[0m'
 echo -e " \n${TEXT_YELLOW}Configuring system update command...${TEXT_RESET} \n" && sleep 1
 
 # write update script
+echo -e "TEXT_YELLOW='\e[1;33m'" >> ~/.update.sh
+echo -e "TEXT_GREEN='\e[1;32m'" >> ~/.update.sh
+echo -e "TEXT_RESET='\e[0m'" >> ~/.update.sh
+echo -e "echo ''" >> ~/.update.sh
+echo -e "echo -e ' \n${TEXT_YELLOW}Google Chrome not configured.${TEXT_RESET} \n' && sleep 1" >> ~/.update.sh
 echo -e '#!/bin/bash' > ~/.update.sh
 echo -e 'sudo apt-get update && sudo apt-get dist-upgrade -y && sudo apt-get upgrade -y && echo ""' >> ~/.update.sh
 echo -e 'sudo flatpak update -y && echo ""' >> ~/.update.sh
