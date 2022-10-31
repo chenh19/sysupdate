@@ -1,4 +1,4 @@
-echo -e "${TEXT_GREEN}System up to date.${TEXT_RESET} \n" && sleep 1
+echo -e "${TEXT_GREEN}System up to date!${TEXT_RESET} \n" && sleep 1
 if [ -f /var/run/reboot-required ]; then
   read -n1 -s -r -p "$(echo -e $TEXT_YELLOW'System reboot required, would you like to reboot the system now? [y/n]'$TEXT_RESET)"$' \n' choice
   case "$choice" in
