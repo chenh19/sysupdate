@@ -41,7 +41,6 @@ esac
 
 # finish
 echo -e 'sudo apt-get autoremove -y && sudo apt-get clean && echo ""' >> ~/.update.sh
-echo -e 'echo "System up to date." && echo ""' >> ~/.update.sh
 wget -qO- https://raw.githubusercontent.com/chenh19/sysupdate/main/.tail >> ~/.update.sh
 
 # add alias in bash configuration
