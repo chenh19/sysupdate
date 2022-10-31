@@ -43,6 +43,22 @@ esac
 echo -e 'sudo apt-get autoremove -y && sudo apt-get clean && echo ""' >> ~/.update.sh
 echo -e 'echo "System up to date." && echo ""' >> ~/.update.sh
 
+echo -e '' >> ~/.update.sh
+
+if [ -f /var/run/reboot-required ]; then
+  # ask whether reboot
+  read -n1 -s -r -p "$(echo -e $TEXT_YELLOW'System reboot required! Would you like to reboot the system now? [y/n/c]'$TEXT_RESET)"$' \n' choice
+  case "$choice" in
+    y|Y ) # notify reboot
+	  sudo echo ""
+	  echo -e "${TEXT_YELLOW}Rebooting in 5 seconds...${TEXT_RESET} \n" && sleep 5
+	  reboot;;
+    * )   # notify cancellation
+	  echo -e " \n${TEXT_YELLOW}Please manually reboot later.${TEXT_RESET} \n" && sleep 5;;
+  esac
+fi
+
+
 # add alias in bash configuration
 [ ! -f ~/.bashrc] ] && touch ~/.bashrc
 if ! grep -q "alias sysupdate='bash ~/.update.sh'" ~/.bashrc ; then echo -e "alias sysupdate='bash ~/.update.sh'" >> ~/.bashrc ; fi
