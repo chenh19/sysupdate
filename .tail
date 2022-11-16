@@ -27,8 +27,8 @@
 ##FastQC
 [ -f /usr/share/applications/fastqc.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/fastqc.desktop --group "Desktop Entry" --key Name "FastQC"
 [ -f /usr/share/applications/fastqc.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/fastqc.desktop --group "Desktop Entry" --key 'Name[en_US]' "FastQC"
-[ -f /usr/share/applications/fastqc.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/fastqc.desktop --group "Desktop Entry" --key GenericName "FastQC quality control"
-[ -f /usr/share/applications/fastqc.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/fastqc.desktop --group "Desktop Entry" --key 'GenericName[en_US]' "FastQC quality control"
+[ -f /usr/share/applications/fastqc.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/fastqc.desktop --group "Desktop Entry" --key GenericName "Fast Quality Control"
+[ -f /usr/share/applications/fastqc.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/fastqc.desktop --group "Desktop Entry" --key 'GenericName[en_US]' "Fast Quality Control"
 [ -f /usr/share/applications/fastqc.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/fastqc.desktop --group "Desktop Entry" --key Icon "/usr/share/icons/hicolor/32x32/apps/fastqc_icon.png"
 [ -f /usr/share/applications/fastqc.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/fastqc.desktop --group "Desktop Entry" --key Categories "Science;"
 ##FreeDownloadManager
@@ -74,7 +74,7 @@
 [ -f /usr/share/applications/slack.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/slack.desktop --group "Desktop Entry" --key Comment "Slack Desktop"
 ##Snapgene-Viewer
 [ -f /usr/share/applications/snapgene-viewer.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/snapgene-viewer.desktop --group "Desktop Entry" --key Name "SnapGene"
-[ -f /usr/share/applications/snapgene-viewer.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/snapgene-viewer.desktop --group "Desktop Entry" --key Comment "Everyday molecular biology"
+[ -f /usr/share/applications/snapgene-viewer.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/snapgene-viewer.desktop --group "Desktop Entry" --key Comment "Everyday Molecular Biology"
 [ -f /usr/share/applications/snapgene-viewer.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/snapgene-viewer.desktop --group "Desktop Entry" --key Categories "Science;"
 ##System Settings
 [ -f /usr/share/applications/systemsettings.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/systemsettings.desktop --group "Desktop Entry" --key Name "Settings"
