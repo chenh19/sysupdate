@@ -8,7 +8,7 @@
 [ -f /usr/share/applications/com.cisco.anyconnect.gui.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/com.cisco.anyconnect.gui.desktop --group "Desktop Entry" --key Name "University VPN"
 [ -f /usr/share/applications/com.cisco.anyconnect.gui.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/com.cisco.anyconnect.gui.desktop --group "Desktop Entry" --key Comment "Cisco Anyconnect"
 ##TeamViewer
-[ -f /usr/share/applications/com.teamviewer.TeamViewer.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/com.teamviewer.TeamViewer.desktop --group "Desktop Entry" --key Comment "Remote control tool"
+[ -f /usr/share/applications/com.teamviewer.TeamViewer.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/com.teamviewer.TeamViewer.desktop --group "Desktop Entry" --key Comment "Remote Control Tool"
 [ -f /usr/share/applications/com.teamviewer.TeamViewer.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/com.teamviewer.TeamViewer.desktop --group "Desktop Entry" --key Icon "/opt/icon/teamviewer.png"
 ##WeChat
 [ -f /usr/share/applications/deepin.com.wechat.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/deepin.com.wechat.desktop --group "Desktop Entry" --key Categories "Network;"
@@ -81,6 +81,8 @@
 [ -f /usr/share/applications/tropy.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/tropy.desktop --group "Desktop Entry" --key Categories "Science;"
 ##UKUU
 [ -f /usr/share/applications/ukuu-gtk.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/ukuu-gtk.desktop --group "Desktop Entry" --key Name "UKUU"
+##VLC
+[ -f /usr/share/applications/vlc.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/vlc.desktop --group "Desktop Entry" --key Name "VLC"
 ##WiFi Hotspot
 [ -f /usr/share/applications/wihotspot.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/wihotspot.desktop --group "Desktop Entry" --key Name "Wifi Hotspot"
 [ -f /usr/share/applications/wihotspot.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/wihotspot.desktop --group "Desktop Entry" --key Comment "Feature-rich Wifi Hotspot"
@@ -91,7 +93,7 @@
 [ -f /usr/share/applications/zotero.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/zotero.desktop --group "Desktop Entry" --key Comment "Bibliography Manager"
 ##Clock
 kwriteconfig5 --file ~/.local/share/applications/org.kde.kclock.desktop --group "Desktop Entry" --key Name "Clock"
-kwriteconfig5 --file ~/.local/share/applications/org.kde.kclock.desktop --group "Desktop Entry" --key Comment "Timer, Stopwatch, and World clocks"
+kwriteconfig5 --file ~/.local/share/applications/org.kde.kclock.desktop --group "Desktop Entry" --key Comment "Clock Application"
 kwriteconfig5 --file ~/.local/share/applications/org.kde.kclock.desktop --group "Desktop Entry" --key Categories "Utility;"
 ##Weather
 kwriteconfig5 --file ~/.local/share/applications/org.kde.kweather.desktop --group "Desktop Entry" --key Name "Weather"
@@ -101,6 +103,10 @@ kwriteconfig5 --file ~/.local/share/applications/org.kde.kweather.desktop --grou
 kwriteconfig5 --file ~/.local/share/applications/me.hyliu.fluentreader.desktop --group "Desktop Entry" --key Name "Fluent Reader"
 kwriteconfig5 --file ~/.local/share/applications/me.hyliu.fluentreader.desktop --group "Desktop Entry" --key Comment "Modern RSS reader"
 kwriteconfig5 --file ~/.local/share/applications/me.hyliu.fluentreader.desktop --group "Desktop Entry" --key Categories "Network;"
+##Bottles
+kwriteconfig5 --file ~/.local/share/applications/com.usebottles.bottles.desktop --group "Desktop Entry" --key Name "Bottles"
+kwriteconfig5 --file ~/.local/share/applications/com.usebottles.bottles.desktop --group "Desktop Entry" --key Comment "Wine Config Tool"
+kwriteconfig5 --file ~/.local/share/applications/com.usebottles.bottles.desktop --group "Desktop Entry" --key Categories "Utility;"
 echo -e "${TEXT_GREEN}System up to date!${TEXT_RESET} \n" && sleep 1
 if [ -f /var/run/reboot-required ]; then
   read -n1 -s -r -p "$(echo -e $TEXT_YELLOW'System reboot required, would you like to reboot the system now? [y/n]'$TEXT_RESET)"$' \n' choice
