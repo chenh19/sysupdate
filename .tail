@@ -13,6 +13,8 @@
 ##WeChat
 [ -f /usr/share/applications/deepin.com.wechat.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/deepin.com.wechat.desktop --group "Desktop Entry" --key Categories "Network;"
 [ -f /usr/share/applications/deepin.com.wechat.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/deepin.com.wechat.desktop --group "Desktop Entry" --key Comment "Tencent WeChat Messaging"
+##Enpass
+[ -f /usr/share/applications/enpass.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/enpass.desktop --group "Desktop Entry" --key GenericName "Password Manager"
 ##BalenaEtcher
 [ -f /usr/share/applications/etcher.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/etcher.desktop --group "Desktop Entry" --key Name "Etcher"
 ##Eudic
