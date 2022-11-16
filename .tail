@@ -37,6 +37,10 @@
 ##IGV
 [ -f /usr/share/applications/igv.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/igv.desktop --group "Desktop Entry" --key Icon "/opt/icon/igv.png"
 [ -f /usr/share/applications/igv.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/igv.desktop --group "Desktop Entry" --key Categories "Science;"
+##Angry IP Scanner
+[ -f /usr/share/applications/ipscan.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/ipscan.desktop --group "Desktop Entry" --key Name "IP Scanner"
+[ -f /usr/share/applications/ipscan.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/ipscan.desktop --group "Desktop Entry" --key GenericName "Fast network scanner"
+[ -f /usr/share/applications/ipscan.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/ipscan.desktop --group "Desktop Entry" --key Comment "Fast network scanner"
 ##Laptop-Model-Tools
 [ -f /usr/share/applications/laptop-mode-tools.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/laptop-mode-tools.desktop --group "Desktop Entry" --key Icon "/opt/icon/power.png"
 ##Evolution
@@ -93,6 +97,10 @@ kwriteconfig5 --file ~/.local/share/applications/org.kde.kclock.desktop --group 
 kwriteconfig5 --file ~/.local/share/applications/org.kde.kweather.desktop --group "Desktop Entry" --key Name "Weather"
 kwriteconfig5 --file ~/.local/share/applications/org.kde.kweather.desktop --group "Desktop Entry" --key Comment "Weather forecasts"
 kwriteconfig5 --file ~/.local/share/applications/org.kde.kweather.desktop --group "Desktop Entry" --key Categories "Utility;"
+##Fluent Reader
+kwriteconfig5 --file ~/.local/share/applications/me.hyliu.fluentreader.desktop --group "Desktop Entry" --key Name "Fluent Reader"
+kwriteconfig5 --file ~/.local/share/applications/me.hyliu.fluentreader.desktop --group "Desktop Entry" --key Comment "Modern RSS reader"
+kwriteconfig5 --file ~/.local/share/applications/me.hyliu.fluentreader.desktop --group "Desktop Entry" --key Categories "Network;"
 echo -e "${TEXT_GREEN}System up to date!${TEXT_RESET} \n" && sleep 1
 if [ -f /var/run/reboot-required ]; then
   read -n1 -s -r -p "$(echo -e $TEXT_YELLOW'System reboot required, would you like to reboot the system now? [y/n]'$TEXT_RESET)"$' \n' choice
