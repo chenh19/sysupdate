@@ -1,3 +1,91 @@
+##4Kvideodownloader
+[ -f /usr/share/applications/4kvideodownloader.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/4kvideodownloader.desktop --group "Desktop Entry" --key Name "YouTube"
+##BaiduYun
+[ -f /usr/share/applications/baidunetdisk.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/baidunetdisk.desktop --group "Desktop Entry" --key Name "BaiduYun"
+[ -f /usr/share/applications/baidunetdisk.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/baidunetdisk.desktop --group "Desktop Entry" --key Comment "Baidu Netdisk"
+[ -f /usr/share/applications/baidunetdisk.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/baidunetdisk.desktop --group "Desktop Entry" --key Exec "/opt/baidunetdisk/baidunetdisk --no-sandbox %U"
+##Cisco Anyconnect
+[ -f /usr/share/applications/com.cisco.anyconnect.gui.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/com.cisco.anyconnect.gui.desktop --group "Desktop Entry" --key Name "University VPN"
+[ -f /usr/share/applications/com.cisco.anyconnect.gui.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/com.cisco.anyconnect.gui.desktop --group "Desktop Entry" --key Comment "Cisco Anyconnect"
+##TeamViewer
+[ -f /usr/share/applications/com.teamviewer.TeamViewer.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/com.teamviewer.TeamViewer.desktop --group "Desktop Entry" --key Comment "Remote control tool"
+[ -f /usr/share/applications/com.teamviewer.TeamViewer.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/com.teamviewer.TeamViewer.desktop --group "Desktop Entry" --key Icon "/opt/icon/teamviewer.png"
+##WeChat
+[ -f /usr/share/applications/deepin.com.wechat.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/deepin.com.wechat.desktop --group "Desktop Entry" --key Categories "Network;"
+[ -f /usr/share/applications/deepin.com.wechat.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/deepin.com.wechat.desktop --group "Desktop Entry" --key Comment "Tencent WeChat Client"
+##BalenaEtcher
+[ -f /usr/share/applications/etcher.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/etcher.desktop --group "Desktop Entry" --key Name "Etcher"
+##Eudic
+[ -f /usr/share/applications/eudic.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/eudic.desktop --group "Desktop Entry" --key Name "EuDic"
+[ -f /usr/share/applications/eudic.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/eudic.desktop --group "Desktop Entry" --key Comment "Dictionary"
+[ -f /usr/share/applications/eudic.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/eudic.desktop --group "Desktop Entry" --key Exec "XDG_CURRENT_DESKTOP=GNOME /opt/eudic/eudic.AppImage"
+[ -f /usr/share/applications/eudic.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/eudic.desktop --group "Desktop Entry" --key Icon "/opt/eudic/eudic.png"
+##ExpanDrive
+[ -f /usr/share/applications/expandrive.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/expandrive.desktop --group "Desktop Entry" --key Comment "Cloud Drive Mount"
+##FastQC
+[ -f /usr/share/applications/fastqc.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/fastqc.desktop --group "Desktop Entry" --key Name "FastQC"
+[ -f /usr/share/applications/fastqc.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/fastqc.desktop --group "Desktop Entry" --key 'Name[en_US]' "FastQC"
+[ -f /usr/share/applications/fastqc.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/fastqc.desktop --group "Desktop Entry" --key GenericName "FastQC quality control"
+[ -f /usr/share/applications/fastqc.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/fastqc.desktop --group "Desktop Entry" --key 'GenericName[en_US]' "FastQC quality control"
+[ -f /usr/share/applications/fastqc.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/fastqc.desktop --group "Desktop Entry" --key Icon "/usr/share/icons/hicolor/32x32/apps/fastqc_icon.png"
+[ -f /usr/share/applications/fastqc.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/fastqc.desktop --group "Desktop Entry" --key Categories "Science;"
+##FreeDownloadManager
+[ -f /usr/share/applications/freedownloadmanager.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/freedownloadmanager.desktop --group "Desktop Entry" --key Name "Download"
+[ -f /usr/share/applications/freedownloadmanager.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/freedownloadmanager.desktop --group "Desktop Entry" --key Comment "Free Download Manager"
+##Google Chrome
+[ -f /usr/share/applications/google-chrome.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/google-chrome.desktop --group "Desktop Entry" --key Name "Chrome"
+##IGV
+[ -f /usr/share/applications/igv.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/igv.desktop --group "Desktop Entry" --key Icon "/opt/icon/igv.png"
+[ -f /usr/share/applications/igv.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/igv.desktop --group "Desktop Entry" --key Categories "Science;"
+##Laptop-Model-Tools
+[ -f /usr/share/applications/laptop-mode-tools.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/laptop-mode-tools.desktop --group "Desktop Entry" --key Icon "/opt/icon/power.png"
+##Evolution
+[ -f /usr/share/applications/org.gnome.Evolution.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/org.gnome.Evolution.desktop --group "Desktop Entry" --key Exec "(LANG=en_US.utf8; evolution &) && sleep 5 && kdocker -q -x $(ps -A|grep evolution$|awk {'print $1;'})"
+[ -f /usr/share/applications/org.gnome.Evolution.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/org.gnome.Evolution.desktop --group "Desktop Entry" --key Categories "Network;"
+##Help
+[ -f /usr/share/applications/org.kde.Help.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/org.kde.Help.desktop --group "Desktop Entry" --key Name "Help"
+[ -f /usr/share/applications/org.kde.Help.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/org.kde.Help.desktop --group "Desktop Entry" --key GenericName ""
+[ -f /usr/share/applications/org.kde.Help.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/org.kde.Help.desktop --group "Desktop Entry" --key Comment ""
+##Infomation Center
+[ -f /usr/share/applications/org.kde.kinfocenter.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/org.kde.kinfocenter.desktop --group "Desktop Entry" --key Name "Info Center"
+[ -f /usr/share/applications/org.kde.kinfocenter.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/org.kde.kinfocenter.desktop --group "Desktop Entry" --key GenericName "System Information"
+##KDE Partition Manager
+[ -f /usr/share/applications/org.kde.partitionmanager.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/org.kde.partitionmanager.desktop --group "Desktop Entry" --key Name "Partition Manager"
+##System Monitor
+[ -f /usr/share/applications/org.kde.plasma-systemmonitor.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/org.kde.plasma-systemmonitor.desktop --group "Desktop Entry" --key GenericName "System Resource Usage"
+##PyMol
+[ -f /usr/share/applications/pymol.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/pymol.desktop --group "Desktop Entry" --key Name "PyMOL"
+[ -f /usr/share/applications/pymol.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/pymol.desktop --group "Desktop Entry" --key GenericName "Molecular Modeller"
+[ -f /usr/share/applications/pymol.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/pymol.desktop --group "Desktop Entry" --key Icon "/opt/icon/pymol.png"
+[ -f /usr/share/applications/pymol.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/pymol.desktop --group "Desktop Entry" --key Categories "Science;"
+##RStudio
+[ -f /usr/share/applications/rstudio.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/rstudio.desktop --group "Desktop Entry" --key Comment "R Development"
+[ -f /usr/share/applications/rstudio.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/rstudio.desktop --group "Desktop Entry" --key Categories "Science;"
+##SimpleNote
+[ -f /usr/share/applications/simplenote.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/simplenote.desktop --group "Desktop Entry" --key Exec "/opt/Simplenote/simplenote --no-sandbox %U"
+##Slack
+[ -f /usr/share/applications/slack.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/slack.desktop --group "Desktop Entry" --key GenericName "Slack Client for Linux"
+[ -f /usr/share/applications/slack.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/slack.desktop --group "Desktop Entry" --key Comment "Slack Desktop"
+##Snapgene-Viewer
+[ -f /usr/share/applications/snapgene-viewer.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/snapgene-viewer.desktop --group "Desktop Entry" --key Name "SnapGene"
+[ -f /usr/share/applications/snapgene-viewer.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/snapgene-viewer.desktop --group "Desktop Entry" --key Comment "Everyday molecular biology"
+[ -f /usr/share/applications/snapgene-viewer.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/snapgene-viewer.desktop --group "Desktop Entry" --key Categories "Science;"
+##System Settings
+[ -f /usr/share/applications/systemsettings.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/systemsettings.desktop --group "Desktop Entry" --key Name "Settings"
+##Tropy
+[ -f /usr/share/applications/tropy.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/tropy.desktop --group "Desktop Entry" --key Icon "/opt/tropy/tropy.png"
+[ -f /usr/share/applications/tropy.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/tropy.desktop --group "Desktop Entry" --key Categories "Science;"
+##UKUU
+[ -f /usr/share/applications/ukuu-gtk.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/ukuu-gtk.desktop --group "Desktop Entry" --key Name "UKUU"
+##WiFi Hotspot
+[ -f /usr/share/applications/wihotspot.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/wihotspot.desktop --group "Desktop Entry" --key Name "Wifi Hotspot"
+[ -f /usr/share/applications/wihotspot.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/wihotspot.desktop --group "Desktop Entry" --key Comment "Feature-rich Wifi Hotspot"
+##Zoom
+[ -f /usr/share/applications/Zoom.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/Zoom.desktop --group "Desktop Entry" --key Comment "Zoom Video Conference"
+##Zotero
+[ -f /usr/share/applications/zotero.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/zotero.desktop --group "Desktop Entry" --key Name "Zotero"
+[ -f /usr/share/applications/zotero.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/zotero.desktop --group "Desktop Entry" --key Comment "Bibliography Manager"
+
 echo -e "${TEXT_GREEN}System up to date!${TEXT_RESET} \n" && sleep 1
 if [ -f /var/run/reboot-required ]; then
   read -n1 -s -r -p "$(echo -e $TEXT_YELLOW'System reboot required, would you like to reboot the system now? [y/n]'$TEXT_RESET)"$' \n' choice
