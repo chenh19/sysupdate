@@ -68,7 +68,7 @@
 ##SimpleNote
 [ -f /usr/share/applications/simplenote.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/simplenote.desktop --group "Desktop Entry" --key Exec "/opt/Simplenote/simplenote --no-sandbox %U"
 ##Slack
-[ -f /usr/share/applications/slack.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/slack.desktop --group "Desktop Entry" --key GenericName "Slack Client for Linux"
+[ -f /usr/share/applications/slack.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/slack.desktop --group "Desktop Entry" --key GenericName "Digital Headquarters"
 [ -f /usr/share/applications/slack.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/slack.desktop --group "Desktop Entry" --key Comment "Slack Desktop"
 ##Snapgene-Viewer
 [ -f /usr/share/applications/snapgene-viewer.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/snapgene-viewer.desktop --group "Desktop Entry" --key Name "SnapGene"
