@@ -85,6 +85,14 @@
 ##Zotero
 [ -f /usr/share/applications/zotero.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/zotero.desktop --group "Desktop Entry" --key Name "Zotero"
 [ -f /usr/share/applications/zotero.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/zotero.desktop --group "Desktop Entry" --key Comment "Bibliography Manager"
+##Clock
+kwriteconfig5 --file ~/.local/share/applications/org.kde.kclock.desktop --group "Desktop Entry" --key Name "Clock"
+kwriteconfig5 --file ~/.local/share/applications/org.kde.kclock.desktop --group "Desktop Entry" --key Comment "Timer, Stopwatch, and World clocks"
+kwriteconfig5 --file ~/.local/share/applications/org.kde.kclock.desktop --group "Desktop Entry" --key Categories "Utility;"
+##Weather
+kwriteconfig5 --file ~/.local/share/applications/org.kde.kweather.desktop --group "Desktop Entry" --key Name "Weather"
+kwriteconfig5 --file ~/.local/share/applications/org.kde.kweather.desktop --group "Desktop Entry" --key Comment "Weather forecasts"
+kwriteconfig5 --file ~/.local/share/applications/org.kde.kweather.desktop --group "Desktop Entry" --key Categories "Utility;"
 echo -e "${TEXT_GREEN}System up to date!${TEXT_RESET} \n" && sleep 1
 if [ -f /var/run/reboot-required ]; then
   read -n1 -s -r -p "$(echo -e $TEXT_YELLOW'System reboot required, would you like to reboot the system now? [y/n]'$TEXT_RESET)"$' \n' choice
