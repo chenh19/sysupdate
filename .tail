@@ -1,5 +1,8 @@
 ##4Kvideodownloader
 [ -f /usr/share/applications/4kvideodownloader.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/4kvideodownloader.desktop --group "Desktop Entry" --key Name "YouTube"
+[ -f /usr/share/applications/4kvideodownloader.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/4kvideodownloader.desktop --group "Desktop Entry" --key GenericName "4K Video Downloader"
+[ -f /usr/share/applications/4kvideodownloader.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/4kvideodownloader.desktop --group "Desktop Entry" --key Comment "4K Video Downloader"
+[ -f /usr/share/applications/4kvideodownloader.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/4kvideodownloader.desktop --group "Desktop Entry" --key Categories "Network;"
 ##BaiduYun
 [ -f /usr/share/applications/baidunetdisk.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/baidunetdisk.desktop --group "Desktop Entry" --key Name "BaiduYun"
 [ -f /usr/share/applications/baidunetdisk.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/baidunetdisk.desktop --group "Desktop Entry" --key Comment "Baidu Netdisk"
