@@ -26,9 +26,9 @@
 [ -f /usr/share/applications/expandrive.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/expandrive.desktop --group "Desktop Entry" --key Comment "Cloud Drive Mount"
 ##FastQC
 [ -f /usr/share/applications/fastqc.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/fastqc.desktop --group "Desktop Entry" --key Name "FastQC"
-[ -f /usr/share/applications/fastqc.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/fastqc.desktop --group "Desktop Entry" --key 'Name[en_US]' "FastQC"
+#[ -f /usr/share/applications/fastqc.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/fastqc.desktop --group "Desktop Entry" --key 'Name[en_US]' "FastQC"
 [ -f /usr/share/applications/fastqc.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/fastqc.desktop --group "Desktop Entry" --key GenericName "Fast Quality Control"
-[ -f /usr/share/applications/fastqc.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/fastqc.desktop --group "Desktop Entry" --key 'GenericName[en_US]' "Fast Quality Control"
+#[ -f /usr/share/applications/fastqc.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/fastqc.desktop --group "Desktop Entry" --key 'GenericName[en_US]' "Fast Quality Control"
 [ -f /usr/share/applications/fastqc.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/fastqc.desktop --group "Desktop Entry" --key Icon "/usr/share/icons/hicolor/32x32/apps/fastqc_icon.png"
 [ -f /usr/share/applications/fastqc.desktop ] && sudo kwriteconfig5 --file /usr/share/applications/fastqc.desktop --group "Desktop Entry" --key Categories "Science;"
 ##FreeDownloadManager
