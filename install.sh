@@ -9,6 +9,9 @@ TEXT_RESET='\e[0m'
 # notify start
 echo -e " \n${TEXT_YELLOW}Configuring system update command...${TEXT_RESET} \n" && sleep 1
 
+# install desktop-file-utils
+sudo apt-get update && sudo apt-get install desktop-file-utils -y
+
 # write update script
 wget -qO- https://raw.githubusercontent.com/chenh19/sysupdate/main/.head > ~/.update.sh
 echo -e 'sudo apt-get update && sudo apt-get dist-upgrade -y && sudo apt-get upgrade -y && echo ""' >> ~/.update.sh
