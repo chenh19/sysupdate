@@ -19,6 +19,7 @@ case "$choice" in
         # remove shell scripts
         [ -f ~/.update.R ] && rm ~/.update.R
         [ -f ~/.update.sh ] && rm ~/.update.sh
+        [ -f ~/.shortcut.sh ] && rm ~/.shortcut.sh
         sleep 1
 
         # notify end
