@@ -533,6 +533,7 @@ desktop-file-edit \
 [ -f /usr/share/applications/laptop-mode-tools.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/laptop-mode-tools.desktop
 [ -f ~/.local/share/applications/com.github.joseexposito.touche.desktop ] && desktop-file-edit --set-key 'NoDisplay' --set-value 'true' ~/.local/share/applications/com.github.joseexposito.touche.desktop
 
+
 # No more than 10 entries in each category
 # silence when running:
 # bash ~/.shortcut.sh >/dev/null 2>&1
