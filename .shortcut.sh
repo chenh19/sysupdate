@@ -1,39 +1,6 @@
 #!/bin/bash
 #This script edits start menu shortcuts
 
-#Hidden
-[ -f /usr/share/applications/debian-uxterm.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/debian-uxterm.desktop
-[ -f /usr/share/applications/debian-xterm.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/debian-xterm.desktop
-[ -f /usr/share/applications/display-im6.q16.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/display-im6.q16.desktop
-[ -f /usr/share/applications/fcitx-configtool.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/fcitx-configtool.desktop
-[ -f /usr/share/applications/fcitx-skin-installer.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/fcitx-skin-installer.desktop
-[ -f /usr/share/applications/fcitx.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/fcitx.desktop
-[ -f /usr/share/applications/im-config.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/im-config.desktop
-[ -f /usr/share/applications/info.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/info.desktop
-[ -f /usr/share/applications/kbd-layout-viewer.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/kbd-layout-viewer.desktop
-[ -f /usr/share/applications/kde_wacom_tabletfinder.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/kde_wacom_tabletfinder.desktop
-[ -f /usr/share/applications/kdocker.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/kdocker.desktop
-[ -f /usr/share/applications/libreoffice-base.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/libreoffice-base.desktop
-[ -f /usr/share/applications/libreoffice-draw.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/libreoffice-draw.desktop
-[ -f /usr/share/applications/libreoffice-math.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/libreoffice-math.desktop
-[ -f /usr/share/applications/libreoffice-startcenter.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/libreoffice-startcenter.desktop
-[ -f /usr/share/applications/nvidia-settings.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/nvidia-settings.desktop
-[ -f /usr/share/applications/org.freedesktop.IBus.Setup.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/org.freedesktop.IBus.Setup.desktop
-[ -f /usr/share/applications/org.gnome.seahorse.Application.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/org.gnome.seahorse.Application.desktop
-[ -f /usr/share/applications/org.kde.kdeconnect_open.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/org.kde.kdeconnect_open.desktop
-[ -f /usr/share/applications/org.kde.kdeconnect.app.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/org.kde.kdeconnect.app.desktop
-[ -f /usr/share/applications/org.kde.kdeconnect.sms.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/org.kde.kdeconnect.sms.desktop
-[ -f /usr/share/applications/org.kde.ksystemlog.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/org.kde.ksystemlog.desktop
-[ -f /usr/share/applications/org.kde.kwalletmanager5.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/org.kde.kwalletmanager5.desktop
-[ -f /usr/share/applications/org.kde.latte-dock.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/org.kde.latte-dock.desktop
-[ -f /usr/share/applications/org.kde.muon.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/org.kde.muon.desktop
-[ -f /usr/share/applications/org.kde.plasma.emojier.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/org.kde.plasma.emojier.desktop
-[ -f /usr/share/applications/pavucontrol-qt.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/pavucontrol-qt.desktop
-[ -f /usr/share/applications/R.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/R.desktop
-[ -f /usr/share/applications/texdoctk.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/texdoctk.desktop
-[ -f /usr/share/applications/vim.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/vim.desktop
-
-
 #Science & Math (Science;)
 ##FastQC
 [ -f /usr/share/applications/fastqc.desktop ] && sudo desktop-file-edit \
@@ -531,6 +498,40 @@ desktop-file-edit \
     --remove-key 'Categories' --add-category 'Utility;' \
 ~/.local/share/applications/com.usebottles.bottles.desktop
 
+
+#Hidden
+[ -f /usr/share/applications/debian-uxterm.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/debian-uxterm.desktop
+[ -f /usr/share/applications/debian-xterm.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/debian-xterm.desktop
+[ -f /usr/share/applications/display-im6.q16.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/display-im6.q16.desktop
+[ -f /usr/share/applications/fcitx-configtool.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/fcitx-configtool.desktop
+[ -f /usr/share/applications/fcitx-skin-installer.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/fcitx-skin-installer.desktop
+[ -f /usr/share/applications/fcitx.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/fcitx.desktop
+[ -f /usr/share/applications/im-config.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/im-config.desktop
+[ -f /usr/share/applications/info.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/info.desktop
+[ -f /usr/share/applications/kbd-layout-viewer.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/kbd-layout-viewer.desktop
+[ -f /usr/share/applications/kde_wacom_tabletfinder.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/kde_wacom_tabletfinder.desktop
+[ -f /usr/share/applications/kdocker.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/kdocker.desktop
+[ -f /usr/share/applications/libreoffice-base.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/libreoffice-base.desktop
+[ -f /usr/share/applications/libreoffice-draw.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/libreoffice-draw.desktop
+[ -f /usr/share/applications/libreoffice-math.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/libreoffice-math.desktop
+[ -f /usr/share/applications/libreoffice-startcenter.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/libreoffice-startcenter.desktop
+[ -f /usr/share/applications/nvidia-settings.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/nvidia-settings.desktop
+[ -f /usr/share/applications/org.freedesktop.IBus.Setup.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/org.freedesktop.IBus.Setup.desktop
+[ -f /usr/share/applications/org.gnome.seahorse.Application.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/org.gnome.seahorse.Application.desktop
+[ -f /usr/share/applications/org.kde.kdeconnect_open.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/org.kde.kdeconnect_open.desktop
+[ -f /usr/share/applications/org.kde.kdeconnect.app.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/org.kde.kdeconnect.app.desktop
+[ -f /usr/share/applications/org.kde.kdeconnect.sms.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/org.kde.kdeconnect.sms.desktop
+[ -f /usr/share/applications/org.kde.ksystemlog.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/org.kde.ksystemlog.desktop
+[ -f /usr/share/applications/org.kde.kwalletmanager5.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/org.kde.kwalletmanager5.desktop
+[ -f /usr/share/applications/org.kde.latte-dock.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/org.kde.latte-dock.desktop
+[ -f /usr/share/applications/org.kde.muon.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/org.kde.muon.desktop
+[ -f /usr/share/applications/org.kde.plasma.emojier.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/org.kde.plasma.emojier.desktop
+[ -f /usr/share/applications/pavucontrol-qt.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/pavucontrol-qt.desktop
+[ -f /usr/share/applications/R.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/R.desktop
+[ -f /usr/share/applications/texdoctk.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/texdoctk.desktop
+[ -f /usr/share/applications/vim.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/vim.desktop
+[ -f /usr/share/applications/laptop-mode-tools.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/laptop-mode-tools.desktop
+[ -f ~/.local/share/applications/com.github.joseexposito.touche.desktop ] && desktop-file-edit --set-key 'NoDisplay' --set-value 'true' ~/.local/share/applications/com.github.joseexposito.touche.desktop
 
 # No more than 10 entries in each category
 # silence when running:
