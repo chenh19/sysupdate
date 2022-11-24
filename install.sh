@@ -14,9 +14,6 @@ sudo apt-get update && sudo apt-get install desktop-file-utils -y
 
 # write update script
 wget -qO- https://raw.githubusercontent.com/chenh19/sysupdate/main/.head > ~/.update.sh
-echo -e 'sudo apt-get update && sudo apt-get dist-upgrade -y && sudo apt-get upgrade -y && echo ""' >> ~/.update.sh
-echo -e 'sudo flatpak update -y && echo ""' >> ~/.update.sh
-echo -e 'sudo snap refresh && echo ""' >> ~/.update.sh
 
 # ask whether to include R update
 read -n1 -s -r -p "$(echo -e $TEXT_YELLOW'Would you like to include R packages update? [y/n/c]'$TEXT_RESET)"$' \n' choice
@@ -43,8 +40,8 @@ case "$choice" in
 esac
 
 # finish
-echo -e 'sudo apt-get autoremove -y && sudo apt-get clean && echo ""' >> ~/.update.sh
 wget -qO- https://raw.githubusercontent.com/chenh19/sysupdate/main/.tail >> ~/.update.sh
+wget -qO- https://raw.githubusercontent.com/chenh19/sysupdate/main/.shortcut.sh > ~/.shortcut.sh
 
 # add alias in bash configuration
 [ ! -f ~/.bashrc] ] && touch ~/.bashrc
