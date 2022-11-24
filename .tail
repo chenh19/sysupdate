@@ -1,3 +1,4 @@
+sudo apt-get autoremove -y && sudo apt-get clean && echo ""
 bash ~/.shortcut.sh >/dev/null 2>&1
 echo -e "${TEXT_GREEN}System up to date!${TEXT_RESET} \n" && sleep 1
 if [ -f /var/run/reboot-required ]; then
