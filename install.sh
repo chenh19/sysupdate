@@ -7,7 +7,8 @@ TEXT_GREEN='\e[1;32m'
 TEXT_RESET='\e[0m'
 
 # notify start
-echo -e " \n${TEXT_YELLOW}Configuring system update command...${TEXT_RESET} \n" && sleep 1
+sudo echo ""
+echo -e "${TEXT_YELLOW}Configuring system update command...${TEXT_RESET} \n" && sleep 1
 
 # install desktop-file-utils
 sudo apt-get update && sudo apt-get install desktop-file-utils -y
@@ -16,6 +17,7 @@ sudo apt-get update && sudo apt-get install desktop-file-utils -y
 wget -qO- https://raw.githubusercontent.com/chenh19/sysupdate/main/.head > ~/.update.sh
 
 # ask whether to include R update
+echo ""
 read -n1 -s -r -p "$(echo -e $TEXT_YELLOW'Would you like to include R packages update? [y/n/c]'$TEXT_RESET)"$' \n' choice
 case "$choice" in
     y|Y ) echo -e 'update.packages(ask = FALSE, checkBuilt = TRUE)' > ~/.update.R
