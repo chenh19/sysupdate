@@ -105,7 +105,7 @@
 ##Google Chrome
 [ -f /usr/share/applications/google-chrome.desktop ] && sudo desktop-file-edit \
     --set-name 'Chrome' --set-key 'Name[en_US]' --set-value 'Chrome' --set-key 'Name[zh_CN]' --set-value '网页浏览器' \
-    --set-generic-name 'Google Web Browser' --set-key 'GenericName[en_US]' --set-value 'Google Web Browser' --set-key 'GenericName[zh_CN]' --set-value '浏览互联网' \
+    --set-generic-name 'Web Browser' --set-key 'GenericName[en_US]' --set-value 'Web Browser' --set-key 'GenericName[zh_CN]' --set-value '浏览互联网' \
     --set-comment 'Google Chrome Web Browser' --set-key 'Comment[en_US]' --set-value 'Google Chrome Web Browser' --set-key 'Comment[zh_CN]' --set-value '谷歌浏览器' \
     --remove-key 'Categories' --add-category 'Network;' \
 /usr/share/applications/google-chrome.desktop
@@ -121,8 +121,8 @@
 ##Zoom
 [ -f /usr/share/applications/Zoom.desktop ] && sudo desktop-file-edit \
     --set-name 'Zoom' --set-key 'Name[en_US]' --set-value 'Zoom' --set-key 'Name[zh_CN]' --set-value 'Zoom' \
-    --set-generic-name 'Zoom Video Conference' --set-key 'GenericName[en_US]' --set-value 'Zoom Video Conference' --set-key 'GenericName[zh_CN]' --set-value 'Zoom视频会议' \
-    --set-comment 'Stop slacking and get back to work!' --set-key 'Comment[en_US]' --set-value 'Stop slacking and get back to work!' --set-key 'Comment[zh_CN]' --set-value 'Slack工作即时通讯' \
+    --set-generic-name 'Video Conference' --set-key 'GenericName[en_US]' --set-value 'Video Conference' --set-key 'GenericName[zh_CN]' --set-value '视频会议' \
+    --set-comment 'Zoom Video Conference' --set-key 'Comment[en_US]' --set-value 'Zoom Video Conference' --set-key 'Comment[zh_CN]' --set-value 'Zoom视频会议' \
     --remove-key 'Categories' --add-category 'Network;' \
 /usr/share/applications/Zoom.desktop
 
@@ -396,6 +396,7 @@
 
 
 #Hidden
+[ -f /usr/share/applications/cnsetuputil2l.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/cnsetuputil2l.desktop
 [ -f /usr/share/applications/debian-uxterm.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/debian-uxterm.desktop
 [ -f /usr/share/applications/debian-xterm.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/debian-xterm.desktop
 [ -f /usr/share/applications/display-im6.q16.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/display-im6.q16.desktop
