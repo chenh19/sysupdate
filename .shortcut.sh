@@ -205,6 +205,13 @@
 
 
 #Multimedia (AudioVideo;)
+##Cider
+[ -f /usr/share/applications/cider.desktop ] && sudo desktop-file-edit \
+    --set-name 'Cider' --set-key 'Name[en_US]' --set-value 'Cider' --set-key 'Name[zh_CN]' --set-value 'Cider' \
+    --set-generic-name 'Apple Music' --set-key 'GenericName[en_US]' --set-value 'Apple Music' --set-key 'GenericName[zh_CN]' --set-value '苹果音乐' \
+    --set-comment 'Open-source Apple Music Client' --set-key 'Comment[en_US]' --set-value 'Open-source Apple Music Client' --set-key 'Comment[zh_CN]' --set-value '开源苹果音乐客户端' \
+    --remove-key 'Categories' --add-category 'AudioVideo;' \
+/usr/share/applications/cider.desktop
 ##qView
 [ -f /usr/share/applications/com.interversehq.qView.desktop ] && sudo desktop-file-edit \
     --set-name 'qView' --set-key 'Name[en_US]' --set-value 'qView' --set-key 'Name[zh_CN]' --set-value '图片浏览器' \
