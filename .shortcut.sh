@@ -392,7 +392,7 @@
     --remove-key 'Categories' --add-category 'System;' \
 /usr/share/applications/org.kde.kwrite.desktop
 
-#Piper
+##Piper
 
 #Help
 ##Help
