@@ -410,6 +410,10 @@
 [ -f /usr/share/applications/fcitx-configtool.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/fcitx-configtool.desktop
 [ -f /usr/share/applications/fcitx-skin-installer.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/fcitx-skin-installer.desktop
 [ -f /usr/share/applications/fcitx.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/fcitx.desktop
+[ -f /usr/share/applications/fcitx5-configtool.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/fcitx5-configtool.desktop
+[ -f /usr/share/applications/org.fcitx.fcitx5-config-qt.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/org.fcitx.fcitx5-config-qt.desktop
+[ -f /usr/share/applications/org.fcitx.fcitx5.migrator.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/org.fcitx.fcitx5.migrator.desktop
+[ -f /usr/share/applications/org.fcitx.Fcitx5.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/org.fcitx.Fcitx5.desktop
 [ -f /usr/share/applications/im-config.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/im-config.desktop
 [ -f /usr/share/applications/info.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/info.desktop
 [ -f /usr/share/applications/kbd-layout-viewer.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/kbd-layout-viewer.desktop
