@@ -18,6 +18,13 @@
     --set-icon '/opt/icon/igv.png' \
     --remove-key 'Categories' --add-category 'Science;' \
 /usr/share/applications/igv.desktop
+##Meld
+[ -f /usr/share/applications/org.gnome.meld.desktop ] && sudo desktop-file-edit \
+    --set-name 'Meld' --set-key 'Name[en_US]' --set-value 'Meld' --set-key 'Name[zh_CN]' --set-value 'Meld' \
+    --set-generic-name 'Diff Viewer' --set-key 'GenericName[en_US]' --set-value 'Diff Viewer' --set-key 'GenericName[zh_CN]' --set-value 'Diff Viewer' \
+    --set-comment 'Compare and merge your files' --set-key 'Comment[en_US]' --set-value 'Compare and merge your files' --set-key 'Comment[zh_CN]' --set-value 'Compare and merge your files' \
+    --remove-key 'Categories' --add-category 'Science;' \
+/usr/share/applications/org.gnome.meld.desktop
 ##PyMol
 [ -f /usr/share/applications/pymol.desktop ] && sudo desktop-file-edit \
     --set-name 'PyMOL' --set-key 'Name[en_US]' --set-value 'PyMOL' --set-key 'Name[zh_CN]' --set-value 'PyMOL' \
