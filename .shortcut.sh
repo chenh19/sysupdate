@@ -265,12 +265,12 @@
 
 #Games(Game;)
 ##HumanResourceMachine
-[ -f /usr/share/applications/Human Resource Machine ] && sudo desktop-file-edit \
+[ -f /usr/share/applications/tomorrowcorporation_com-HumanResourceMachine_1.desktop ] && sudo desktop-file-edit \
     --set-name 'Human Resource Machine' --set-key 'Name[en_US]' --set-value 'Human Resource Machine' --set-key 'Name[zh_CN]' --set-value '人力资源机器' \
     --set-generic-name 'Programming Game' --set-key 'GenericName[en_US]' --set-value 'Programming Game' --set-key 'GenericName[zh_CN]' --set-value '编程游戏' \
     --set-comment 'Learn programming by gaming' --set-key 'Comment[en_US]' --set-value 'Learn programming by gaming' --set-key 'Comment[zh_CN]' --set-value '游戏学习编程' \
     --remove-key 'Categories' --add-category 'Game;' \
-/usr/share/applications/Human Resource Machine
+/usr/share/applications/tomorrowcorporation_com-HumanResourceMachine_1.desktop
 
 
 #Utilities (Utility;)
