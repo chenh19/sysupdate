@@ -460,4 +460,3 @@
 [ -f /usr/share/applications/timekpr-admin.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/timekpr-admin.desktop
 [ -f /usr/share/applications/vim.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/vim.desktop
 [ -f /usr/share/applications/laptop-mode-tools.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/laptop-mode-tools.desktop
-[ -f ~/.local/share/applications/com.github.joseexposito.touche.desktop ] && desktop-file-edit --set-key 'NoDisplay' --set-value 'true' ~/.local/share/applications/com.github.joseexposito.touche.desktop
