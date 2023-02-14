@@ -304,7 +304,7 @@
     --set-key 'StartupNotify' --set-value 'true' \
     --set-key 'Terminal' --set-value 'false' \
     --set-key 'TerminalOptions' --set-value '' \
-    --set-icon '/opt/etcher/balenaEtcher.png' \
+    --set-icon 'balena-etcher' \
     --remove-key 'Categories' --add-category 'Utility;' \
 /usr/share/applications/balena-etcher.desktop
 ##ExpanDrive
