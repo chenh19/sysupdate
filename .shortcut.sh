@@ -144,7 +144,7 @@
     --set-key 'Exec' --set-value 'XDG_CURRENT_DESKTOP=GNOME /opt/eudic/eudic.AppImage' \
     --set-key 'StartupNotify' --set-value 'true' \
     --set-key 'Terminal' --set-value 'false' \
-    --set-icon '/opt/eudic/eudic.png' \
+    --set-icon '/opt/icon/eudic.png' \
     --remove-key 'Categories' --add-category 'Office;' \
 /usr/share/applications/eudic.desktop
 ##Libreoffice Base
@@ -262,6 +262,14 @@
     --set-comment 'Create and Edit Pixel Images' --set-key 'Comment[en_US]' --set-value 'Create and Edit Pixel Images' --set-key 'Comment[zh_CN]' --set-value '创建、编辑点阵图形图像' \
     --remove-key 'Categories' --add-category 'AudioVideo;' \
 /usr/share/applications/org.kde.krita.desktop
+##MuseScore
+[ -f /usr/share/applications/musescore.desktop ] && sudo desktop-file-edit \
+    --set-name 'MuseScore' --set-key 'Name[en_US]' --set-value 'MuseScore' --set-key 'Name[zh_CN]' --set-value '五线谱' \
+    --set-generic-name 'Music Notation' --set-key 'GenericName[en_US]' --set-value 'Music Notation' --set-key 'GenericName[zh_CN]' --set-value '绘谱工具' \
+    --set-comment 'Create, play and print sheet music' --set-key 'Comment[en_US]' --set-value 'Create, play and print sheet music' --set-key 'Comment[zh_CN]' --set-value '免费易用的绘谱软件' \
+    --set-icon '/opt/icon/musescore.png' \
+    --remove-key 'Categories' --add-category 'AudioVideo;' \
+/usr/share/applications/musescore.desktop
 
 
 #Games(Game;)
