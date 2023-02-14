@@ -271,6 +271,20 @@
     --set-icon '/opt/icon/musescore.png' \
     --remove-key 'Categories' --add-category 'AudioVideo;' \
 /usr/share/applications/musescore.desktop
+##Kamoso
+[ -f /usr/share/applications/org.kde.kamoso.desktop ] && sudo desktop-file-edit \
+    --set-name 'Kamoso' --set-key 'Name[en_US]' --set-value 'Kamoso' --set-key 'Name[zh_CN]' --set-value '相机' \
+    --set-generic-name 'Camera' --set-key 'GenericName[en_US]' --set-value 'Camera' --set-key 'GenericName[zh_CN]' --set-value '摄像头' \
+    --set-comment 'Use your webcam to take pictures or make videos' --set-key 'Comment[en_US]' --set-value 'Use your webcam to take pictures or make videos' --set-key 'Comment[zh_CN]' --set-value '使用摄像头照相或者制作视频' \
+    --remove-key 'Categories' --add-category 'AudioVideo;' \
+/usr/share/applications/org.kde.kamoso.desktop
+##Kdenlive
+[ -f /usr/share/applications/org.kde.kdenlive.desktop ] && sudo desktop-file-edit \
+    --set-name 'Kdenlive' --set-key 'Name[en_US]' --set-value 'Kdenlive' --set-key 'Name[zh_CN]' --set-value '视频编辑' \
+    --set-generic-name 'Nonlinear Video Editor' --set-key 'GenericName[en_US]' --set-value 'Nonlinear Video Editor' --set-key 'GenericName[zh_CN]' --set-value '非线性视频编辑工具' \
+    --set-comment 'Nonlinear Video Editor by KDE' --set-key 'Comment[en_US]' --set-value 'Nonlinear Video Editor by KDE' --set-key 'Comment[zh_CN]' --set-value 'KDE社区开发的非线性视频编辑工具' \
+    --remove-key 'Categories' --add-category 'AudioVideo;' \
+/usr/share/applications/org.kde.kdenlive.desktop
 
 
 #Games(Game;)
