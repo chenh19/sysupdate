@@ -296,17 +296,17 @@
     --remove-key 'Categories' --add-category 'Utility;' \
 /usr/share/applications/enpass.desktop
 ##BalenaEtcher
-[ -f /usr/share/applications/etcher.desktop ] && sudo desktop-file-edit \
+[ -f /usr/share/applications/balena-etcher.desktop ] && sudo desktop-file-edit \
     --set-name 'Etcher' --set-key 'Name[en_US]' --set-value 'Etcher' --set-key 'Name[zh_CN]' --set-value 'Etcher刻录' \
     --set-generic-name 'Bootable USB Creator' --set-key 'GenericName[en_US]' --set-value 'Bootable USB Creator' --set-key 'GenericName[zh_CN]' --set-value '启动盘制作工具' \
     --set-comment 'A cross-platform tool to flash OS images onto SD cards and USB drives safely and easily' --set-key 'Comment[en_US]' --set-value 'A cross-platform tool to flash OS images onto SD cards and USB drives safely and easily' --set-key 'Comment[zh_CN]' --set-value '简单方便制作U盘启动盘' \
-    --set-key 'Exec' --set-value '/opt/etcher/balenaEtcher.AppImage' \
+    --set-key 'Exec' --set-value '/opt/balenaEtcher/balena-etcher %U' \
     --set-key 'StartupNotify' --set-value 'true' \
     --set-key 'Terminal' --set-value 'false' \
     --set-key 'TerminalOptions' --set-value '' \
     --set-icon '/opt/etcher/balenaEtcher.png' \
     --remove-key 'Categories' --add-category 'Utility;' \
-/usr/share/applications/etcher.desktop
+/usr/share/applications/balena-etcher.desktop
 ##ExpanDrive
 [ -f /usr/share/applications/expandrive.desktop ] && sudo desktop-file-edit \
     --set-name 'ExpanDrive' --set-key 'Name[en_US]' --set-value 'ExpanDrive' --set-key 'Name[zh_CN]' --set-value '云盘挂载' \
