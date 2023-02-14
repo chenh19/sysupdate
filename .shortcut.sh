@@ -295,6 +295,44 @@
     --set-comment 'Learn programming by gaming' --set-key 'Comment[en_US]' --set-value 'Learn programming by gaming' --set-key 'Comment[zh_CN]' --set-value '游戏学习编程' \
     --remove-key 'Categories' --add-category 'Game;' \
 /usr/share/applications/tomorrowcorporation_com-HumanResourceMachine_1.desktop
+##GCompris
+[ -f /usr/share/applications/org.kde.gcompris.desktop ] && sudo desktop-file-edit \
+    --set-name 'GCompris' --set-key 'Name[en_US]' --set-value 'GCompris' --set-key 'Name[zh_CN]' --set-value '教育游戏' \
+    --set-generic-name 'Educational Game' --set-key 'GenericName[en_US]' --set-value 'Educational Game' --set-key 'GenericName[zh_CN]' --set-value '少儿教学游戏' \
+    --set-comment 'Multi-Activity Educational game for children 2 to 10' --set-key 'Comment[en_US]' --set-value 'Multi-Activity Educational game for children 2 to 10' --set-key 'Comment[zh_CN]' --set-value '面向2到10岁儿童的多学科教学游戏' \
+    --remove-key 'Categories' --add-category 'Game;' \
+/usr/share/applications/org.kde.gcompris.desktop
+##Stellarium
+[ -f /usr/share/applications/org.stellarium.Stellarium.desktop ] && sudo desktop-file-edit \
+    --set-name 'Stellarium' --set-key 'Name[en_US]' --set-value 'Stellarium' --set-key 'Name[zh_CN]' --set-value '星空' \
+    --set-generic-name 'Desktop Planetarium' --set-key 'GenericName[en_US]' --set-value 'Desktop Planetarium' --set-key 'GenericName[zh_CN]' --set-value '桌面天文馆' \
+    --set-comment 'Planetarium' --set-key 'Comment[en_US]' --set-value 'Planetarium' --set-key 'Comment[zh_CN]' --set-value '天文馆' \
+    --remove-key 'Categories' --add-category 'Game;' \
+/usr/share/applications/org.stellarium.Stellarium.desktop
+##Bovo
+[ -f /usr/share/applications/org.kde.bovo.desktop ] && sudo desktop-file-edit \
+    --set-name 'Bovo' --set-key 'Name[en_US]' --set-value 'Bovo' --set-key 'Name[zh_CN]' --set-value '五子棋' \
+    --set-generic-name 'Five-in-a-row Board Game' --set-key 'GenericName[en_US]' --set-value 'Five-in-a-row Board Game' --set-key 'GenericName[zh_CN]' --set-value '五子棋游戏' \
+    --remove-key 'Categories' --add-category 'Game;' \
+/usr/share/applications/org.kde.bovo.desktop
+##Kapman
+[ -f /usr/share/applications/org.kde.kapman.desktop ] && sudo desktop-file-edit \
+    --set-name 'Kapman' --set-key 'Name[en_US]' --set-value 'Kapman' --set-key 'Name[zh_CN]' --set-value '吃豆人' \
+    --set-generic-name 'Pac-Man Game' --set-key 'GenericName[en_US]' --set-value 'Pac-Man Game' --set-key 'GenericName[zh_CN]' --set-value '街机游戏' \
+    --remove-key 'Categories' --add-category 'Game;' \
+/usr/share/applications/org.kde.kapman.desktop
+##KDiamond
+[ -f /usr/share/applications/org.kde.kdiamond.desktop ] && sudo desktop-file-edit \
+    --set-name 'KDiamond' --set-key 'Name[en_US]' --set-value 'KDiamond' --set-key 'Name[zh_CN]' --set-value '消消乐' \
+    --set-generic-name 'Three-in-a-row Game' --set-key 'GenericName[en_US]' --set-value 'Three-in-a-row Game' --set-key 'GenericName[zh_CN]' --set-value '休闲游戏' \
+    --remove-key 'Categories' --add-category 'Game;' \
+/usr/share/applications/org.kde.kdiamond.desktop
+##Kigo
+[ -f /usr/share/applications/org.kde.kigo.desktop ] && sudo desktop-file-edit \
+    --set-name 'Kigo' --set-key 'Name[en_US]' --set-value 'Kigo' --set-key 'Name[zh_CN]' --set-value '围棋' \
+    --set-generic-name 'Go Board Game' --set-key 'GenericName[en_US]' --set-value 'Go Board Game' --set-key 'GenericName[zh_CN]' --set-value '围棋游戏' \
+    --remove-key 'Categories' --add-category 'Game;' \
+/usr/share/applications/org.kde.kigo.desktop
 
 
 #Utilities (Utility;)
