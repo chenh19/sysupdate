@@ -267,6 +267,7 @@
     --set-name 'MuseScore' --set-key 'Name[en_US]' --set-value 'MuseScore' --set-key 'Name[zh_CN]' --set-value '五线谱' \
     --set-generic-name 'Music Notation' --set-key 'GenericName[en_US]' --set-value 'Music Notation' --set-key 'GenericName[zh_CN]' --set-value '绘谱工具' \
     --set-comment 'Create, play and print sheet music' --set-key 'Comment[en_US]' --set-value 'Create, play and print sheet music' --set-key 'Comment[zh_CN]' --set-value '免费易用的绘谱软件' \
+    --set-key 'Exec' --set-value '/opt/musescore/musescore.AppImage' \
     --set-icon '/opt/icon/musescore.png' \
     --remove-key 'Categories' --add-category 'AudioVideo;' \
 /usr/share/applications/musescore.desktop
