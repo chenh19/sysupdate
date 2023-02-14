@@ -45,6 +45,7 @@
     --set-name 'SnapGene' --set-key 'Name[en_US]' --set-value 'SnapGene' --set-key 'Name[zh_CN]' --set-value 'SnapGene' \
     --set-generic-name 'Everyday Molecular Biology' --set-key 'GenericName[en_US]' --set-value 'Everyday Molecular Biology' --set-key 'GenericName[zh_CN]' --set-value 'Everyday Molecular Biology' \
     --set-comment 'View, Edit, and Analyze Sequences' --set-key 'Comment[en_US]' --set-value 'View, Edit, and Analyze Sequences' --set-key 'Comment[zh_CN]' --set-value 'View, Edit, and Analyze Sequences' \
+    --set-key 'Exec' --set-value 'XDG_CURRENT_DESKTOP=GNOME /opt/gslbiotech/snapgene-viewer/snapgene-viewer.sh %U' \
     --remove-key 'Categories' --add-category 'Science;' \
 /usr/share/applications/snapgene-viewer.desktop
 ##Tropy
