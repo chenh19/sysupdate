@@ -481,7 +481,7 @@
 /usr/share/applications/org.kde.Help.desktop
 
 
-#Flathub
+#Flatpak & Snap
 ## clock
 [ ! -f ~/.local/share/applications/org.kde.kclock.desktop ] && touch ~/.local/share/applications/org.kde.kclock.desktop
 desktop-file-edit \
