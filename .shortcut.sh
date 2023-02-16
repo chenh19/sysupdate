@@ -149,49 +149,49 @@
 /usr/share/applications/eudic.desktop
 ##Libreoffice Base
 [ -f /usr/share/applications/libreoffice-base.desktop ] && sudo desktop-file-edit \
-    --set-name 'LibreOffice Base' --set-key 'Name[en_US]' --set-value 'LibreOffice Base' --set-key 'Name[zh_CN]' --set-value 'LibreOffice 数据库' \
+    --set-name 'LibreOffice Base' --set-key 'Name[en_US]' --set-value 'LibreOffice Base' --set-key 'Name[zh_CN]' --set-value 'Office 数据库' \
     --set-generic-name 'Database Development' --set-key 'GenericName[en_US]' --set-value 'Database Development' --set-key 'GenericName[zh_CN]' --set-value '数据库开发' \
     --set-comment 'Manage databases, create queries and reports to track and manage your information by using Base' --set-key 'Comment[en_US]' --set-value 'Manage databases, create queries and reports to track and manage your information by using Base' --set-key 'Comment[zh_CN]' --set-value '使用 Base 管理数据库并创建查询和报表，以对信息进行跟踪和管理' \
     --remove-key 'Categories' --add-category 'Office;' \
 /usr/share/applications/libreoffice-base.desktop
 ##Libreoffice Calc
 [ -f /usr/share/applications/libreoffice-calc.desktop ] && sudo desktop-file-edit \
-    --set-name 'LibreOffice Calc' --set-key 'Name[en_US]' --set-value 'LibreOffice Calc' --set-key 'Name[zh_CN]' --set-value 'LibreOffice 表格' \
+    --set-name 'LibreOffice Calc' --set-key 'Name[en_US]' --set-value 'LibreOffice Calc' --set-key 'Name[zh_CN]' --set-value 'Office 表格' \
     --set-generic-name 'Spreadsheet' --set-key 'GenericName[en_US]' --set-value 'Spreadsheet' --set-key 'GenericName[zh_CN]' --set-value '电子表格' \
     --set-comment 'Perform calculations, analyze information and manage lists in spreadsheets by using Calc' --set-key 'Comment[en_US]' --set-value 'Perform calculations, analyze information and manage lists in spreadsheets by using Calc' --set-key 'Comment[zh_CN]' --set-value '使用 Calc 进行计算，并在电子表格中进行数据分析' \
     --remove-key 'Categories' --add-category 'Office;' \
 /usr/share/applications/libreoffice-calc.desktop
 ##Libreoffice Draw
 [ -f /usr/share/applications/libreoffice-draw.desktop ] && sudo desktop-file-edit \
-    --set-name 'LibreOffice Draw' --set-key 'Name[en_US]' --set-value 'LibreOffice Draw' --set-key 'Name[zh_CN]' --set-value 'LibreOffice 绘画' \
+    --set-name 'LibreOffice Draw' --set-key 'Name[en_US]' --set-value 'LibreOffice Draw' --set-key 'Name[zh_CN]' --set-value 'Office 绘画' \
     --set-generic-name 'Drawing Program' --set-key 'GenericName[en_US]' --set-value 'Drawing Program' --set-key 'GenericName[zh_CN]' --set-value '电子绘画' \
     --set-comment 'Create and edit drawings, flow charts and logos by using Draw' --set-key 'Comment[en_US]' --set-value 'Create and edit drawings, flow charts and logos by using Draw' --set-key 'Comment[zh_CN]' --set-value '使用 Draw 创建并编辑图形、流程图和徽标' \
     --remove-key 'Categories' --add-category 'Office;' \
 /usr/share/applications/libreoffice-draw.desktop
 ##Libreoffice Impress
 [ -f /usr/share/applications/libreoffice-impress.desktop ] && sudo desktop-file-edit \
-    --set-name 'LibreOffice Impress' --set-key 'Name[en_US]' --set-value 'LibreOffice Impress' --set-key 'Name[zh_CN]' --set-value 'LibreOffice 演示' \
+    --set-name 'LibreOffice Impress' --set-key 'Name[en_US]' --set-value 'LibreOffice Impress' --set-key 'Name[zh_CN]' --set-value 'Office 演示' \
     --set-generic-name 'Presentation' --set-key 'GenericName[en_US]' --set-value 'Presentation' --set-key 'GenericName[zh_CN]' --set-value '演示文稿' \
     --set-comment 'Create and edit presentations for slideshows, meeting and Web pages by using Impress' --set-key 'Comment[en_US]' --set-value 'Create and edit presentations for slideshows, meeting and Web pages by using Impress' --set-key 'Comment[zh_CN]' --set-value '使用 Impress 创建并编辑幻灯片、会议和网页中使用的演示文稿' \
     --remove-key 'Categories' --add-category 'Office;' \
 /usr/share/applications/libreoffice-impress.desktop
 ##Libreoffice Math
 [ -f /usr/share/applications/libreoffice-math.desktop ] && sudo desktop-file-edit \
-    --set-name 'LibreOffice Math' --set-key 'Name[en_US]' --set-value 'LibreOffice Math' --set-key 'Name[zh_CN]' --set-value 'LibreOffice 演示' \
+    --set-name 'LibreOffice Math' --set-key 'Name[en_US]' --set-value 'LibreOffice Math' --set-key 'Name[zh_CN]' --set-value 'Office 演示' \
     --set-generic-name 'Presentation' --set-key 'GenericName[en_US]' --set-value 'Presentation' --set-key 'GenericName[zh_CN]' --set-value '演示文稿' \
     --set-comment 'Create and edit presentations for slideshows, meeting and Web pages by using Impress' --set-key 'Comment[en_US]' --set-value 'Create and edit presentations for slideshows, meeting and Web pages by using Impress' --set-key 'Comment[zh_CN]' --set-value '使用 Impress 创建并编辑幻灯片、会议和网页中使用的演示文稿' \
     --remove-key 'Categories' --add-category 'Office;' \
 /usr/share/applications/libreoffice-math.desktop
 ##Libreoffice Startcenter
 [ -f /usr/share/applications/libreoffice-startcenter.desktop ] && sudo desktop-file-edit \
-    --set-name 'LibreOffice' --set-key 'Name[en_US]' --set-value 'LibreOffice' --set-key 'Name[zh_CN]' --set-value 'LibreOffice 套件' \
+    --set-name 'LibreOffice' --set-key 'Name[en_US]' --set-value 'LibreOffice' --set-key 'Name[zh_CN]' --set-value 'Office 套件' \
     --set-generic-name 'Office Suite' --set-key 'GenericName[en_US]' --set-value 'Office Suite' --set-key 'GenericName[zh_CN]' --set-value '办公套件' \
     --set-comment 'The office productivity suite compatible to the open and standardized ODF document format' --set-key 'Comment[en_US]' --set-value 'The office productivity suite compatible to the open and standardized ODF document format' --set-key 'Comment[zh_CN]' --set-value '办公生产套件与开放、标准化的 ODF 文档格式兼容' \
     --remove-key 'Categories' --add-category 'Office;' \
 /usr/share/applications/libreoffice-startcenter.desktop
 ##Libreoffice Writer
 [ -f /usr/share/applications/libreoffice-writer.desktop ] && sudo desktop-file-edit \
-    --set-name 'LibreOffice Writer' --set-key 'Name[en_US]' --set-value 'LibreOffice Writer' --set-key 'Name[zh_CN]' --set-value 'LibreOffice 文稿' \
+    --set-name 'LibreOffice Writer' --set-key 'Name[en_US]' --set-value 'LibreOffice Writer' --set-key 'Name[zh_CN]' --set-value 'Office 文稿' \
     --set-generic-name 'Word Processor' --set-key 'GenericName[en_US]' --set-value 'Word Processor' --set-key 'GenericName[zh_CN]' --set-value '电子文档' \
     --set-comment 'Create and edit text and graphics in letters, reports, documents and Web pages by using Writer' --set-key 'Comment[en_US]' --set-value 'Create and edit text and graphics in letters, reports, documents and Web pages by using Writer' --set-key 'Comment[zh_CN]' --set-value '使用 Writer 对信函、报告、文档以及网页中的文字和图像进行编辑' \
     --remove-key 'Categories' --add-category 'Office;' \
@@ -215,8 +215,8 @@
 #Multimedia (AudioVideo;)
 ##Cider
 [ -f /usr/share/applications/cider.desktop ] && sudo desktop-file-edit \
-    --set-name 'Cider' --set-key 'Name[en_US]' --set-value 'Cider' --set-key 'Name[zh_CN]' --set-value 'Cider' \
-    --set-generic-name 'Apple Music' --set-key 'GenericName[en_US]' --set-value 'Apple Music' --set-key 'GenericName[zh_CN]' --set-value '苹果音乐' \
+    --set-name 'Cider' --set-key 'Name[en_US]' --set-value 'Cider' --set-key 'Name[zh_CN]' --set-value '苹果音乐' \
+    --set-generic-name 'Apple Music' --set-key 'GenericName[en_US]' --set-value 'Apple Music' --set-key 'GenericName[zh_CN]' --set-value '苹果音乐客户端' \
     --set-comment 'Open-source Apple Music Client' --set-key 'Comment[en_US]' --set-value 'Open-source Apple Music Client' --set-key 'Comment[zh_CN]' --set-value '开源苹果音乐客户端' \
     --remove-key 'Categories' --add-category 'AudioVideo;' \
 /usr/share/applications/cider.desktop
@@ -229,7 +229,7 @@
 /usr/share/applications/com.interversehq.qView.desktop
 ##VLC
 [ -f /usr/share/applications/vlc.desktop ] && sudo desktop-file-edit \
-    --set-name 'VLC' --set-key 'Name[en_US]' --set-value 'VLC' --set-key 'Name[zh_CN]' --set-value 'VLC播放器' \
+    --set-name 'VLC' --set-key 'Name[en_US]' --set-value 'VLC' --set-key 'Name[zh_CN]' --set-value '视频播放器' \
     --set-generic-name 'Media player' --set-key 'GenericName[en_US]' --set-value 'Media player' --set-key 'GenericName[zh_CN]' --set-value '多媒体播放器' \
     --set-comment 'Read, capture, broadcast your multimedia streams' --set-key 'Comment[en_US]' --set-value 'Read, capture, broadcast your multimedia streams' --set-key 'Comment[zh_CN]' --set-value '读取、捕获、广播您的多媒体流' \
     --remove-key 'Categories' --add-category 'AudioVideo;' \
@@ -338,7 +338,7 @@
 #Utilities (Utility;)
 ##WiFi Hotspot
 [ -f /usr/share/applications/wihotspot.desktop ] && sudo desktop-file-edit \
-    --set-name 'WiFi Hotspot' --set-key 'Name[en_US]' --set-value 'WiFi Hotspot' --set-key 'Name[zh_CN]' --set-value 'WiFi热点' \
+    --set-name 'WiFi Hotspot' --set-key 'Name[en_US]' --set-value 'WiFi Hotspot' --set-key 'Name[zh_CN]' --set-value '无线热点' \
     --set-generic-name 'Feature-rich Wifi Hotspot' --set-key 'GenericName[en_US]' --set-value 'Feature-rich Wifi Hotspot' --set-key 'GenericName[zh_CN]' --set-value '共享网络' \
     --remove-key 'Categories' --add-category 'Utility;' \
 /usr/share/applications/wihotspot.desktop
