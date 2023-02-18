@@ -395,9 +395,9 @@
 #System (System;)
 ##System Settings
 [ -f /usr/share/applications/systemsettings.desktop ] && sudo desktop-file-edit \
-    --set-name 'Settings' --set-key 'Name[en_US]' --set-value 'Settings' --set-key 'Name[zh_CN]' --set-value '设置' \
-    --set-generic-name 'System Settings' --set-key 'GenericName[en_US]' --set-value 'System Settings' --set-key 'GenericName[zh_CN]' --set-value '系统设置' \
-    --set-comment 'Configuration Tool for the System' --set-key 'Comment[en_US]' --set-value 'Configuration Tool for the System' --set-key 'Comment[zh_CN]' --set-value '系统设置管理工具' \
+    --set-name 'Settings' --set-key 'Name[en_US]' --set-value 'Settings' --set-key 'Name[zh_CN]' --set-value '系统设置' \
+    --set-generic-name 'System Settings' --set-key 'GenericName[en_US]' --set-value 'System Settings' --set-key 'GenericName[zh_CN]' --set-value '系统设置管理工具' \
+    --set-comment 'Configuration Tool for the System' --set-key 'Comment[en_US]' --set-value 'Configuration Tool for the System' --set-key 'Comment[zh_CN]' --set-value '管理系统设置' \
     --remove-key 'Categories' --add-category 'System;' \
 /usr/share/applications/systemsettings.desktop
 ##UKUU
