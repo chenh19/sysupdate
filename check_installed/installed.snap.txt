@@ -1,0 +1,12 @@
+Name               Version          Rev    Tracking         Publisher    Notes
+bare               1.0              5      latest/stable    canonical**  base
+core18             20230118         2679   latest/stable    canonical**  base,disabled
+core18             20230207         2697   latest/stable    canonical**  base
+core20             20230126         1822   latest/stable    canonical**  base
+core20             20220719         1587   latest/stable    canonical**  base,disabled
+gnome-3-38-2004    0+git.891e5bc    112    latest/stable/…  canonical**  disabled
+gnome-3-38-2004    0+git.6f39565    119    latest/stable/…  canonical**  -
+gtk-common-themes  0.1-81-g442e511  1535   latest/stable/…  canonical**  -
+qt513              5.13             24     latest/stable    keshavnrj*   -
+snapd              2.58             17950  latest/stable    canonical**  snapd,disabled
+snapd              2.58.2           18357  latest/stable    canonical**  snapd
