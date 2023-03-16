@@ -2,64 +2,73 @@
 #This script edits start menu shortcuts
 
 #Science & Math (Science;)
+##ClustalX
+[ -f /usr/share/applications/clustalx.desktop ] && sudo desktop-file-edit \
+    --set-name 'ClustalX' --set-key 'Name[en_US]' --set-value 'ClustalX' --set-key 'Name[zh_CN]' --set-value 'ClustalX' \
+    --set-generic-name 'Multiple Sequence Alignment' --set-key 'GenericName[en_US]' --set-value 'Multiple Sequence Alignment' --set-key 'GenericName[zh_CN]' --set-value '多重序列比对' \
+    --set-comment 'Global Multiple Nucleotide or Peptide Sequence Alignment and Phylogenetic Analysis' --set-key 'Comment[en_US]' --set-value 'Global Multiple Nucleotide or Peptide Sequence Alignment and Phylogenetic Analysis' --set-key 'Comment[zh_CN]' --set-value '核酸与蛋白质序列比对工具' \
+    --set-icon '/opt/icon/clustal.png' \
+    --remove-key 'Categories' --add-category 'Science;' \
+    --remove-key 'Description' \
+/usr/share/applications/clustalx.desktop
 ##FastQC
 [ -f /usr/share/applications/fastqc.desktop ] && sudo desktop-file-edit \
     --set-name 'FastQC' --set-key 'Name[en_US]' --set-value 'FastQC' --set-key 'Name[zh_CN]' --set-value 'FastQC' \
-    --set-generic-name 'Fast Quality Control' --set-key 'GenericName[en_US]' --set-value 'Fast Quality Control' --set-key 'GenericName[zh_CN]' --set-value 'Fast Quality Control' \
-    --set-comment 'Quality Control Tool for High Throughput Sequence Data' --set-key 'Comment[en_US]' --set-value 'Quality Control Tool for High Throughput Sequence Data' --set-key 'Comment[zh_CN]' --set-value 'Quality Control Tool for High Throughput Sequence Data' \
+    --set-generic-name 'Fast Quality Control' --set-key 'GenericName[en_US]' --set-value 'Fast Quality Control' --set-key 'GenericName[zh_CN]' --set-value '测序数据质检' \
+    --set-comment 'Quality Control Tool for High Throughput Sequence Data' --set-key 'Comment[en_US]' --set-value 'Quality Control Tool for High Throughput Sequence Data' --set-key 'Comment[zh_CN]' --set-value '测序数据质量控制工具' \
     --set-icon '/usr/share/icons/hicolor/32x32/apps/fastqc_icon.png' \
     --remove-key 'Categories' --add-category 'Science;' \
 /usr/share/applications/fastqc.desktop
 ##IGV
 [ -f /usr/share/applications/igv.desktop ] && sudo desktop-file-edit \
     --set-name 'IGV' --set-key 'Name[en_US]' --set-value 'IGV' --set-key 'Name[zh_CN]' --set-value 'IGV' \
-    --set-generic-name 'Integrative Genomics Viewer' --set-key 'GenericName[en_US]' --set-value 'Integrative Genomics Viewer' --set-key 'GenericName[zh_CN]' --set-value 'Integrative Genomics Viewer' \
-    --set-comment 'High-performance Viewer for Large Genomics Datasets' --set-key 'Comment[en_US]' --set-value 'High-performance Viewer for Large Genomics Datasets' --set-key 'Comment[zh_CN]' --set-value 'High-performance Viewer for Large Genomics Datasets' \
+    --set-generic-name 'Integrative Genomics Viewer' --set-key 'GenericName[en_US]' --set-value 'Integrative Genomics Viewer' --set-key 'GenericName[zh_CN]' --set-value '基因组浏览器' \
+    --set-comment 'High-performance Viewer for Large Genomics Datasets' --set-key 'Comment[en_US]' --set-value 'High-performance Viewer for Large Genomics Datasets' --set-key 'Comment[zh_CN]' --set-value '高性能的基因组可视化工具' \
     --set-icon '/opt/icon/igv.png' \
     --remove-key 'Categories' --add-category 'Science;' \
 /usr/share/applications/igv.desktop
 ##Meld
 [ -f /usr/share/applications/org.gnome.meld.desktop ] && sudo desktop-file-edit \
     --set-name 'Meld' --set-key 'Name[en_US]' --set-value 'Meld' --set-key 'Name[zh_CN]' --set-value 'Meld' \
-    --set-generic-name 'Diff Viewer' --set-key 'GenericName[en_US]' --set-value 'Diff Viewer' --set-key 'GenericName[zh_CN]' --set-value 'Diff Viewer' \
-    --set-comment 'Compare and merge your files' --set-key 'Comment[en_US]' --set-value 'Compare and merge your files' --set-key 'Comment[zh_CN]' --set-value 'Compare and merge your files' \
+    --set-generic-name 'Diff Viewer' --set-key 'GenericName[en_US]' --set-value 'Diff Viewer' --set-key 'GenericName[zh_CN]' --set-value '文件比较工具' \
+    --set-comment 'Compare and merge your files' --set-key 'Comment[en_US]' --set-value 'Compare and merge your files' --set-key 'Comment[zh_CN]' --set-value '文件比较和整合工具' \
     --remove-key 'Categories' --add-category 'Science;' \
 /usr/share/applications/org.gnome.meld.desktop
 ##PyMol
 [ -f /usr/share/applications/pymol.desktop ] && sudo desktop-file-edit \
     --set-name 'PyMOL' --set-key 'Name[en_US]' --set-value 'PyMOL' --set-key 'Name[zh_CN]' --set-value 'PyMOL' \
-    --set-generic-name 'Molecular Modeller' --set-key 'GenericName[en_US]' --set-value 'Molecular Modeller' --set-key 'GenericName[zh_CN]' --set-value 'Molecular Modeller' \
-    --set-comment 'Model Molecular Structures and Produce High-quality Images' --set-key 'Comment[en_US]' --set-value 'Model Molecular Structures and Produce High-quality Images' --set-key 'Comment[zh_CN]' --set-value 'Model Molecular Structures and Produce High-quality Images' \
+    --set-generic-name 'Molecular Modeller' --set-key 'GenericName[en_US]' --set-value 'Molecular Modeller' --set-key 'GenericName[zh_CN]' --set-value '三维分子模型' \
+    --set-comment 'Model Molecular Structures and Produce High-quality Images' --set-key 'Comment[en_US]' --set-value 'Model Molecular Structures and Produce High-quality Images' --set-key 'Comment[zh_CN]' --set-value '分子三维结构分析工具' \
     --set-icon '/opt/icon/pymol.png' \
     --remove-key 'Categories' --add-category 'Science;' \
 /usr/share/applications/pymol.desktop
 ##RStudio
 [ -f /usr/share/applications/rstudio.desktop ] && sudo desktop-file-edit \
     --set-name 'RStudio' --set-key 'Name[en_US]' --set-value 'RStudio' --set-key 'Name[zh_CN]' --set-value 'RStudio' \
-    --set-generic-name 'R Development' --set-key 'GenericName[en_US]' --set-value 'R Development' --set-key 'GenericName[zh_CN]' --set-value 'R Development' \
-    --set-comment 'R Programming IDE' --set-key 'Comment[en_US]' --set-value 'R Programming IDE' --set-key 'Comment[zh_CN]' --set-value 'R Programming IDE' \
+    --set-generic-name 'R Development' --set-key 'GenericName[en_US]' --set-value 'R Development' --set-key 'GenericName[zh_CN]' --set-value 'R语言开发' \
+    --set-comment 'R Programming IDE' --set-key 'Comment[en_US]' --set-value 'R Programming IDE' --set-key 'Comment[zh_CN]' --set-value 'R语言开发工具' \
     --remove-key 'Categories' --add-category 'Science;' \
 /usr/share/applications/rstudio.desktop
 ##Snapgene-Viewer
 [ -f /usr/share/applications/snapgene-viewer.desktop ] && sudo desktop-file-edit \
     --set-name 'SnapGene' --set-key 'Name[en_US]' --set-value 'SnapGene' --set-key 'Name[zh_CN]' --set-value 'SnapGene' \
-    --set-generic-name 'Everyday Molecular Biology' --set-key 'GenericName[en_US]' --set-value 'Everyday Molecular Biology' --set-key 'GenericName[zh_CN]' --set-value 'Everyday Molecular Biology' \
-    --set-comment 'View, Edit, and Analyze Sequences' --set-key 'Comment[en_US]' --set-value 'View, Edit, and Analyze Sequences' --set-key 'Comment[zh_CN]' --set-value 'View, Edit, and Analyze Sequences' \
+    --set-generic-name 'Everyday Molecular Biology' --set-key 'GenericName[en_US]' --set-value 'Everyday Molecular Biology' --set-key 'GenericName[zh_CN]' --set-value '分子生物学工具' \
+    --set-comment 'View, Edit, and Analyze Sequences' --set-key 'Comment[en_US]' --set-value 'View, Edit, and Analyze Sequences' --set-key 'Comment[zh_CN]' --set-value '浏览，分析与编辑生物序列' \
     --set-key 'Exec' --set-value 'XDG_CURRENT_DESKTOP=GNOME /opt/gslbiotech/snapgene-viewer/snapgene-viewer.sh %U' \
     --remove-key 'Categories' --add-category 'Science;' \
 /usr/share/applications/snapgene-viewer.desktop
 ##Tropy
 [ -f /usr/share/applications/tropy.desktop ] && sudo desktop-file-edit \
     --set-name 'Tropy' --set-key 'Name[en_US]' --set-value 'Tropy' --set-key 'Name[zh_CN]' --set-value 'Tropy' \
-    --set-generic-name 'Lab Image Manager' --set-key 'GenericName[en_US]' --set-value 'Lab Image Manager' --set-key 'GenericName[zh_CN]' --set-value 'Lab Image Manager' \
-    --set-comment 'Organizing and Annotating Experiment Images' --set-key 'Comment[en_US]' --set-value 'Organizing and Annotating Experiment Images' --set-key 'Comment[zh_CN]' --set-value 'Organizing and Annotating Experiment Images' \
+    --set-generic-name 'Lab Image Manager' --set-key 'GenericName[en_US]' --set-value 'Lab Image Manager' --set-key 'GenericName[zh_CN]' --set-value '实验图片管理' \
+    --set-comment 'Organizing and Annotating Experiment Images' --set-key 'Comment[en_US]' --set-value 'Organizing and Annotating Experiment Images' --set-key 'Comment[zh_CN]' --set-value '整理和标注实验图片' \
     --remove-key 'Categories' --add-category 'Science;' \
 /usr/share/applications/tropy.desktop
 ##Zotero
 [ -f /usr/share/applications/zotero.desktop ] && sudo desktop-file-edit \
     --set-name 'Zotero' --set-key 'Name[en_US]' --set-value 'Zotero' --set-key 'Name[zh_CN]' --set-value 'Zotero' \
-    --set-generic-name 'Bibliography Manager' --set-key 'GenericName[en_US]' --set-value 'Bibliography Manager' --set-key 'GenericName[zh_CN]' --set-value 'Bibliography Manager' \
-    --set-comment 'Organizing and Citing References' --set-key 'Comment[en_US]' --set-value 'Organizing and Citing References' --set-key 'Comment[zh_CN]' --set-value 'Organizing and Citing References' \
+    --set-generic-name 'Bibliography Manager' --set-key 'GenericName[en_US]' --set-value 'Bibliography Manager' --set-key 'GenericName[zh_CN]' --set-value '文献管理' \
+    --set-comment 'Organizing and Citing References' --set-key 'Comment[en_US]' --set-value 'Organizing and Citing References' --set-key 'Comment[zh_CN]' --set-value '管理和引用文献' \
     --remove-key 'Categories' --add-category 'Science;' \
     --remove-key 'Description' \
 /usr/share/applications/zotero.desktop
