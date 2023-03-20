@@ -98,6 +98,18 @@
     --set-comment 'Connect to University Network' --set-key 'Comment[en_US]' --set-value 'Connect to University Network' --set-key 'Comment[zh_CN]' --set-value '连接校园网' \
     --remove-key 'Categories' --add-category 'Network;' \
 /usr/share/applications/com.cisco.anyconnect.gui.desktop
+[ -f /usr/share/applications/securew2.desktop ] && sudo desktop-file-edit \
+    --set-name 'University WiFi' --set-key 'Name[en_US]' --set-value 'University WiFi' --set-key 'Name[zh_CN]' --set-value '校园网WiFi' \
+    --set-generic-name 'Eduroam SecureW2' --set-key 'GenericName[en_US]' --set-value 'Eduroam SecureW2' --set-key 'GenericName[zh_CN]' --set-value 'Eduroam高校网络' \
+    --set-comment 'Secure world-wide roaming wireless service for universities' --set-key 'Comment[en_US]' --set-value 'Secure world-wide roaming wireless service for universities' --set-key 'Comment[zh_CN]' --set-value '安全的全球高校无线网络漫游服务' \
+    --set-key 'Exec' --set-value 'bash /opt/eduroam/SecureW2/run.sh' \
+    --set-icon '/opt/icon/securew2.png' \
+    --set-key 'NoDisplay' --set-value 'false' \
+    --set-key 'Terminal' --set-value 'true' \
+    --set-key 'TerminalOptions' --set-value '' \
+    --set-key 'Type' --set-value 'Application' \
+    --remove-key 'Categories' --add-category 'Network;' \
+/usr/share/applications/securew2.desktop
 ##TeamViewer
 [ -f /usr/share/applications/com.teamviewer.TeamViewer.desktop ] && sudo desktop-file-edit \
     --set-name 'TeamViewer' --set-key 'Name[en_US]' --set-value 'TeamViewer' --set-key 'Name[zh_CN]' --set-value '远程协助' \
