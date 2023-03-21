@@ -16,7 +16,7 @@
     --set-name 'FastQC' --set-key 'Name[en_US]' --set-value 'FastQC' --set-key 'Name[zh_CN]' --set-value 'FastQC' \
     --set-generic-name 'Fast Quality Control' --set-key 'GenericName[en_US]' --set-value 'Fast Quality Control' --set-key 'GenericName[zh_CN]' --set-value '测序数据质检' \
     --set-comment 'Quality Control Tool for High Throughput Sequence Data' --set-key 'Comment[en_US]' --set-value 'Quality Control Tool for High Throughput Sequence Data' --set-key 'Comment[zh_CN]' --set-value '测序数据质量控制工具' \
-    --set-icon '/usr/share/icons/hicolor/32x32/apps/fastqc_icon.png' \
+    --set-icon '/opt/icon/fastqc.png' \
     --remove-key 'Categories' --add-category 'Science;' \
 /usr/share/applications/fastqc.desktop
 ##IGV
