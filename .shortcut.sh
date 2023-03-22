@@ -359,6 +359,12 @@
 
 
 #Utilities (Utility;)
+##ChatGPT
+[ -f /usr/share/applications/chat-gpt.desktop ] && sudo desktop-file-edit \
+    --set-name 'ChatGPT' --set-key 'Name[en_US]' --set-value 'ChatGPT' --set-key 'Name[zh_CN]' --set-value 'ChatGPT' \
+    --set-generic-name 'Artificial Intelligence Chatbot' --set-key 'GenericName[en_US]' --set-value 'Artificial Intelligence Chatbot' --set-key 'GenericName[zh_CN]' --set-value '人工智能聊天机器人' \
+    --remove-key 'Categories' --add-category 'Utility;' \
+/usr/share/applications/chat-gpt.desktop
 ##WiFi Hotspot
 [ -f /usr/share/applications/wihotspot.desktop ] && sudo desktop-file-edit \
     --set-name 'WiFi Hotspot' --set-key 'Name[en_US]' --set-value 'WiFi Hotspot' --set-key 'Name[zh_CN]' --set-value '无线热点' \
