@@ -27,13 +27,6 @@
     --set-icon '/opt/icon/igv.png' \
     --remove-key 'Categories' --add-category 'Science;' \
 /usr/share/applications/igv.desktop
-##Meld
-[ -f /usr/share/applications/org.gnome.meld.desktop ] && sudo desktop-file-edit \
-    --set-name 'Meld' --set-key 'Name[en_US]' --set-value 'Meld' --set-key 'Name[zh_CN]' --set-value 'Meld' \
-    --set-generic-name 'Diff Viewer' --set-key 'GenericName[en_US]' --set-value 'Diff Viewer' --set-key 'GenericName[zh_CN]' --set-value '文件比较工具' \
-    --set-comment 'Compare and merge your files' --set-key 'Comment[en_US]' --set-value 'Compare and merge your files' --set-key 'Comment[zh_CN]' --set-value '文件比较和整合工具' \
-    --remove-key 'Categories' --add-category 'Science;' \
-/usr/share/applications/org.gnome.meld.desktop
 ##PyMol
 [ -f /usr/share/applications/pymol.desktop ] && sudo desktop-file-edit \
     --set-name 'PyMOL' --set-key 'Name[en_US]' --set-value 'PyMOL' --set-key 'Name[zh_CN]' --set-value 'PyMOL' \
@@ -73,6 +66,12 @@
     --remove-key 'Categories' --add-category 'Science;' \
     --remove-key 'Description' \
 /usr/share/applications/zotero.desktop
+##ChatGPT
+[ -f /usr/share/applications/chat-gpt.desktop ] && sudo desktop-file-edit \
+    --set-name 'ChatGPT' --set-key 'Name[en_US]' --set-value 'ChatGPT' --set-key 'Name[zh_CN]' --set-value 'ChatGPT' \
+    --set-generic-name 'Artificial Intelligence Chatbot' --set-key 'GenericName[en_US]' --set-value 'Artificial Intelligence Chatbot' --set-key 'GenericName[zh_CN]' --set-value '人工智能聊天机器人' \
+    --remove-key 'Categories' --add-category 'Science;' \
+/usr/share/applications/chat-gpt.desktop
 
 
 #Internet (Network;)
@@ -233,6 +232,13 @@
     --set-comment 'Calculator which offers many mathematical functions, such as trigonometric functions, logic operations, and statistical calculations' --set-key 'Comment[en_US]' --set-value 'Calculator which offers many mathematical functions, such as trigonometric functions, logic operations, and statistical calculations' --set-key 'Comment[zh_CN]' --set-value '提供许多数学函数，比如三角函数，逻辑运算和统计运算的计算器' \
     --remove-key 'Categories' --add-category 'Office;' \
 /usr/share/applications/org.kde.kcalc.desktop
+##Meld
+[ -f /usr/share/applications/org.gnome.meld.desktop ] && sudo desktop-file-edit \
+    --set-name 'Meld' --set-key 'Name[en_US]' --set-value 'Meld' --set-key 'Name[zh_CN]' --set-value 'Meld' \
+    --set-generic-name 'Diff Viewer' --set-key 'GenericName[en_US]' --set-value 'Diff Viewer' --set-key 'GenericName[zh_CN]' --set-value '文件比较工具' \
+    --set-comment 'Compare and merge your files' --set-key 'Comment[en_US]' --set-value 'Compare and merge your files' --set-key 'Comment[zh_CN]' --set-value '文件比较和整合工具' \
+    --remove-key 'Categories' --add-category 'Office;' \
+/usr/share/applications/org.gnome.meld.desktop
 
 
 #Multimedia (AudioVideo;)
@@ -359,12 +365,6 @@
 
 
 #Utilities (Utility;)
-##ChatGPT
-[ -f /usr/share/applications/chat-gpt.desktop ] && sudo desktop-file-edit \
-    --set-name 'ChatGPT' --set-key 'Name[en_US]' --set-value 'ChatGPT' --set-key 'Name[zh_CN]' --set-value 'ChatGPT' \
-    --set-generic-name 'Artificial Intelligence Chatbot' --set-key 'GenericName[en_US]' --set-value 'Artificial Intelligence Chatbot' --set-key 'GenericName[zh_CN]' --set-value '人工智能聊天机器人' \
-    --remove-key 'Categories' --add-category 'Utility;' \
-/usr/share/applications/chat-gpt.desktop
 ##WiFi Hotspot
 [ -f /usr/share/applications/wihotspot.desktop ] && sudo desktop-file-edit \
     --set-name 'WiFi Hotspot' --set-key 'Name[en_US]' --set-value 'WiFi Hotspot' --set-key 'Name[zh_CN]' --set-value '无线热点' \
