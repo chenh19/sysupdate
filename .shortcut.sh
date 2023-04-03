@@ -413,13 +413,27 @@
     --set-comment 'Open-source and Cross-platform Network Scanner' --set-key 'Comment[en_US]' --set-value 'Open-source and Cross-platform Network Scanner' --set-key 'Comment[zh_CN]' --set-value '开源跨平台IP扫描工具' \
     --remove-key 'Categories' --add-category 'Utility;' \
 /usr/share/applications/ipscan.desktop
-##Spectacle
-[ -f /usr/share/applications/org.kde.spectacle.desktop ] && sudo desktop-file-edit \
-    --set-name 'Spectacle' --set-key 'Name[en_US]' --set-value 'Spectacle' --set-key 'Name[zh_CN]' --set-value '截图' \
-    --set-generic-name 'Screenshot Utility' --set-key 'GenericName[en_US]' --set-value 'Screenshot Utility' --set-key 'GenericName[zh_CN]' --set-value '屏幕截图' \
-    --set-comment 'Screenshot Capture Utility' --set-key 'Comment[en_US]' --set-value 'Screenshot Capture Utility' --set-key 'Comment[zh_CN]' --set-value '屏幕截图工具' \
+##UKUU
+[ -f /usr/share/applications/ukuu-gtk.desktop ] && sudo desktop-file-edit \
+    --set-name 'UKUU' --set-key 'Name[en_US]' --set-value 'UKUU' --set-key 'Name[zh_CN]' --set-value 'UKUU' \
+    --set-generic-name 'Kernel Update Utility' --set-key 'GenericName[en_US]' --set-value 'Kernel Update Utility' --set-key 'GenericName[zh_CN]' --set-value 'Linux内核管理工具' \
+    --set-comment 'Manage and Update Linux Kernel' --set-key 'Comment[en_US]' --set-value 'Manage and Update Linux Kernel' --set-key 'Comment[zh_CN]' --set-value '管理及更新Linux系统内核' \
     --remove-key 'Categories' --add-category 'Utility;' \
-/usr/share/applications/org.kde.spectacle.desktop
+/usr/share/applications/ukuu-gtk.desktop
+##Baqpaq
+[ -f /usr/share/applications/baqpaq-gtk.desktop ] && sudo desktop-file-edit \
+    --set-name 'Baqpaq' --set-key 'Name[en_US]' --set-value 'Baqpaq' --set-key 'Name[zh_CN]' --set-value 'Baqpaq' \
+    --set-generic-name 'Data Backup Tool' --set-key 'GenericName[en_US]' --set-value 'Data Backup Tool' --set-key 'GenericName[zh_CN]' --set-value '文件备份工具' \
+    --set-comment 'Backup Personal Files' --set-key 'Comment[en_US]' --set-value 'Backup Personal Files' --set-key 'Comment[zh_CN]' --set-value '备份个人文件' \
+    --remove-key 'Categories' --add-category 'Utility;' \
+/usr/share/applications/baqpaq-gtk.desktop
+[ -f /usr/share/applications/baqpaq-gtk-admin.desktop ] && sudo desktop-file-edit \
+    --set-name 'Baqpaq (Admin)' --set-key 'Name[en_US]' --set-value 'Baqpaq (Admin)' --set-key 'Name[zh_CN]' --set-value 'Baqpaq（管理员）' \
+    --set-generic-name 'Data Backup Tool' --set-key 'GenericName[en_US]' --set-value 'Data Backup Tool' --set-key 'GenericName[zh_CN]' --set-value '文件备份工具' \
+    --set-comment 'Backup Personal Files' --set-key 'Comment[en_US]' --set-value 'Backup Personal Files' --set-key 'Comment[zh_CN]' --set-value '备份个人文件' \
+    --remove-key 'Categories' --add-category 'Utility;' \
+    --set-key 'NoDisplay' --set-value 'true' \
+/usr/share/applications/baqpaq-gtk-admin.desktop
 
 
 #System (System;)
@@ -430,13 +444,6 @@
     --set-comment 'Configuration Tool for the System' --set-key 'Comment[en_US]' --set-value 'Configuration Tool for the System' --set-key 'Comment[zh_CN]' --set-value '管理系统设置' \
     --remove-key 'Categories' --add-category 'System;' \
 /usr/share/applications/systemsettings.desktop
-##UKUU
-[ -f /usr/share/applications/ukuu-gtk.desktop ] && sudo desktop-file-edit \
-    --set-name 'UKUU' --set-key 'Name[en_US]' --set-value 'UKUU' --set-key 'Name[zh_CN]' --set-value 'UKUU' \
-    --set-generic-name 'Kernel Update Utility' --set-key 'GenericName[en_US]' --set-value 'Kernel Update Utility' --set-key 'GenericName[zh_CN]' --set-value 'Linux内核管理工具' \
-    --set-comment 'Manage and Update Linux Kernel' --set-key 'Comment[en_US]' --set-value 'Manage and Update Linux Kernel' --set-key 'Comment[zh_CN]' --set-value '管理及更新Linux系统内核' \
-    --remove-key 'Categories' --add-category 'System;' \
-/usr/share/applications/ukuu-gtk.desktop
 ##Infomation Center
 [ -f /usr/share/applications/org.kde.kinfocenter.desktop ] && sudo desktop-file-edit \
     --set-name 'Info Center' --set-key 'Name[en_US]' --set-value 'Info Center' --set-key 'Name[zh_CN]' --set-value '信息中心' \
@@ -500,6 +507,13 @@
     --set-comment 'KDE Text Editor' --set-key 'Comment[en_US]' --set-value 'KDE Text Editor' --set-key 'Comment[zh_CN]' --set-value 'KDE文本编辑工具' \
     --remove-key 'Categories' --add-category 'System;' \
 /usr/share/applications/org.kde.kwrite.desktop
+##Spectacle
+[ -f /usr/share/applications/org.kde.spectacle.desktop ] && sudo desktop-file-edit \
+    --set-name 'Spectacle' --set-key 'Name[en_US]' --set-value 'Spectacle' --set-key 'Name[zh_CN]' --set-value '截图' \
+    --set-generic-name 'Screenshot Utility' --set-key 'GenericName[en_US]' --set-value 'Screenshot Utility' --set-key 'GenericName[zh_CN]' --set-value '屏幕截图' \
+    --set-comment 'Screenshot Capture Utility' --set-key 'Comment[en_US]' --set-value 'Screenshot Capture Utility' --set-key 'Comment[zh_CN]' --set-value '屏幕截图工具' \
+    --remove-key 'Categories' --add-category 'System;' \
+/usr/share/applications/org.kde.spectacle.desktop
 
 
 #Help
@@ -619,3 +633,4 @@ desktop-file-edit \
 [ -f /usr/share/applications/laptop-mode-tools.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/laptop-mode-tools.desktop
 [ -f /usr/share/applications/gnugo.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/gnugo.desktop
 [ -f /usr/share/applications/htop.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/htop.desktop
+[ -f /usr/share/applications/ranger.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/ranger.desktop
