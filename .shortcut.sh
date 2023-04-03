@@ -517,7 +517,7 @@
 /usr/share/applications/org.kde.spectacle.desktop
 ##Modem Manager
 [ -f /usr/share/applications/modem-manager-gui.desktop ] && sudo desktop-file-edit \
-    --set-name 'WWAN' --set-key 'Name[en_US]' --set-value 'WWAN' --set-key 'Name[zh_CN]' --set-value '蜂窝网络 \
+    --set-name 'WWAN' --set-key 'Name[en_US]' --set-value 'WWAN' --set-key 'Name[zh_CN]' --set-value '蜂窝网络' \
     --set-generic-name 'Broadband Network' --set-key 'GenericName[en_US]' --set-value 'Broadband Network' --set-key 'GenericName[zh_CN]' --set-value '移动数据流量' \
     --set-comment 'Mobile Broadband Internet' --set-key 'Comment[en_US]' --set-value 'Mobile Broadband Internet' --set-key 'Comment[zh_CN]' --set-value '设置并使用蜂窝数据' \
     --remove-key 'Categories' --add-category 'System;' \
