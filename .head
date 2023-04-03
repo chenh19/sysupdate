@@ -3,6 +3,12 @@ TEXT_YELLOW='\e[1;33m'
 TEXT_GREEN='\e[1;32m'
 TEXT_RESET='\e[0m'
 sudo echo ""
+wget -q --spider http://google.com
+until [[ $? -eq 0 ]] ; do
+    read -n1 -s -r -p "$(echo -e $TEXT_YELLOW'No internet connection! please first connect to internet then press [Enter] to continue.'$TEXT_RESET)"$' \n'
+    echo ""
+    wget -q --spider http://google.com
+done
 echo -e "${TEXT_YELLOW}Updating system...${TEXT_RESET} \n" && sleep 1
 sudo apt-get update && sudo apt-get dist-upgrade -y && sudo apt-get upgrade -y && echo ""
 sudo flatpak update -y && echo ""
