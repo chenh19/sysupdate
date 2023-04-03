@@ -434,6 +434,13 @@
     --set-key 'NoDisplay' --set-value 'true' \
     --remove-key 'Categories' --add-category 'Utility;' \
 /usr/share/applications/baqpaq-gtk-admin.desktop
+##Modem Manager
+[ -f /usr/share/applications/modem-manager-gui.desktop ] && sudo desktop-file-edit \
+    --set-name 'WWAN' --set-key 'Name[en_US]' --set-value 'WWAN' --set-key 'Name[zh_CN]' --set-value '蜂窝网络' \
+    --set-generic-name 'Broadband Network' --set-key 'GenericName[en_US]' --set-value 'Broadband Network' --set-key 'GenericName[zh_CN]' --set-value '移动数据流量' \
+    --set-comment 'Mobile Broadband Internet' --set-key 'Comment[en_US]' --set-value 'Mobile Broadband Internet' --set-key 'Comment[zh_CN]' --set-value '设置并使用蜂窝数据' \
+    --remove-key 'Categories' --add-category 'Utility;' \
+/usr/share/applications/modem-manager-gui.desktop
 
 
 #System (System;)
@@ -449,7 +456,6 @@
     --set-name 'Info Center' --set-key 'Name[en_US]' --set-value 'Info Center' --set-key 'Name[zh_CN]' --set-value '信息中心' \
     --set-generic-name 'System Information' --set-key 'GenericName[en_US]' --set-value 'System Information' --set-key 'GenericName[zh_CN]' --set-value '系统信息' \
     --set-comment 'System Information Center' --set-key 'Comment[en_US]' --set-value 'System Information Center' --set-key 'Comment[zh_CN]' --set-value '系统信息中心' \
-    --set-key 'NoDisplay' --set-value 'true' \
     --remove-key 'Categories' --add-category 'System;' \
 /usr/share/applications/org.kde.kinfocenter.desktop
 ##KDE Partition Manager
@@ -515,13 +521,6 @@
     --set-comment 'Screenshot Capture Utility' --set-key 'Comment[en_US]' --set-value 'Screenshot Capture Utility' --set-key 'Comment[zh_CN]' --set-value '屏幕截图工具' \
     --remove-key 'Categories' --add-category 'System;' \
 /usr/share/applications/org.kde.spectacle.desktop
-##Modem Manager
-[ -f /usr/share/applications/modem-manager-gui.desktop ] && sudo desktop-file-edit \
-    --set-name 'WWAN' --set-key 'Name[en_US]' --set-value 'WWAN' --set-key 'Name[zh_CN]' --set-value '蜂窝网络' \
-    --set-generic-name 'Broadband Network' --set-key 'GenericName[en_US]' --set-value 'Broadband Network' --set-key 'GenericName[zh_CN]' --set-value '移动数据流量' \
-    --set-comment 'Mobile Broadband Internet' --set-key 'Comment[en_US]' --set-value 'Mobile Broadband Internet' --set-key 'Comment[zh_CN]' --set-value '设置并使用蜂窝数据' \
-    --remove-key 'Categories' --add-category 'System;' \
-/usr/share/applications/modem-manager-gui.desktop
 
 
 #Help
