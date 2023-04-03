@@ -431,8 +431,8 @@
     --set-name 'Baqpaq (Admin)' --set-key 'Name[en_US]' --set-value 'Baqpaq (Admin)' --set-key 'Name[zh_CN]' --set-value 'Baqpaq（管理员）' \
     --set-generic-name 'Data Backup Tool' --set-key 'GenericName[en_US]' --set-value 'Data Backup Tool' --set-key 'GenericName[zh_CN]' --set-value '文件备份工具' \
     --set-comment 'Backup Personal Files' --set-key 'Comment[en_US]' --set-value 'Backup Personal Files' --set-key 'Comment[zh_CN]' --set-value '备份个人文件' \
-    --remove-key 'Categories' --add-category 'Utility;' \
     --set-key 'NoDisplay' --set-value 'true' \
+    --remove-key 'Categories' --add-category 'Utility;' \
 /usr/share/applications/baqpaq-gtk-admin.desktop
 
 
