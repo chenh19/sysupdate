@@ -1,5 +1,5 @@
 # Full system update in one command
-*Current version: v2.4.8*
+*Current version: v2.4.9*
 
 ## Introduction
 - This tool is intended to combine all update operations into one simple command.
