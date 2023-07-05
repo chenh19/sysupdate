@@ -645,3 +645,4 @@ desktop-file-edit \
 [ -f /usr/share/applications/setup-mozc.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/setup-mozc.desktop
 [ -f /usr/share/applications/org.kde.drkonqi.coredump.gui.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/org.kde.drkonqi.coredump.gui.desktop
 [ -f /usr/share/applications/org.kde.drkonqi.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/org.kde.drkonqi.desktop
+[ -f /usr/share/applications/org.kde.kmenuedit.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/org.kde.kmenuedit.desktop
