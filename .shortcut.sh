@@ -491,7 +491,7 @@
     --set-name 'Dolphin' --set-key 'Name[en_US]' --set-value 'Dolphin' --set-key 'Name[zh_CN]' --set-value '文件' \
     --set-generic-name 'File Manager' --set-key 'GenericName[en_US]' --set-value 'File Manager' --set-key 'GenericName[zh_CN]' --set-value '文件管理器' \
     --set-comment 'KDE File Manager' --set-key 'Comment[en_US]' --set-value 'KDE File Manager' --set-key 'Comment[zh_CN]' --set-value 'KDE文件管理器' \
-    --remove-key 'Categories' --add-category 'System;' \
+    --remove-key 'Categories' --add-category 'Qt;KDE;System;FileTools;FileManager;' \
 /usr/share/applications/org.kde.dolphin.desktop
 ##Discover
 [ -f /usr/share/applications/org.kde.discover.desktop ] && sudo desktop-file-edit \
