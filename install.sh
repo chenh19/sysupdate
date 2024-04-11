@@ -20,7 +20,7 @@ wget -qO- https://raw.githubusercontent.com/chenh19/sysupdate/main/.head > ~/.up
 echo ""
 read -n1 -s -r -p "$(echo -e $TEXT_YELLOW'Would you like to include R packages update? [y/n/c]'$TEXT_RESET)"$' \n' choice
 case "$choice" in
-    y|Y ) echo -e 'sudo Rscript -e "update.packages(ask = FALSE, checkBuilt = TRUE)" && echo ""' >> ~/.update.sh;;
+    y|Y ) echo -e 'sudo Rscript -e "update.packages(ask = FALSE, checkBuilt = TRUE, Ncpus = system('nproc --all', intern = TRUE))" && echo ""' >> ~/.update.sh;;
     * )   ;;
 esac
 
