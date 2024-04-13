@@ -160,7 +160,7 @@
 
 #Office (Office;)
 ##Eudic
-[ -f /usr/share/applications/eudic.desktop ] && sudo desktop-file-edit \
+[ -f /usr/share/applications/eusoft-eudic.desktop ] && sudo desktop-file-edit \
     --set-name 'EuDic' --set-key 'Name[en_US]' --set-value 'EuDic' --set-key 'Name[zh_CN]' --set-value '欧陆词典' \
     --set-generic-name 'Dictionary' --set-key 'GenericName[en_US]' --set-value 'Dictionary' --set-key 'GenericName[zh_CN]' --set-value '英语词典' \
     --set-comment 'The Best Dictionary Application' --set-key 'Comment[en_US]' --set-value 'The Best Dictionary Application' --set-key 'Comment[zh_CN]' --set-value '最好的开源词典软件' \
@@ -169,7 +169,7 @@
     --set-key 'Terminal' --set-value 'false' \
     --set-icon '/opt/icon/eudic.png' \
     --remove-key 'Categories' --add-category 'Office;' \
-/usr/share/applications/eudic.desktop
+/usr/share/applications/eusoft-eudic.desktop
 ##Libreoffice Base
 [ -f /usr/share/applications/libreoffice-base.desktop ] && sudo desktop-file-edit \
     --set-name 'LibreOffice Base' --set-key 'Name[en_US]' --set-value 'LibreOffice Base' --set-key 'Name[zh_CN]' --set-value 'Office 数据库' \
@@ -234,12 +234,12 @@
     --remove-key 'Categories' --add-category 'Office;' \
 /usr/share/applications/org.kde.kcalc.desktop
 ##Meld
-[ -f /usr/share/applications/org.gnome.meld.desktop ] && sudo desktop-file-edit \
+[ -f /usr/share/applications/org.gnome.Meld.desktop ] && sudo desktop-file-edit \
     --set-name 'Meld' --set-key 'Name[en_US]' --set-value 'Meld' --set-key 'Name[zh_CN]' --set-value 'Meld' \
     --set-generic-name 'Diff Viewer' --set-key 'GenericName[en_US]' --set-value 'Diff Viewer' --set-key 'GenericName[zh_CN]' --set-value '文件比较工具' \
     --set-comment 'Compare and merge your files' --set-key 'Comment[en_US]' --set-value 'Compare and merge your files' --set-key 'Comment[zh_CN]' --set-value '文件比较和整合工具' \
     --remove-key 'Categories' --add-category 'Office;' \
-/usr/share/applications/org.gnome.meld.desktop
+/usr/share/applications/org.gnome.Meld.desktop
 
 
 #Multimedia (AudioVideo;)
