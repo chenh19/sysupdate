@@ -10,8 +10,8 @@ TEXT_RESET='\e[0m'
 sudo echo ""
 echo -e "${TEXT_YELLOW}Configuring system update command...${TEXT_RESET} \n" && sleep 1
 
-# install desktop-file-utils
-sudo apt-get update && sudo apt-get install desktop-file-utils -y
+# install necessary deb packages
+sudo apt-get update && sudo apt-get install wget desktop-file-utils -y
 
 # write update script
 wget -qO- https://raw.githubusercontent.com/chenh19/sysupdate/main/.head > ~/.update.sh
@@ -20,7 +20,7 @@ wget -qO- https://raw.githubusercontent.com/chenh19/sysupdate/main/.head > ~/.up
 echo ""
 read -n1 -s -r -p "$(echo -e $TEXT_YELLOW'Would you like to include R packages update? [y/n/c]'$TEXT_RESET)"$' \n' choice
 case "$choice" in
-    y|Y ) wget -q https://raw.githubusercontent.com/chenh19/sysupdate/main/.update.R -O ~/.update.R
+    y|Y ) wget -qO- https://raw.githubusercontent.com/chenh19/sysupdate/main/.update.R > ~/.update.R
           echo -e 'sudo Rscript ~/.update.R && echo ""' >> ~/.update.sh
           ;;
     * )   ;;
