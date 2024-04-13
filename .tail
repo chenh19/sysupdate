@@ -9,7 +9,7 @@ if [ -f /var/run/reboot-required ]; then
   case "$choice" in
     y|Y ) sudo echo ""
           echo -e "${TEXT_YELLOW}Rebooting in 5 seconds...${TEXT_RESET} \n" && sleep 5
-          reboot;;
+          systemctl reboot;;
       * ) echo -e " \n${TEXT_YELLOW}Please reboot the system manually later.${TEXT_RESET} \n" && sleep 1;;
   esac
 fi
