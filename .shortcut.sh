@@ -141,7 +141,12 @@
     --remove-key 'Categories' --add-category 'Network;' \
 /usr/share/applications/google-chrome.desktop
 ##Evolution
-[ -f /usr/share/applications/org.gnome.Evolution.desktop ] && sudo cp -f /opt/shortcut/org.gnome.Evolution.desktop /usr/share/applications/
+[ -f /usr/share/applications/org.gnome.Evolution.desktop ] && sudo desktop-file-edit \
+    --set-name 'Evolution' --set-key 'Name[en_US]' --set-value 'Evolution' --set-key 'Name[zh_CN]' --set-value '邮箱' \
+    --set-generic-name 'Groupware Suite' --set-key 'GenericName[en_US]' --set-value 'Groupware Suite' --set-key 'GenericName[zh_CN]' --set-value '个人管理工具' \
+    --set-comment 'Manage your email, contacts and schedule' --set-key 'Comment[en_US]' --set-value 'Manage your email, contacts and schedule' --set-key 'Comment[zh_CN]' --set-value '管理个人邮件，联系人，日历' \
+    --remove-key 'Categories' --add-category 'Network;' \
+/usr/share/applications/org.gnome.Evolution.desktop
 ##Slack
 [ -f /usr/share/applications/slack.desktop ] && sudo desktop-file-edit \
     --set-name 'Slack' --set-key 'Name[en_US]' --set-value 'Slack' --set-key 'Name[zh_CN]' --set-value 'Slack' \
@@ -441,6 +446,20 @@
     --set-comment 'Mobile Broadband Internet' --set-key 'Comment[en_US]' --set-value 'Mobile Broadband Internet' --set-key 'Comment[zh_CN]' --set-value '设置并使用蜂窝数据' \
     --remove-key 'Categories' --add-category 'Utility;' \
 /usr/share/applications/modem-manager-gui.desktop
+##Spectacle
+[ -f /usr/share/applications/org.kde.spectacle.desktop ] && sudo desktop-file-edit \
+    --set-name 'Spectacle' --set-key 'Name[en_US]' --set-value 'Spectacle' --set-key 'Name[zh_CN]' --set-value '截图' \
+    --set-generic-name 'Screenshot Utility' --set-key 'GenericName[en_US]' --set-value 'Screenshot Utility' --set-key 'GenericName[zh_CN]' --set-value '屏幕截图' \
+    --set-comment 'Screenshot Capture Utility' --set-key 'Comment[en_US]' --set-value 'Screenshot Capture Utility' --set-key 'Comment[zh_CN]' --set-value '屏幕截图工具' \
+    --remove-key 'Categories' --add-category 'Utility;' \
+/usr/share/applications/org.kde.spectacle.desktop
+##Ark
+[ -f /usr/share/applications/org.kde.ark.desktop ] && sudo desktop-file-edit \
+    --set-name 'Ark' --set-key 'Name[en_US]' --set-value 'Ark' --set-key 'Name[zh_CN]' --set-value '压缩包管理器' \
+    --set-generic-name 'Archiving Tool' --set-key 'GenericName[en_US]' --set-value 'Archiving Tool' --set-key 'GenericName[zh_CN]' --set-value '压缩文件管理工具' \
+    --set-comment 'Work with file archives' --set-key 'Comment[en_US]' --set-value 'Work with file archives' --set-key 'Comment[zh_CN]' --set-value '管理压缩包文件' \
+    --remove-key 'Categories' --add-category 'Utility;' \
+/usr/share/applications/org.kde.ark.desktop
 
 
 #System (System;)
@@ -479,13 +498,6 @@
     --set-comment 'Power Saving Configuration Tool' --set-key 'Comment[en_US]' --set-value 'Power Saving Configuration Tool' --set-key 'Comment[zh_CN]' --set-value '省电设置工具' \
     --remove-key 'Categories' --add-category 'System;' \
 /usr/share/applications/laptop-mode-tools.desktop
-##Ark
-[ -f /usr/share/applications/org.kde.ark.desktop ] && sudo desktop-file-edit \
-    --set-name 'Ark' --set-key 'Name[en_US]' --set-value 'Ark' --set-key 'Name[zh_CN]' --set-value '压缩包管理器' \
-    --set-generic-name 'Archiving Tool' --set-key 'GenericName[en_US]' --set-value 'Archiving Tool' --set-key 'GenericName[zh_CN]' --set-value '压缩文件管理工具' \
-    --set-comment 'Work with file archives' --set-key 'Comment[en_US]' --set-value 'Work with file archives' --set-key 'Comment[zh_CN]' --set-value '管理压缩包文件' \
-    --remove-key 'Categories' --add-category 'System;' \
-/usr/share/applications/org.kde.ark.desktop
 ##Dolphin
 [ -f /usr/share/applications/org.kde.dolphin.desktop ] && sudo desktop-file-edit \
     --set-name 'Dolphin' --set-key 'Name[en_US]' --set-value 'Dolphin' --set-key 'Name[zh_CN]' --set-value '文件' \
@@ -514,13 +526,6 @@
     --set-comment 'KDE Text Editor' --set-key 'Comment[en_US]' --set-value 'KDE Text Editor' --set-key 'Comment[zh_CN]' --set-value 'KDE文本编辑工具' \
     --remove-key 'Categories' --add-category 'System;' \
 /usr/share/applications/org.kde.kwrite.desktop
-##Spectacle
-[ -f /usr/share/applications/org.kde.spectacle.desktop ] && sudo desktop-file-edit \
-    --set-name 'Spectacle' --set-key 'Name[en_US]' --set-value 'Spectacle' --set-key 'Name[zh_CN]' --set-value '截图' \
-    --set-generic-name 'Screenshot Utility' --set-key 'GenericName[en_US]' --set-value 'Screenshot Utility' --set-key 'GenericName[zh_CN]' --set-value '屏幕截图' \
-    --set-comment 'Screenshot Capture Utility' --set-key 'Comment[en_US]' --set-value 'Screenshot Capture Utility' --set-key 'Comment[zh_CN]' --set-value '屏幕截图工具' \
-    --remove-key 'Categories' --add-category 'System;' \
-/usr/share/applications/org.kde.spectacle.desktop
 
 
 #Help
@@ -647,3 +652,4 @@ desktop-file-edit \
 [ -f /usr/share/applications/org.kde.drkonqi.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/org.kde.drkonqi.desktop
 [ -f /usr/share/applications/org.kde.kmenuedit.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/org.kde.kmenuedit.desktop
 [ -f /usr/share/applications/org.kde.kate.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/org.kde.kate.desktop
+[ -f /usr/share/applications/org.kde.gwenview.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/org.kde.gwenview.desktop
