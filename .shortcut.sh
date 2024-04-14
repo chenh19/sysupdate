@@ -81,9 +81,9 @@
     --set-generic-name '4K Video Downloader' --set-key 'GenericName[en_US]' --set-value '4K Video Downloader' --set-key 'GenericName[zh_CN]' --set-value '4k网络视频下载工具' \
     --set-comment 'Download Videos from YouTube and Bilibili' --set-key 'Comment[en_US]' --set-value 'Download Videos from YouTube and Bilibili' --set-key 'Comment[zh_CN]' --set-value '下载YouTueb和Bilibili高清视频' \
     --remove-key 'Categories' --add-category 'Network;' \
-/usr/share/applications/4kvideodownloader.desktop
+/usr/share/applications/4kvideodownloaderplus.desktop
 ##BaiduYun
-[ -f /usr/share/applications/baidunetdiskplus.desktop ] && sudo desktop-file-edit \
+[ -f /usr/share/applications/baidunetdisk.desktop ] && sudo desktop-file-edit \
     --set-name 'BaiduYun' --set-key 'Name[en_US]' --set-value 'BaiduYun' --set-key 'Name[zh_CN]' --set-value '百度云' \
     --set-generic-name 'Baidu Netdisk' --set-key 'GenericName[en_US]' --set-value 'Baidu Netdisk' --set-key 'GenericName[zh_CN]' --set-value '百度网盘' \
     --set-comment 'Baidu Netdisk Client' --set-key 'Comment[en_US]' --set-value 'Baidu Netdisk Client' --set-key 'Comment[zh_CN]' --set-value '百度网盘客户端' \
