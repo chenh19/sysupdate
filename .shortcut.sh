@@ -580,27 +580,6 @@ desktop-file-edit \
     --remove-key 'Categories' --add-category 'Utility;' \
 ~/.local/share/applications/org.kde.kweather.desktop
 
-## touché
-[ ! -f ~/.local/share/applications/com.github.joseexposito.touche.desktop ] && touch ~/.local/share/applications/com.github.joseexposito.touche.desktop
-desktop-file-edit \
-    --set-name 'Touché' --set-key 'Name[en_US]' --set-value 'Touché' --set-key 'Name[zh_CN]' --set-value '手势' \
-    --set-generic-name 'Touchégg Editor' --set-key 'GenericName[en_US]' --set-value 'Touchégg Editor' --set-key 'GenericName[zh_CN]' --set-value '觸控板手势' \
-    --set-comment 'Configure Touchégg multi-touch gestures' --set-key 'Comment[en_US]' --set-value 'Configure Touchégg multi-touch gestures' --set-key 'Comment[zh_CN]' --set-value '设置多指觸控手势' \
-    --set-key 'Exec' --set-value '/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=com.github.joseexposito.touche com.github.joseexposito.touche' \
-    --set-icon 'com.github.joseexposito.touche' \
-    --set-key 'NoDisplay' --set-value 'true' \
-    --set-key 'Path' --set-value '' \
-    --set-key 'StartupNotify' --set-value 'true' \
-    --set-key 'Terminal' --set-value 'false' \
-    --set-key 'TerminalOptions' --set-value '' \
-    --set-key 'Type' --set-value 'Application' \
-    --set-key 'X-Flatpak' --set-value 'com.github.joseexposito.touche' \
-    --set-key 'X-KDE-FormFactor' --set-value 'desktop;tablet;handset;' \
-    --set-key 'X-KDE-SubstituteUID' --set-value 'false' \
-    --set-key 'X-KDE-Username' --set-value '' \
-    --remove-key 'Categories' --add-category 'Utility;' \
-~/.local/share/applications/com.github.joseexposito.touche.desktop
-
 
 #Hidden
 [ -f /usr/share/applications/cnsetuputil2l.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/cnsetuputil2l.desktop
