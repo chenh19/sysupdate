@@ -14,6 +14,7 @@ case "$choice" in
 
         # remove alias
         if grep -q "alias sysupdate='bash ~/.update.sh'" ~/.bashrc ; then sed -i '/alias sysupdate=/d' ~/.bashrc ; fi
+        if grep -q "alias rupdate='sudo Rscript ~/.update.R'" ~/.bashrc ; then sed -i '/alias rupdate=/d' ~/.bashrc ; fi
         sleep 1
 
         # remove shell scripts
