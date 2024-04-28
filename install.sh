@@ -26,7 +26,6 @@ read -n1 -s -r -p "$(echo -e $TEXT_YELLOW'Would you like to include R packages u
 case "$choice" in
     y|Y ) wget -qO- https://raw.githubusercontent.com/chenh19/sysupdate/main/.update.R > ~/.update.R
           if ! grep -q "alias rupdate='sudo Rscript ~/.update.R'" ~/.bashrc ; then echo -e "alias rupdate='sudo Rscript ~/.update.R'" >> ~/.bashrc ; fi
-          #echo -e ' && echo ""' >> ~/.update.sh
           ;;
     * )   ;;
 esac
