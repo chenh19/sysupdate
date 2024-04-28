@@ -51,4 +51,4 @@ wget -qO- https://raw.githubusercontent.com/chenh19/sysupdate/main/.tail >> ~/.u
 wget -qO- https://raw.githubusercontent.com/chenh19/sysupdate/main/.shortcut.sh > ~/.shortcut.sh
 
 # notify end
-echo -e " \n${TEXT_GREEN}System update command ${TEXT_YELLOW}<sysupdate>${TEXT_GREEN} configured! Please reopen terminal before using the command. ${TEXT_RESET} \n" && sleep 1
+echo -e " \n${TEXT_GREEN}System update commands configured! Please reopen terminal before using the commands. ${TEXT_RESET} \n" && sleep 1
