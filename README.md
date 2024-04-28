@@ -1,5 +1,5 @@
 # Full system update in one command
-*Current version: v2.5.9*
+*Current version: v2.6.0*
 
 ## Introduction
 - This tool is intended to combine all update operations into one simple command.
@@ -17,7 +17,12 @@ bash <(wget -qO- https://raw.githubusercontent.com/chenh19/sysupdate/main/uninst
 ```
 
 ## How to use
-- **Full system update:**
+- **System update:**
 ```
 sysupdate
+```
+
+- **R update:**
+```
+rupdate
 ```
