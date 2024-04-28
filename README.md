@@ -2,7 +2,7 @@
 *Current version: v2.6.0*
 
 ## Introduction
-- This tool is intended to combine all update operations into one simple command.
+- This tool is intended for easy system and developing environment update.
 - You may choose whether to include specific updates.
 
 ## How to setup
