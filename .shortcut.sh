@@ -118,7 +118,7 @@
     --set-icon '/opt/icon/teamviewer.png' \
     --remove-key 'Categories' --add-category 'Network;' \
 /usr/share/applications/com.teamviewer.TeamViewer.desktop
-##WeChat
+##WeChat Deepin
 [ -f /usr/share/applications/com.qq.weixin.deepin.desktop ] && sudo desktop-file-edit \
     --set-name 'WeChat' --set-key 'Name[en_US]' --set-value 'WeChat' --set-key 'Name[zh_CN]' --set-value '微信' \
     --set-generic-name 'Instant Messaging' --set-key 'GenericName[en_US]' --set-value 'Instant Messaging' --set-key 'GenericName[zh_CN]' --set-value '个人即时通讯' \
@@ -126,6 +126,13 @@
     --set-icon '/opt/icon/wechat.png' \
     --remove-key 'Categories' --add-category 'Network;' \
 /usr/share/applications/com.qq.weixin.deepin.desktop
+##Wechat Universal
+[ -f /usr/share/applications/com.tencent.WeChat.desktop ] && sudo desktop-file-edit \
+    --set-name 'WeChat' --set-key 'Name[en_US]' --set-value 'WeChat' --set-key 'Name[zh_CN]' --set-value '微信' \
+    --set-generic-name 'Instant Messaging' --set-key 'GenericName[en_US]' --set-value 'Instant Messaging' --set-key 'GenericName[zh_CN]' --set-value '个人即时通讯' \
+    --set-comment 'WeChat Universal' --set-key 'Comment[en_US]' --set-value 'WeChat Universal' --set-key 'Comment[zh_CN]' --set-value '微信统信版' \
+    --remove-key 'Categories' --add-category 'Network;' \
+/usr/share/applications/com.tencent.WeChat.desktop
 ##FreeDownloadManager
 [ -f /usr/share/applications/freedownloadmanager.desktop ] && sudo desktop-file-edit \
     --set-name 'Download' --set-key 'Name[en_US]' --set-value 'Download' --set-key 'Name[zh_CN]' --set-value '下载工具' \
