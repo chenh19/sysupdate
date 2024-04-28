@@ -10,6 +10,10 @@ TEXT_RESET='\e[0m'
 sudo echo ""
 echo -e "${TEXT_YELLOW}Configuring system update command...${TEXT_RESET} \n" && sleep 1
 
+# add alias in bash configuration
+[ ! -f ~/.bashrc] ] && touch ~/.bashrc
+if ! grep -q "alias sysupdate='bash ~/.update.sh'" ~/.bashrc ; then echo -e "alias sysupdate='bash ~/.update.sh'" >> ~/.bashrc ; fi
+
 # install necessary deb packages
 sudo apt-get update && sudo apt-get install wget desktop-file-utils -y
 
@@ -21,34 +25,31 @@ echo ""
 read -n1 -s -r -p "$(echo -e $TEXT_YELLOW'Would you like to include R packages update? [y/n/c]'$TEXT_RESET)"$' \n' choice
 case "$choice" in
     y|Y ) wget -qO- https://raw.githubusercontent.com/chenh19/sysupdate/main/.update.R > ~/.update.R
-          echo -e 'sudo Rscript ~/.update.R && echo ""' >> ~/.update.sh
+          if ! grep -q "alias rupdate='sudo Rscript ~/.update.R'" ~/.bashrc ; then echo -e "alias rupdate='sudo Rscript ~/.update.R'" >> ~/.bashrc ; fi
+          #echo -e ' && echo ""' >> ~/.update.sh
           ;;
     * )   ;;
 esac
 
 # ask whether to include Python update
-echo ""
-read -n1 -s -r -p "$(echo -e $TEXT_YELLOW'Would you like to include Python packages update by Conda? [y/n/c]'$TEXT_RESET)"$' \n' choice
-case "$choice" in
-    y|Y ) echo -e 'conda update --all -y && echo ""' >> ~/.update.sh;;
-    * )   ;;
-esac
+#echo ""
+#read -n1 -s -r -p "$(echo -e $TEXT_YELLOW'Would you like to include Python packages update by Conda? [y/n/c]'$TEXT_RESET)"$' \n' choice
+#case "$choice" in
+    #y|Y ) echo -e 'conda update --all -y && echo ""' >> ~/.update.sh;;
+    #* )   ;;
+#esac
 
 # ask whether to include kernel update
-echo ""
-read -n1 -s -r -p "$(echo -e $TEXT_YELLOW'Would you like to include Linux kernel update by UKUU? [y/n/c]'$TEXT_RESET)"$' \n' choice
-case "$choice" in
-    y|Y ) echo -e 'sudo ukuu --scripted --install-latest && echo ""' >> ~/.update.sh;;
-    * )   ;;
-esac
+#echo ""
+#read -n1 -s -r -p "$(echo -e $TEXT_YELLOW'Would you like to include Linux kernel update by UKUU? [y/n/c]'$TEXT_RESET)"$' \n' choice
+#case "$choice" in
+    #y|Y ) echo -e 'sudo ukuu --scripted --install-latest && echo ""' >> ~/.update.sh;;
+    #* )   ;;
+#esac
 
 # finish
 wget -qO- https://raw.githubusercontent.com/chenh19/sysupdate/main/.tail >> ~/.update.sh
 wget -qO- https://raw.githubusercontent.com/chenh19/sysupdate/main/.shortcut.sh > ~/.shortcut.sh
-
-# add alias in bash configuration
-[ ! -f ~/.bashrc] ] && touch ~/.bashrc
-if ! grep -q "alias sysupdate='bash ~/.update.sh'" ~/.bashrc ; then echo -e "alias sysupdate='bash ~/.update.sh'" >> ~/.bashrc ; fi
 
 # notify end
 echo -e " \n${TEXT_GREEN}System update command ${TEXT_YELLOW}<sysupdate>${TEXT_GREEN} configured! Please reopen terminal before using the command. ${TEXT_RESET} \n" && sleep 1
