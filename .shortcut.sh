@@ -118,21 +118,6 @@
     --set-icon '/opt/icon/teamviewer.png' \
     --remove-key 'Categories' --add-category 'Network;' \
 /usr/share/applications/com.teamviewer.TeamViewer.desktop
-##WeChat Deepin
-[ -f /usr/share/applications/com.qq.weixin.deepin.desktop ] && sudo desktop-file-edit \
-    --set-name 'WeChat' --set-key 'Name[en_US]' --set-value 'WeChat' --set-key 'Name[zh_CN]' --set-value '微信' \
-    --set-generic-name 'Instant Messaging' --set-key 'GenericName[en_US]' --set-value 'Instant Messaging' --set-key 'GenericName[zh_CN]' --set-value '个人即时通讯' \
-    --set-comment 'Deepin Wine WeChat Client' --set-key 'Comment[en_US]' --set-value 'Deepin Wine WeChat Client' --set-key 'Comment[zh_CN]' --set-value '腾讯微信深度版' \
-    --set-icon '/opt/icon/wechat.png' \
-    --remove-key 'Categories' --add-category 'Network;' \
-/usr/share/applications/com.qq.weixin.deepin.desktop
-##Wechat Universal
-[ -f /usr/share/applications/com.tencent.WeChat.desktop ] && sudo desktop-file-edit \
-    --set-name 'WeChat' --set-key 'Name[en_US]' --set-value 'WeChat' --set-key 'Name[zh_CN]' --set-value '微信' \
-    --set-generic-name 'Instant Messaging' --set-key 'GenericName[en_US]' --set-value 'Instant Messaging' --set-key 'GenericName[zh_CN]' --set-value '个人即时通讯' \
-    --set-comment 'WeChat Universal' --set-key 'Comment[en_US]' --set-value 'WeChat Universal' --set-key 'Comment[zh_CN]' --set-value '微信统信版' \
-    --remove-key 'Categories' --add-category 'Network;' \
-/usr/share/applications/com.tencent.WeChat.desktop
 ##FreeDownloadManager
 [ -f /usr/share/applications/freedownloadmanager.desktop ] && sudo desktop-file-edit \
     --set-name 'Download' --set-key 'Name[en_US]' --set-value 'Download' --set-key 'Name[zh_CN]' --set-value '下载工具' \
@@ -168,6 +153,35 @@
     --set-comment 'Zoom Video Conference' --set-key 'Comment[en_US]' --set-value 'Zoom Video Conference' --set-key 'Comment[zh_CN]' --set-value 'Zoom视频会议' \
     --remove-key 'Categories' --add-category 'Network;' \
 /usr/share/applications/Zoom.desktop
+##WeChat Deepin (Wine)
+[ -f /usr/share/applications/com.qq.weixin.deepin.desktop ] && sudo desktop-file-edit \
+    --set-name 'WeChat' --set-key 'Name[en_US]' --set-value 'WeChat' --set-key 'Name[zh_CN]' --set-value '微信' \
+    --set-generic-name 'Instant Messaging' --set-key 'GenericName[en_US]' --set-value 'Instant Messaging' --set-key 'GenericName[zh_CN]' --set-value '个人即时通讯' \
+    --set-comment 'Deepin Wine WeChat Client' --set-key 'Comment[en_US]' --set-value 'Deepin Wine WeChat Client' --set-key 'Comment[zh_CN]' --set-value '腾讯微信深度版' \
+    --set-icon '/opt/icon/wechat.png' \
+    --remove-key 'Categories' --add-category 'Network;' \
+/usr/share/applications/com.qq.weixin.deepin.desktop
+##Wechat Universal (flatpak)
+[ -f /var/lib/flatpak/app/com.tencent.WeChat/current/active/export/share/applications/com.tencent.WeChat.desktop ] && sudo mv -f /var/lib/flatpak/app/com.tencent.WeChat/current/active/export/share/applications/com.tencent.WeChat.desktop /usr/share/applications/
+[ -f /usr/share/applications/com.tencent.WeChat.desktop ] && sudo desktop-file-edit \
+    --set-name 'WeChat' --set-key 'Name[en_US]' --set-value 'WeChat' --set-key 'Name[zh_CN]' --set-value '微信' \
+    --set-generic-name 'Instant Messaging' --set-key 'GenericName[en_US]' --set-value 'Instant Messaging' --set-key 'GenericName[zh_CN]' --set-value '个人即时通讯' \
+    --set-comment 'WeChat Universal' --set-key 'Comment[en_US]' --set-value 'WeChat Universal' --set-key 'Comment[zh_CN]' --set-value '微信统信版' \
+    --set-key 'Exec' --set-value '/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=wechat --file-forwarding com.tencent.WeChat @@u %U @@' \
+    --set-icon 'com.tencent.WeChat' \
+    --set-key 'NoDisplay' --set-value 'false' \
+    --set-key 'Path' --set-value '' \
+    --set-key 'StartupNotify' --set-value 'true' \
+    --set-key 'StartupWMClass' --set-value 'WeChat' \
+    --set-key 'Terminal' --set-value 'false' \
+    --set-key 'TerminalOptions' --set-value '' \
+    --set-key 'Type' --set-value 'Application' \
+    --set-key 'X-Flatpak' --set-value 'com.tencent.WeChat' \
+    --set-key 'X-KDE-FormFactor' --set-value 'desktop;tablet;handset;' \
+    --set-key 'X-KDE-SubstituteUID' --set-value 'false' \
+    --set-key 'X-KDE-Username' --set-value '' \
+    --remove-key 'Categories' --add-category 'Network;' \
+/usr/share/applications/com.tencent.WeChat.desktop
 
 
 #Office (Office;)
@@ -467,6 +481,46 @@
     --set-comment 'Work with file archives' --set-key 'Comment[en_US]' --set-value 'Work with file archives' --set-key 'Comment[zh_CN]' --set-value '管理压缩包文件' \
     --remove-key 'Categories' --add-category 'Utility;' \
 /usr/share/applications/org.kde.ark.desktop
+## clock (flatpak)
+[ -f ~/.local/share/applications/org.kde.kclock.desktop ] && sudo mv -f ~/.local/share/applications/org.kde.kclock.desktop /usr/share/applications/
+[ -f /usr/share/applications/org.kde.kclock.desktop ] && sudo desktop-file-edit \
+    --set-name 'Clock' --set-key 'Name[en_US]' --set-value 'Clock' --set-key 'Name[zh_CN]' --set-value '时钟' \
+    --set-generic-name 'Clock Application' --set-key 'GenericName[en_US]' --set-value 'Clock Application' --set-key 'GenericName[zh_CN]' --set-value '时钟应用' \
+    --set-comment 'Set alarms and timers, use a stopwatch, and manage world clocks' --set-key 'Comment[en_US]' --set-value 'Set alarms and timers, use a stopwatch, and manage world clocks' --set-key 'Comment[zh_CN]' --set-value '设置闹钟，计时器，和世界时钟' \
+    --set-key 'Exec' --set-value '/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=kclock org.kde.kclock' \
+    --set-icon 'org.kde.kclock' \
+    --set-key 'NoDisplay' --set-value 'false' \
+    --set-key 'Path' --set-value '' \
+    --set-key 'StartupNotify' --set-value 'true' \
+    --set-key 'Terminal' --set-value 'false' \
+    --set-key 'TerminalOptions' --set-value '' \
+    --set-key 'Type' --set-value 'Application' \
+    --set-key 'X-Flatpak' --set-value 'org.kde.kclock' \
+    --set-key 'X-KDE-FormFactor' --set-value 'desktop;tablet;handset;' \
+    --set-key 'X-KDE-SubstituteUID' --set-value 'false' \
+    --set-key 'X-KDE-Username' --set-value '' \
+    --remove-key 'Categories' --add-category 'Utility;' \
+/usr/share/applications/org.kde.kclock.desktop
+## weather (flatpak)
+[ -f ~/.local/share/applications/org.kde.kweather.desktop ] && sudo mv -f ~/.local/share/applications/org.kde.kweather.desktop /usr/share/applications/
+[ -f /usr/share/applications/org.kde.kweather.desktop ] && sudo desktop-file-edit \
+    --set-name 'Weather' --set-key 'Name[en_US]' --set-value 'Weather' --set-key 'Name[zh_CN]' --set-value '天气' \
+    --set-generic-name 'Weather Forecast' --set-key 'GenericName[en_US]' --set-value 'Weather Forecast' --set-key 'GenericName[zh_CN]' --set-value '天气预报' \
+    --set-comment 'View real-time weather forecasts and other information' --set-key 'Comment[en_US]' --set-value 'View real-time weather forecasts and other information' --set-key 'Comment[zh_CN]' --set-value '查看实时天气预报' \
+    --set-key 'Exec' --set-value '/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=kweather org.kde.kweather' \
+    --set-icon 'org.kde.kweather' \
+    --set-key 'NoDisplay' --set-value 'false' \
+    --set-key 'Path' --set-value '' \
+    --set-key 'StartupNotify' --set-value 'true' \
+    --set-key 'Terminal' --set-value 'false' \
+    --set-key 'TerminalOptions' --set-value '' \
+    --set-key 'Type' --set-value 'Application' \
+    --set-key 'X-Flatpak' --set-value 'org.kde.kweather' \
+    --set-key 'X-KDE-FormFactor' --set-value 'desktop;tablet;handset;' \
+    --set-key 'X-KDE-SubstituteUID' --set-value 'false' \
+    --set-key 'X-KDE-Username' --set-value '' \
+    --remove-key 'Categories' --add-category 'Utility;' \
+/usr/share/applications/org.kde.kweather.desktop
 
 
 #System (System;)
@@ -542,50 +596,6 @@
     --set-generic-name '' --set-key 'GenericName[en_US]' --set-value '' --set-key 'GenericName[zh_CN]' --set-value '' \
     --set-comment '' --set-key 'Comment[en_US]' --set-value '' --set-key 'Comment[zh_CN]' --set-value '' \
 /usr/share/applications/org.kde.Help.desktop
-
-
-#Flatpak & Snap
-## clock
-[ ! -f ~/.local/share/applications/org.kde.kclock.desktop ] && touch ~/.local/share/applications/org.kde.kclock.desktop
-desktop-file-edit \
-    --set-name 'Clock' --set-key 'Name[en_US]' --set-value 'Clock' --set-key 'Name[zh_CN]' --set-value '时钟' \
-    --set-generic-name 'Clock Application' --set-key 'GenericName[en_US]' --set-value 'Clock Application' --set-key 'GenericName[zh_CN]' --set-value '时钟应用' \
-    --set-comment 'Set alarms and timers, use a stopwatch, and manage world clocks' --set-key 'Comment[en_US]' --set-value 'Set alarms and timers, use a stopwatch, and manage world clocks' --set-key 'Comment[zh_CN]' --set-value '设置闹钟，计时器，和世界时钟' \
-    --set-key 'Exec' --set-value '/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=kclock org.kde.kclock' \
-    --set-icon 'org.kde.kclock' \
-    --set-key 'NoDisplay' --set-value 'false' \
-    --set-key 'Path' --set-value '' \
-    --set-key 'StartupNotify' --set-value 'true' \
-    --set-key 'Terminal' --set-value 'false' \
-    --set-key 'TerminalOptions' --set-value '' \
-    --set-key 'Type' --set-value 'Application' \
-    --set-key 'X-Flatpak' --set-value 'org.kde.kclock' \
-    --set-key 'X-KDE-FormFactor' --set-value 'desktop;tablet;handset;' \
-    --set-key 'X-KDE-SubstituteUID' --set-value 'false' \
-    --set-key 'X-KDE-Username' --set-value '' \
-    --remove-key 'Categories' --add-category 'Utility;' \
-~/.local/share/applications/org.kde.kclock.desktop
-
-## weather
-[ ! -f ~/.local/share/applications/org.kde.kweather.desktop ] && touch ~/.local/share/applications/org.kde.kweather.desktop
-desktop-file-edit \
-    --set-name 'Weather' --set-key 'Name[en_US]' --set-value 'Weather' --set-key 'Name[zh_CN]' --set-value '天气' \
-    --set-generic-name 'Weather Forecast' --set-key 'GenericName[en_US]' --set-value 'Weather Forecast' --set-key 'GenericName[zh_CN]' --set-value '天气预报' \
-    --set-comment 'View real-time weather forecasts and other information' --set-key 'Comment[en_US]' --set-value 'View real-time weather forecasts and other information' --set-key 'Comment[zh_CN]' --set-value '查看实时天气预报' \
-    --set-key 'Exec' --set-value '/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=kweather org.kde.kweather' \
-    --set-icon 'org.kde.kweather' \
-    --set-key 'NoDisplay' --set-value 'false' \
-    --set-key 'Path' --set-value '' \
-    --set-key 'StartupNotify' --set-value 'true' \
-    --set-key 'Terminal' --set-value 'false' \
-    --set-key 'TerminalOptions' --set-value '' \
-    --set-key 'Type' --set-value 'Application' \
-    --set-key 'X-Flatpak' --set-value 'org.kde.kweather' \
-    --set-key 'X-KDE-FormFactor' --set-value 'desktop;tablet;handset;' \
-    --set-key 'X-KDE-SubstituteUID' --set-value 'false' \
-    --set-key 'X-KDE-Username' --set-value '' \
-    --remove-key 'Categories' --add-category 'Utility;' \
-~/.local/share/applications/org.kde.kweather.desktop
 
 
 #Hidden
