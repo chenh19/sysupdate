@@ -1,4 +1,4 @@
-# Full system update in one command
+# System update commands
 *Current version: v2.6.0*
 
 ## Introduction
