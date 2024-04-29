@@ -486,7 +486,7 @@
 [ -f /usr/share/applications/org.kde.kclock.desktop ] && sudo desktop-file-edit \
     --set-name 'Clock' --set-key 'Name[en_US]' --set-value 'Clock' --set-key 'Name[zh_CN]' --set-value '时钟' \
     --set-generic-name 'Clock Application' --set-key 'GenericName[en_US]' --set-value 'Clock Application' --set-key 'GenericName[zh_CN]' --set-value '时钟应用' \
-    --set-comment 'Set alarms and timers, use a stopwatch, and manage world clocks' --set-key 'Comment[en_US]' --set-value 'Set alarms and timers, use a stopwatch, and manage world clocks' --set-key 'Comment[zh_CN]' --set-value '设置闹钟，计时器，和世界时钟' \
+    --set-comment 'Clock Application' --set-key 'Comment[en_US]' --set-value 'Clock Application' --set-key 'Comment[zh_CN]' --set-value '时钟应用' \
     --set-key 'Exec' --set-value '/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=kclock org.kde.kclock' \
     --set-icon 'org.kde.kclock' \
     --set-key 'NoDisplay' --set-value 'false' \
@@ -506,7 +506,7 @@
 [ -f /usr/share/applications/org.kde.kweather.desktop ] && sudo desktop-file-edit \
     --set-name 'Weather' --set-key 'Name[en_US]' --set-value 'Weather' --set-key 'Name[zh_CN]' --set-value '天气' \
     --set-generic-name 'Weather Forecast' --set-key 'GenericName[en_US]' --set-value 'Weather Forecast' --set-key 'GenericName[zh_CN]' --set-value '天气预报' \
-    --set-comment 'View real-time weather forecasts and other information' --set-key 'Comment[en_US]' --set-value 'View real-time weather forecasts and other information' --set-key 'Comment[zh_CN]' --set-value '查看实时天气预报' \
+    --set-comment 'Weather Forecast' --set-key 'Comment[en_US]' --set-value 'Weather Forecast' --set-key 'Comment[zh_CN]' --set-value '天气预报' \
     --set-key 'Exec' --set-value '/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=kweather org.kde.kweather' \
     --set-icon 'org.kde.kweather' \
     --set-key 'NoDisplay' --set-value 'false' \
