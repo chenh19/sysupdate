@@ -1,5 +1,5 @@
 # System update commands
-*Current version: v2.6.6*
+*Current version: v2.6.7*
 
 ## Introduction
 - This tool is intended for easy system and developing environment update.
@@ -8,12 +8,12 @@
 ## How to setup
 - **Install:** connect to internet and execute the below command in terminal
 ```
-bash <(wget -qO- https://raw.githubusercontent.com/chenh19/sysupdate/main/install.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/chenh19/sysupdate/main/install.sh)
 ```
 
 - **Uninstall:** connect to internet and execute the below command in terminal  
 ```
-bash <(wget -qO- https://raw.githubusercontent.com/chenh19/sysupdate/main/uninstall.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/chenh19/sysupdate/main/uninstall.sh)
 ```
 
 ## How to use
