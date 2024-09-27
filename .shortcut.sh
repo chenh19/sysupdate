@@ -474,13 +474,13 @@
     --set-comment 'Screenshot Capture Utility' --set-key 'Comment[en_US]' --set-value 'Screenshot Capture Utility' --set-key 'Comment[zh_CN]' --set-value '屏幕截图工具' \
     --remove-key 'Categories' --add-category 'Utility;' \
 /usr/share/applications/org.kde.spectacle.desktop
-##Ark
-[ -f /usr/share/applications/org.kde.ark.desktop ] && sudo desktop-file-edit \
-    --set-name 'Ark' --set-key 'Name[en_US]' --set-value 'Ark' --set-key 'Name[zh_CN]' --set-value '压缩包管理器' \
-    --set-generic-name 'Archiving Tool' --set-key 'GenericName[en_US]' --set-value 'Archiving Tool' --set-key 'GenericName[zh_CN]' --set-value '压缩文件管理工具' \
-    --set-comment 'Work with file archives' --set-key 'Comment[en_US]' --set-value 'Work with file archives' --set-key 'Comment[zh_CN]' --set-value '管理压缩包文件' \
+##KDE Partition Manager
+[ -f /usr/share/applications/org.kde.partitionmanager.desktop ] && sudo desktop-file-edit \
+    --set-name 'Partition Manager' --set-key 'Name[en_US]' --set-value 'Partition Manager' --set-key 'Name[zh_CN]' --set-value '磁盘管理' \
+    --set-generic-name 'Disk Partition Editor' --set-key 'GenericName[en_US]' --set-value 'Disk Partition Editor' --set-key 'GenericName[zh_CN]' --set-value '磁盘分区工具' \
+    --set-comment 'Manage disks, partitions and file systems' --set-key 'Comment[en_US]' --set-value 'Manage disks, partitions and file systems' --set-key 'Comment[zh_CN]' --set-value '管理磁盘分区与文件系统' \
     --remove-key 'Categories' --add-category 'Utility;' \
-/usr/share/applications/org.kde.ark.desktop
+/usr/share/applications/org.kde.partitionmanager.desktop
 ## clock (flatpak)
 [ -f /var/lib/flatpak/app/org.kde.kclock/current/active/export/share/applications/org.kde.kclock.desktop ] && sudo mv -f /var/lib/flatpak/app/org.kde.kclock/current/active/export/share/applications/org.kde.kclock.desktop /usr/share/applications/
 [ -f /usr/share/applications/org.kde.kclock.desktop ] && sudo desktop-file-edit \
@@ -538,13 +538,6 @@
     --set-comment 'System Information Center' --set-key 'Comment[en_US]' --set-value 'System Information Center' --set-key 'Comment[zh_CN]' --set-value '系统信息中心' \
     --remove-key 'Categories' --add-category 'System;' \
 /usr/share/applications/org.kde.kinfocenter.desktop
-##KDE Partition Manager
-[ -f /usr/share/applications/org.kde.partitionmanager.desktop ] && sudo desktop-file-edit \
-    --set-name 'Partition Manager' --set-key 'Name[en_US]' --set-value 'Partition Manager' --set-key 'Name[zh_CN]' --set-value '磁盘管理' \
-    --set-generic-name 'Disk Partition Editor' --set-key 'GenericName[en_US]' --set-value 'Disk Partition Editor' --set-key 'GenericName[zh_CN]' --set-value '磁盘分区工具' \
-    --set-comment 'Manage disks, partitions and file systems' --set-key 'Comment[en_US]' --set-value 'Manage disks, partitions and file systems' --set-key 'Comment[zh_CN]' --set-value '管理磁盘分区与文件系统' \
-    --remove-key 'Categories' --add-category 'System;' \
-/usr/share/applications/org.kde.partitionmanager.desktop
 ##System Monitor
 [ -f /usr/share/applications/org.kde.plasma-systemmonitor.desktop ] && sudo desktop-file-edit \
     --set-name 'System Monitor' --set-key 'Name[en_US]' --set-value 'System Monitor' --set-key 'Name[zh_CN]' --set-value '系统监视器' \
@@ -587,6 +580,13 @@
     --set-comment 'KDE Text Editor' --set-key 'Comment[en_US]' --set-value 'KDE Text Editor' --set-key 'Comment[zh_CN]' --set-value 'KDE文本编辑工具' \
     --remove-key 'Categories' --add-category 'System;' \
 /usr/share/applications/org.kde.kwrite.desktop
+##Ark
+[ -f /usr/share/applications/org.kde.ark.desktop ] && sudo desktop-file-edit \
+    --set-name 'Ark' --set-key 'Name[en_US]' --set-value 'Ark' --set-key 'Name[zh_CN]' --set-value '压缩包管理器' \
+    --set-generic-name 'Archiving Tool' --set-key 'GenericName[en_US]' --set-value 'Archiving Tool' --set-key 'GenericName[zh_CN]' --set-value '压缩文件管理工具' \
+    --set-comment 'Work with file archives' --set-key 'Comment[en_US]' --set-value 'Work with file archives' --set-key 'Comment[zh_CN]' --set-value '管理压缩包文件' \
+    --remove-key 'Categories' --add-category 'System;' \
+/usr/share/applications/org.kde.ark.desktop
 
 
 #Help
