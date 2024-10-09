@@ -182,6 +182,14 @@
     --set-key 'X-KDE-Username' --set-value '' \
     --remove-key 'Categories' --add-category 'Network;' \
 /usr/share/applications/com.tencent.WeChat.desktop
+##WeChat Deepin (Universal deb)
+[ -f /usr/share/applications/wechat.desktop ] && sudo desktop-file-edit \
+    --set-name 'WeChat' --set-key 'Name[en_US]' --set-value 'WeChat' --set-key 'Name[zh_CN]' --set-value '微信' \
+    --set-generic-name 'Instant Messaging' --set-key 'GenericName[en_US]' --set-value 'Instant Messaging' --set-key 'GenericName[zh_CN]' --set-value '个人即时通讯' \
+    --set-comment 'WeChat Universal' --set-key 'Comment[en_US]' --set-value 'WeChat Universal' --set-key 'Comment[zh_CN]' --set-value '微信统信版' \
+    --set-icon '/opt/icon/wechat.png' \
+    --remove-key 'Categories' --add-category 'Network;' \
+/usr/share/applications/wechat.desktop
 
 
 #Office (Office;)
