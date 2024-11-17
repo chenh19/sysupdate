@@ -26,3 +26,7 @@ sysupdate
 ```
 rupdate
 ```
+
+## To-do
+
+- [ ] Combine ```apt``` (Debian), ```dnf``` (Red Hat), ```pkcon``` (Kde Neon), ```pkg``` (FreeBSD)，```pacman``` (Arch), ```flatpak```， ```snap```, ```R```, ```python``` updates
