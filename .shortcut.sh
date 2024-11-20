@@ -72,13 +72,6 @@
     --set-generic-name 'Artificial Intelligence Chatbot' --set-key 'GenericName[en_US]' --set-value 'Artificial Intelligence Chatbot' --set-key 'GenericName[zh_CN]' --set-value '人工智能聊天机器人' \
     --remove-key 'Categories' --add-category 'Science;' \
 /usr/share/applications/chat-gpt.desktop
-##FileZilla
-[ -f /usr/share/applications/filezilla.desktop ] && sudo desktop-file-edit \
-    --set-name 'FileZilla' --set-key 'Name[en_US]' --set-value 'FileZilla' --set-key 'Name[zh_CN]' --set-value 'FileZilla' \
-    --set-generic-name 'FTP client' --set-key 'GenericName[en_US]' --set-value 'FTP client' --set-key 'GenericName[zh_CN]' --set-value 'FTP客户端' \
-    --set-comment 'Download and upload files via FTP, FTPS and SFTP' --set-key 'Comment[en_US]' --set-value 'Download and upload files via FTP, FTPS and SFTP' --set-key 'Comment[zh_CN]' --set-value 'FTP,FTPS和SFTP客户端' \
-    --remove-key 'Categories' --add-category 'Science;' \
-/usr/share/applications/filezilla.desktop
 
 
 #Internet (Network;)
@@ -132,6 +125,13 @@
     --set-comment 'Powerful Modern Download Accelerator and Organizer' --set-key 'Comment[en_US]' --set-value 'Powerful Modern Download Accelerator and Organizer' --set-key 'Comment[zh_CN]' --set-value '高速下载与管理工具' \
     --remove-key 'Categories' --add-category 'Network;' \
 /usr/share/applications/freedownloadmanager.desktop
+##FileZilla
+[ -f /usr/share/applications/filezilla.desktop ] && sudo desktop-file-edit \
+    --set-name 'FileZilla' --set-key 'Name[en_US]' --set-value 'FileZilla' --set-key 'Name[zh_CN]' --set-value 'FileZilla' \
+    --set-generic-name 'FTP client' --set-key 'GenericName[en_US]' --set-value 'FTP client' --set-key 'GenericName[zh_CN]' --set-value 'FTP客户端' \
+    --set-comment 'Download and upload files via FTP, FTPS and SFTP' --set-key 'Comment[en_US]' --set-value 'Download and upload files via FTP, FTPS and SFTP' --set-key 'Comment[zh_CN]' --set-value 'FTP,FTPS和SFTP客户端' \
+    --remove-key 'Categories' --add-category 'Network;' \
+/usr/share/applications/filezilla.desktop
 ##Google Chrome
 [ -f /usr/share/applications/google-chrome.desktop ] && sudo desktop-file-edit \
     --set-name 'Chrome' --set-key 'Name[en_US]' --set-value 'Chrome' --set-key 'Name[zh_CN]' --set-value '网页浏览器' \
