@@ -190,6 +190,13 @@
     --set-key 'X-KDE-Username' --set-value '' \
     --remove-key 'Categories' --add-category 'Network;' \
 /usr/share/applications/com.tencent.WeChat.desktop
+##FileZilla
+[ -f /usr/share/applications/filezilla.desktop ] && sudo desktop-file-edit \
+    --set-name 'FileZilla' --set-key 'Name[en_US]' --set-value 'FileZilla' --set-key 'Name[zh_CN]' --set-value 'FileZilla' \
+    --set-generic-name 'FTP client' --set-key 'GenericName[en_US]' --set-value 'FTP client' --set-key 'GenericName[zh_CN]' --set-value 'FTP客户端' \
+    --set-comment 'Download and upload files via FTP, FTPS and SFTP' --set-key 'Comment[en_US]' --set-value 'Download and upload files via FTP, FTPS and SFTP' --set-key 'Comment[zh_CN]' --set-value 'FTP,FTPS和SFTP客户端' \
+    --remove-key 'Categories' --add-category 'Network;' \
+/usr/share/applications/filezilla.desktop
 
 
 #Office (Office;)
