@@ -664,3 +664,8 @@
 [ -f /usr/share/applications/org.kde.kmenuedit.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/org.kde.kmenuedit.desktop
 [ -f /usr/share/applications/org.kde.kate.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/org.kde.kate.desktop
 [ -f /usr/share/applications/org.kde.gwenview.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/org.kde.gwenview.desktop
+[ -f /usr/share/applications/org.kde.kdevelop_bzr.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/org.kde.kdevelop_bzr.desktop
+[ -f /usr/share/applications/org.kde.kdevelop_git.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/org.kde.kdevelop_git.desktop
+[ -f /usr/share/applications/org.kde.kdevelop_kdev4.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/org.kde.kdevelop_kdev4.desktop
+[ -f /usr/share/applications/org.kde.kdevelop_ps.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/org.kde.kdevelop_ps.desktop
+[ -f /usr/share/applications/org.kde.kdevelop_svn.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/org.kde.kdevelop_svn.desktop
