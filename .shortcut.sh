@@ -675,3 +675,4 @@
 [ -f /usr/share/applications/org.kde.kdevelop_kdev4.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/org.kde.kdevelop_kdev4.desktop
 [ -f /usr/share/applications/org.kde.kdevelop_ps.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/org.kde.kdevelop_ps.desktop
 [ -f /usr/share/applications/org.kde.kdevelop_svn.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/org.kde.kdevelop_svn.desktop
+[ -f /usr/share/applications/org.kde.kapptemplate.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/org.kde.kapptemplate.desktop
