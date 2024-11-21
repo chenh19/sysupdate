@@ -72,6 +72,12 @@
     --set-generic-name 'Artificial Intelligence Chatbot' --set-key 'GenericName[en_US]' --set-value 'Artificial Intelligence Chatbot' --set-key 'GenericName[zh_CN]' --set-value '人工智能聊天机器人' \
     --remove-key 'Categories' --add-category 'Science;' \
 /usr/share/applications/chat-gpt.desktop
+##KDevelop
+[ -f /usr/share/applications/org.kde.kdevelop.desktop ] && sudo desktop-file-edit \
+    --set-name 'KDevelop' --set-key 'Name[en_US]' --set-value 'KDevelop' --set-key 'Name[zh_CN]' --set-value 'KDevelop' \
+    --set-generic-name 'Integrated Development Environment' --set-key 'GenericName[en_US]' --set-value 'Integrated Development Environment' --set-key 'GenericName[zh_CN]' --set-value '集成开发环境' \
+    --remove-key 'Categories' --add-category 'Science;' \
+/usr/share/applications/org.kde.kdevelop.desktop
 
 
 #Internet (Network;)
