@@ -78,6 +78,13 @@
     --set-generic-name 'Integrated Development Environment' --set-key 'GenericName[en_US]' --set-value 'Integrated Development Environment' --set-key 'GenericName[zh_CN]' --set-value '集成开发环境' \
     --remove-key 'Categories' --add-category 'Science;' \
 /usr/share/applications/org.kde.kdevelop.desktop
+##JupyterLab
+[ -f /usr/share/applications/jupyterlab-desktop.desktop ] && sudo desktop-file-edit \
+    --set-name 'JupyterLab' --set-key 'Name[en_US]' --set-value 'JupyterLab' --set-key 'Name[zh_CN]' --set-value 'JupyterLab' \
+    --set-generic-name 'JupyterLab Desktop' --set-key 'GenericName[en_US]' --set-value 'JupyterLab Desktop' --set-key 'GenericName[zh_CN]' --set-value 'JupyterLab桌面' \
+    --set-comment 'JupyterLab Desktop Client' --set-key 'Comment[en_US]' --set-value 'JupyterLab Desktop Client' --set-key 'Comment[zh_CN]' --set-value 'JupyterLab桌面' \
+    --remove-key 'Categories' --add-category 'Science;' \
+/usr/share/applications/jupyterlab-desktop.desktop
 
 
 #Internet (Network;)
