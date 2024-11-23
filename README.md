@@ -8,12 +8,12 @@
 ## How to setup
 - **Install:** connect to internet and execute the below command in terminal
 ```
-bash <(curl -fsSL https://raw.githubusercontent.com/chenh19/sysupdate/main/install.sh)
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/chenh19/sysupdate/main/install.sh)"
 ```
 
 - **Uninstall:** connect to internet and execute the below command in terminal  
 ```
-bash <(curl -fsSL https://raw.githubusercontent.com/chenh19/sysupdate/main/uninstall.sh)
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/chenh19/sysupdate/main/uninstall.sh)"
 ```
 
 ## How to use
