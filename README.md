@@ -1,5 +1,5 @@
 # System update commands
-*Current version: v2.7.2*
+*Current version: v2.7.3*
 
 ## Introduction
 - This tool is intended for easy system and developing environment update.
@@ -8,12 +8,12 @@
 ## How to setup
 - **Install:** connect to internet and execute the below command in terminal
 ```
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/chenh19/sysupdate/main/install.sh)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/chenh19/sysupdate/main/install.sh)"
 ```
 
 - **Uninstall:** connect to internet and execute the below command in terminal  
 ```
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/chenh19/sysupdate/main/uninstall.sh)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/chenh19/sysupdate/main/uninstall.sh)"
 ```
 
 ## How to use
