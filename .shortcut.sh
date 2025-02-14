@@ -549,7 +549,13 @@
     --set-key 'X-KDE-Username' --set-value '' \
     --remove-key 'Categories' --add-category 'Utility;' \
 /usr/share/applications/org.kde.kweather.desktop
-
+##Solaar
+[ -f /usr/share/applications/solaar.desktop ] && sudo desktop-file-edit \
+    --set-name 'Solaar' --set-key 'Name[en_US]' --set-value 'Solaar' --set-key 'Name[zh_CN]' --set-value '罗技外设' \
+    --set-generic-name 'Logitech Peripherals Manager' --set-key 'GenericName[en_US]' --set-value 'Logitech Peripherals Manager' --set-key 'GenericName[zh_CN]' --set-value '罗技外设管理工具' \
+    --set-comment 'Logitech Peripherals Manager' --set-key 'Comment[en_US]' --set-value 'Logitech Peripherals Manager' --set-key 'Comment[zh_CN]' --set-value '罗技外设管理工具' \
+    --remove-key 'Categories' --add-category 'Utility;' \
+/usr/share/applications/solaar.desktop
 
 #System (System;)
 ##System Settings
