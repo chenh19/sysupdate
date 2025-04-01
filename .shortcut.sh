@@ -88,7 +88,7 @@
 ##DB Browser for SQLite
 [ -f /usr/share/applications/sqlitebrowser.desktop ] && sudo desktop-file-edit \
     --set-name 'DB Browser' --set-key 'Name[en_US]' --set-value 'DB Browser' --set-key 'Name[zh_CN]' --set-value 'DB Browser' \
-    --set-generic-name 'DB Browser for SQLite' --set-key 'GenericName[en_US]' --set-value 'DB Browser for SQLite' --set-key 'GenericName[zh_CN]' --set-value 'SQLite数据库管理工具' \
+    --set-generic-name 'DB Browser for SQLite Database' --set-key 'GenericName[en_US]' --set-value 'DB Browser for SQLite Database' --set-key 'GenericName[zh_CN]' --set-value 'SQLite数据库管理工具' \
     --set-comment 'Open Source SQLite Database Browser' --set-key 'Comment[en_US]' --set-value 'Open Source SQLite Database Browser' --set-key 'Comment[zh_CN]' --set-value '开源数据库管理工具' \
     --remove-key 'Categories' --add-category 'Science;' \
 /usr/share/applications/sqlitebrowser.desktop
