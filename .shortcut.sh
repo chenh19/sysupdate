@@ -224,7 +224,6 @@
     --set-name 'EuDic' --set-key 'Name[en_US]' --set-value 'EuDic' --set-key 'Name[zh_CN]' --set-value '欧陆词典' \
     --set-generic-name 'Dictionary' --set-key 'GenericName[en_US]' --set-value 'Dictionary' --set-key 'GenericName[zh_CN]' --set-value '英语词典' \
     --set-comment 'The Best Dictionary Application' --set-key 'Comment[en_US]' --set-value 'The Best Dictionary Application' --set-key 'Comment[zh_CN]' --set-value '最好的开源词典软件' \
-    --set-key 'Exec' --set-value 'XDG_CURRENT_DESKTOP=GNOME /usr/share/eusoft-eudic/AppRun %F' \
     --set-key 'StartupNotify' --set-value 'true' \
     --set-key 'Terminal' --set-value 'false' \
     --set-icon '/opt/icon/eudic.png' \
