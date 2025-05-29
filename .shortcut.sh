@@ -72,12 +72,6 @@
     --set-generic-name 'Artificial Intelligence Chatbot' --set-key 'GenericName[en_US]' --set-value 'Artificial Intelligence Chatbot' --set-key 'GenericName[zh_CN]' --set-value '人工智能聊天机器人' \
     --remove-key 'Categories' --add-category 'Science;' \
 /usr/share/applications/chat-gpt.desktop
-##KDevelop
-[ -f /usr/share/applications/org.kde.kdevelop.desktop ] && sudo desktop-file-edit \
-    --set-name 'KDevelop' --set-key 'Name[en_US]' --set-value 'KDevelop' --set-key 'Name[zh_CN]' --set-value 'KDevelop' \
-    --set-generic-name 'Integrated Development Environment' --set-key 'GenericName[en_US]' --set-value 'Integrated Development Environment' --set-key 'GenericName[zh_CN]' --set-value '集成开发环境' \
-    --remove-key 'Categories' --add-category 'Science;' \
-/usr/share/applications/org.kde.kdevelop.desktop
 ##JupyterLab
 [ -f /usr/share/applications/jupyterlab-desktop.desktop ] && sudo desktop-file-edit \
     --set-name 'JupyterLab' --set-key 'Name[en_US]' --set-value 'JupyterLab' --set-key 'Name[zh_CN]' --set-value 'JupyterLab' \
@@ -85,12 +79,21 @@
     --set-comment 'JupyterLab Desktop Client' --set-key 'Comment[en_US]' --set-value 'JupyterLab Desktop Client' --set-key 'Comment[zh_CN]' --set-value 'JupyterLab桌面客户端' \
     --remove-key 'Categories' --add-category 'Science;' \
 /usr/share/applications/jupyterlab-desktop.desktop
+
+
+#Development
+##KDevelop
+[ -f /usr/share/applications/org.kde.kdevelop.desktop ] && sudo desktop-file-edit \
+    --set-name 'KDevelop' --set-key 'Name[en_US]' --set-value 'KDevelop' --set-key 'Name[zh_CN]' --set-value 'KDevelop' \
+    --set-generic-name 'Integrated Development Environment' --set-key 'GenericName[en_US]' --set-value 'Integrated Development Environment' --set-key 'GenericName[zh_CN]' --set-value '集成开发环境' \
+    --remove-key 'Categories' --add-category 'Development;' \
+/usr/share/applications/org.kde.kdevelop.desktop
 ##DB Browser for SQLite
 [ -f /usr/share/applications/sqlitebrowser.desktop ] && sudo desktop-file-edit \
     --set-name 'DB Browser' --set-key 'Name[en_US]' --set-value 'DB Browser' --set-key 'Name[zh_CN]' --set-value 'DB Browser' \
     --set-generic-name 'SQLite Database Tool' --set-key 'GenericName[en_US]' --set-value 'SQLite Database Tool' --set-key 'GenericName[zh_CN]' --set-value 'SQLite数据库管理工具' \
     --set-comment 'Open Source SQLite Database Browser' --set-key 'Comment[en_US]' --set-value 'Open Source SQLite Database Browser' --set-key 'Comment[zh_CN]' --set-value '开源数据库管理工具' \
-    --remove-key 'Categories' --add-category 'Science;' \
+    --remove-key 'Categories' --add-category 'Development;' \
 /usr/share/applications/sqlitebrowser.desktop
 
 
@@ -561,6 +564,13 @@
     --set-comment 'Logitech Peripherals Manager' --set-key 'Comment[en_US]' --set-value 'Logitech Peripherals Manager' --set-key 'Comment[zh_CN]' --set-value '罗技外设管理工具' \
     --remove-key 'Categories' --add-category 'Utility;' \
 /usr/share/applications/solaar.desktop
+##DavMail
+[ -f /usr/share/applications/davmail.desktop ] && sudo desktop-file-edit \
+    --set-name 'DavMail' --set-key 'Name[en_US]' --set-value 'DavMail' --set-key 'Name[zh_CN]' --set-value 'DavMail' \
+    --set-generic-name 'Microsoft Exchange Gateway' --set-key 'GenericName[en_US]' --set-value 'Microsoft Exchange Gateway' --set-key 'GenericName[zh_CN]' --set-value '微软Exchange网关' \
+    --set-comment 'POP/IMAP/SMTP/Caldav/Carddav/LDAP Exchange Gateway' --set-key 'Comment[en_US]' --set-value 'POP/IMAP/SMTP/Caldav/Carddav/LDAP Exchange Gateway' --set-key 'Comment[zh_CN]' --set-value 'POP/IMAP/SMTP/Caldav/Carddav/LDAP Exchange 网关' \
+    --remove-key 'Categories' --add-category 'Utility;' \
+/usr/share/applications/davmail.desktop
 
 #System (System;)
 ##System Settings
