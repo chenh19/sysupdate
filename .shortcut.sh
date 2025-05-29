@@ -74,15 +74,6 @@
     --set-icon '/opt/icon/snapgene-viewer.png' \
     --remove-key 'Categories' --add-category 'Science;' \
 /usr/share/applications/snapgene-viewer.desktop
-##Snapgene (wine)
-[ -f /usr/share/applications/SnapGene.desktop ] && sudo desktop-file-edit \
-    --set-name 'SnapGene' --set-key 'Name[en_US]' --set-value 'SnapGene' --set-key 'Name[zh_CN]' --set-value 'SnapGene' \
-    --set-generic-name 'Everyday Molecular Biology' --set-key 'GenericName[en_US]' --set-value 'Everyday Molecular Biology' --set-key 'GenericName[zh_CN]' --set-value '分子生物学工具' \
-    --set-comment 'View, Edit, and Analyze Sequences' --set-key 'Comment[en_US]' --set-value 'View, Edit, and Analyze Sequences' --set-key 'Comment[zh_CN]' --set-value '浏览，分析与编辑生物序列' \
-    --set-key 'Exec' --set-value 'env WINEPREFIX="$HOME/.wine" wine "C:\\Program Files\\SnapGene\\SnapGene.exe"' \
-    --set-icon '2751_SnapGene.0' \
-    --remove-key 'Categories' --add-category 'Science;' \
-/usr/share/applications/SnapGene.desktop
 ##Tropy
 [ -f /usr/share/applications/tropy.desktop ] && sudo desktop-file-edit \
     --set-name 'Tropy' --set-key 'Name[en_US]' --set-value 'Tropy' --set-key 'Name[zh_CN]' --set-value 'Tropy' \
