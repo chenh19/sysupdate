@@ -1,6 +1,36 @@
 #!/bin/bash
 #This script edits start menu shortcuts
 
+#Development (Development;)
+##RStudio
+[ -f /usr/share/applications/rstudio.desktop ] && sudo desktop-file-edit \
+    --set-name 'RStudio' --set-key 'Name[en_US]' --set-value 'RStudio' --set-key 'Name[zh_CN]' --set-value 'RStudio' \
+    --set-generic-name 'R Development' --set-key 'GenericName[en_US]' --set-value 'R Development' --set-key 'GenericName[zh_CN]' --set-value 'R语言开发' \
+    --set-comment 'R Programming IDE' --set-key 'Comment[en_US]' --set-value 'R Programming IDE' --set-key 'Comment[zh_CN]' --set-value 'R语言开发工具' \
+    --remove-key 'Categories' --add-category 'Development;' \
+/usr/share/applications/rstudio.desktop
+##KDevelop
+[ -f /usr/share/applications/org.kde.kdevelop.desktop ] && sudo desktop-file-edit \
+    --set-name 'KDevelop' --set-key 'Name[en_US]' --set-value 'KDevelop' --set-key 'Name[zh_CN]' --set-value 'KDevelop' \
+    --set-generic-name 'Integrated Development Environment' --set-key 'GenericName[en_US]' --set-value 'Integrated Development Environment' --set-key 'GenericName[zh_CN]' --set-value '集成开发环境' \
+    --remove-key 'Categories' --add-category 'Development;' \
+/usr/share/applications/org.kde.kdevelop.desktop
+##DB Browser for SQLite
+[ -f /usr/share/applications/sqlitebrowser.desktop ] && sudo desktop-file-edit \
+    --set-name 'DB Browser' --set-key 'Name[en_US]' --set-value 'DB Browser' --set-key 'Name[zh_CN]' --set-value 'DB Browser' \
+    --set-generic-name 'SQLite Database Tool' --set-key 'GenericName[en_US]' --set-value 'SQLite Database Tool' --set-key 'GenericName[zh_CN]' --set-value 'SQLite数据库管理工具' \
+    --set-comment 'Open Source SQLite Database Browser' --set-key 'Comment[en_US]' --set-value 'Open Source SQLite Database Browser' --set-key 'Comment[zh_CN]' --set-value '开源数据库管理工具' \
+    --remove-key 'Categories' --add-category 'Development;' \
+/usr/share/applications/sqlitebrowser.desktop
+##JupyterLab
+[ -f /usr/share/applications/jupyterlab-desktop.desktop ] && sudo desktop-file-edit \
+    --set-name 'JupyterLab' --set-key 'Name[en_US]' --set-value 'JupyterLab' --set-key 'Name[zh_CN]' --set-value 'JupyterLab' \
+    --set-generic-name 'JupyterLab Desktop' --set-key 'GenericName[en_US]' --set-value 'JupyterLab Desktop' --set-key 'GenericName[zh_CN]' --set-value 'JupyterLab桌面' \
+    --set-comment 'JupyterLab Desktop Client' --set-key 'Comment[en_US]' --set-value 'JupyterLab Desktop Client' --set-key 'Comment[zh_CN]' --set-value 'JupyterLab桌面客户端' \
+    --remove-key 'Categories' --add-category 'Development;' \
+/usr/share/applications/jupyterlab-desktop.desktop
+
+
 #Science & Math (Science;)
 ##ClustalX
 [ -f /usr/share/applications/clustalx.desktop ] && sudo desktop-file-edit \
@@ -44,6 +74,15 @@
     --set-icon '/opt/icon/snapgene-viewer.png' \
     --remove-key 'Categories' --add-category 'Science;' \
 /usr/share/applications/snapgene-viewer.desktop
+##Snapgene (wine)
+[ -f /usr/share/applications/SnapGene.desktop ] && sudo desktop-file-edit \
+    --set-name 'SnapGene' --set-key 'Name[en_US]' --set-value 'SnapGene' --set-key 'Name[zh_CN]' --set-value 'SnapGene' \
+    --set-generic-name 'Everyday Molecular Biology' --set-key 'GenericName[en_US]' --set-value 'Everyday Molecular Biology' --set-key 'GenericName[zh_CN]' --set-value '分子生物学工具' \
+    --set-comment 'View, Edit, and Analyze Sequences' --set-key 'Comment[en_US]' --set-value 'View, Edit, and Analyze Sequences' --set-key 'Comment[zh_CN]' --set-value '浏览，分析与编辑生物序列' \
+    --set-key 'Exec' --set-value 'env WINEPREFIX="$HOME/.wine" wine "C:\\Program Files\\SnapGene\\SnapGene.exe"' \
+    --set-icon '2751_SnapGene.0' \
+    --remove-key 'Categories' --add-category 'Science;' \
+/usr/share/applications/SnapGene.desktop
 ##Tropy
 [ -f /usr/share/applications/tropy.desktop ] && sudo desktop-file-edit \
     --set-name 'Tropy' --set-key 'Name[en_US]' --set-value 'Tropy' --set-key 'Name[zh_CN]' --set-value 'Tropy' \
@@ -65,36 +104,6 @@
     --set-generic-name 'Artificial Intelligence Chatbot' --set-key 'GenericName[en_US]' --set-value 'Artificial Intelligence Chatbot' --set-key 'GenericName[zh_CN]' --set-value '人工智能聊天机器人' \
     --remove-key 'Categories' --add-category 'Science;' \
 /usr/share/applications/chat-gpt.desktop
-
-
-#Development
-##RStudio
-[ -f /usr/share/applications/rstudio.desktop ] && sudo desktop-file-edit \
-    --set-name 'RStudio' --set-key 'Name[en_US]' --set-value 'RStudio' --set-key 'Name[zh_CN]' --set-value 'RStudio' \
-    --set-generic-name 'R Development' --set-key 'GenericName[en_US]' --set-value 'R Development' --set-key 'GenericName[zh_CN]' --set-value 'R语言开发' \
-    --set-comment 'R Programming IDE' --set-key 'Comment[en_US]' --set-value 'R Programming IDE' --set-key 'Comment[zh_CN]' --set-value 'R语言开发工具' \
-    --remove-key 'Categories' --add-category 'Development;' \
-/usr/share/applications/rstudio.desktop
-##KDevelop
-[ -f /usr/share/applications/org.kde.kdevelop.desktop ] && sudo desktop-file-edit \
-    --set-name 'KDevelop' --set-key 'Name[en_US]' --set-value 'KDevelop' --set-key 'Name[zh_CN]' --set-value 'KDevelop' \
-    --set-generic-name 'Integrated Development Environment' --set-key 'GenericName[en_US]' --set-value 'Integrated Development Environment' --set-key 'GenericName[zh_CN]' --set-value '集成开发环境' \
-    --remove-key 'Categories' --add-category 'Development;' \
-/usr/share/applications/org.kde.kdevelop.desktop
-##DB Browser for SQLite
-[ -f /usr/share/applications/sqlitebrowser.desktop ] && sudo desktop-file-edit \
-    --set-name 'DB Browser' --set-key 'Name[en_US]' --set-value 'DB Browser' --set-key 'Name[zh_CN]' --set-value 'DB Browser' \
-    --set-generic-name 'SQLite Database Tool' --set-key 'GenericName[en_US]' --set-value 'SQLite Database Tool' --set-key 'GenericName[zh_CN]' --set-value 'SQLite数据库管理工具' \
-    --set-comment 'Open Source SQLite Database Browser' --set-key 'Comment[en_US]' --set-value 'Open Source SQLite Database Browser' --set-key 'Comment[zh_CN]' --set-value '开源数据库管理工具' \
-    --remove-key 'Categories' --add-category 'Development;' \
-/usr/share/applications/sqlitebrowser.desktop
-##JupyterLab
-[ -f /usr/share/applications/jupyterlab-desktop.desktop ] && sudo desktop-file-edit \
-    --set-name 'JupyterLab' --set-key 'Name[en_US]' --set-value 'JupyterLab' --set-key 'Name[zh_CN]' --set-value 'JupyterLab' \
-    --set-generic-name 'JupyterLab Desktop' --set-key 'GenericName[en_US]' --set-value 'JupyterLab Desktop' --set-key 'GenericName[zh_CN]' --set-value 'JupyterLab桌面' \
-    --set-comment 'JupyterLab Desktop Client' --set-key 'Comment[en_US]' --set-value 'JupyterLab Desktop Client' --set-key 'Comment[zh_CN]' --set-value 'JupyterLab桌面客户端' \
-    --remove-key 'Categories' --add-category 'Development;' \
-/usr/share/applications/jupyterlab-desktop.desktop
 
 
 #Internet (Network;)
