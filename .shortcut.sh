@@ -35,13 +35,6 @@
     --set-icon '/opt/icon/pymol.png' \
     --remove-key 'Categories' --add-category 'Science;' \
 /usr/share/applications/pymol.desktop
-##RStudio
-[ -f /usr/share/applications/rstudio.desktop ] && sudo desktop-file-edit \
-    --set-name 'RStudio' --set-key 'Name[en_US]' --set-value 'RStudio' --set-key 'Name[zh_CN]' --set-value 'RStudio' \
-    --set-generic-name 'R Development' --set-key 'GenericName[en_US]' --set-value 'R Development' --set-key 'GenericName[zh_CN]' --set-value 'R语言开发' \
-    --set-comment 'R Programming IDE' --set-key 'Comment[en_US]' --set-value 'R Programming IDE' --set-key 'Comment[zh_CN]' --set-value 'R语言开发工具' \
-    --remove-key 'Categories' --add-category 'Science;' \
-/usr/share/applications/rstudio.desktop
 ##Snapgene-Viewer
 [ -f /usr/share/applications/snapgene-viewer.desktop ] && sudo desktop-file-edit \
     --set-name 'SnapGene' --set-key 'Name[en_US]' --set-value 'SnapGene' --set-key 'Name[zh_CN]' --set-value 'SnapGene' \
@@ -72,16 +65,16 @@
     --set-generic-name 'Artificial Intelligence Chatbot' --set-key 'GenericName[en_US]' --set-value 'Artificial Intelligence Chatbot' --set-key 'GenericName[zh_CN]' --set-value '人工智能聊天机器人' \
     --remove-key 'Categories' --add-category 'Science;' \
 /usr/share/applications/chat-gpt.desktop
-##JupyterLab
-[ -f /usr/share/applications/jupyterlab-desktop.desktop ] && sudo desktop-file-edit \
-    --set-name 'JupyterLab' --set-key 'Name[en_US]' --set-value 'JupyterLab' --set-key 'Name[zh_CN]' --set-value 'JupyterLab' \
-    --set-generic-name 'JupyterLab Desktop' --set-key 'GenericName[en_US]' --set-value 'JupyterLab Desktop' --set-key 'GenericName[zh_CN]' --set-value 'JupyterLab桌面' \
-    --set-comment 'JupyterLab Desktop Client' --set-key 'Comment[en_US]' --set-value 'JupyterLab Desktop Client' --set-key 'Comment[zh_CN]' --set-value 'JupyterLab桌面客户端' \
-    --remove-key 'Categories' --add-category 'Science;' \
-/usr/share/applications/jupyterlab-desktop.desktop
 
 
 #Development
+##RStudio
+[ -f /usr/share/applications/rstudio.desktop ] && sudo desktop-file-edit \
+    --set-name 'RStudio' --set-key 'Name[en_US]' --set-value 'RStudio' --set-key 'Name[zh_CN]' --set-value 'RStudio' \
+    --set-generic-name 'R Development' --set-key 'GenericName[en_US]' --set-value 'R Development' --set-key 'GenericName[zh_CN]' --set-value 'R语言开发' \
+    --set-comment 'R Programming IDE' --set-key 'Comment[en_US]' --set-value 'R Programming IDE' --set-key 'Comment[zh_CN]' --set-value 'R语言开发工具' \
+    --remove-key 'Categories' --add-category 'Development;' \
+/usr/share/applications/rstudio.desktop
 ##KDevelop
 [ -f /usr/share/applications/org.kde.kdevelop.desktop ] && sudo desktop-file-edit \
     --set-name 'KDevelop' --set-key 'Name[en_US]' --set-value 'KDevelop' --set-key 'Name[zh_CN]' --set-value 'KDevelop' \
@@ -95,6 +88,13 @@
     --set-comment 'Open Source SQLite Database Browser' --set-key 'Comment[en_US]' --set-value 'Open Source SQLite Database Browser' --set-key 'Comment[zh_CN]' --set-value '开源数据库管理工具' \
     --remove-key 'Categories' --add-category 'Development;' \
 /usr/share/applications/sqlitebrowser.desktop
+##JupyterLab
+[ -f /usr/share/applications/jupyterlab-desktop.desktop ] && sudo desktop-file-edit \
+    --set-name 'JupyterLab' --set-key 'Name[en_US]' --set-value 'JupyterLab' --set-key 'Name[zh_CN]' --set-value 'JupyterLab' \
+    --set-generic-name 'JupyterLab Desktop' --set-key 'GenericName[en_US]' --set-value 'JupyterLab Desktop' --set-key 'GenericName[zh_CN]' --set-value 'JupyterLab桌面' \
+    --set-comment 'JupyterLab Desktop Client' --set-key 'Comment[en_US]' --set-value 'JupyterLab Desktop Client' --set-key 'Comment[zh_CN]' --set-value 'JupyterLab桌面客户端' \
+    --remove-key 'Categories' --add-category 'Development;' \
+/usr/share/applications/jupyterlab-desktop.desktop
 
 
 #Internet (Network;)
