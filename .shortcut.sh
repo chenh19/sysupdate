@@ -98,16 +98,6 @@
 
 
 #Internet (Network;)
-##Onedriver
-[ -f /usr/share/applications/onedriver.desktop ] && sudo desktop-file-edit \
-    --set-name 'OneDrive' --set-key 'Name[en_US]' --set-value 'OneDrive' --set-key 'Name[zh_CN]' --set-value 'OneDrive' \
-    --set-generic-name 'Cloud Storage' --set-key 'GenericName[en_US]' --set-value 'Cloud Storage' --set-key 'GenericName[zh_CN]' --set-value '云储存空间' \
-    --set-comment 'OneDrive Client' --set-key 'Comment[en_US]' --set-value 'OneDrive Client' --set-key 'Comment[zh_CN]' --set-value 'OneDrive 客户端' \
-    --set-key 'Exec' --set-value '/usr/bin/onedriver-launcher' \
-    --set-icon '/opt/icon/onedrive.png' \
-    --set-key 'Type' --set-value 'Application' \
-    --remove-key 'Categories' --add-category 'Network;' \
-/usr/share/applications/onedriver.desktop
 ##4Kvideodownloader
 [ -f /usr/share/applications/4kvideodownloaderplus.desktop ] && sudo desktop-file-edit \
     --set-name 'YouTube' --set-key 'Name[en_US]' --set-value 'YouTube' --set-key 'Name[zh_CN]' --set-value '网络视频下载器' \
@@ -447,6 +437,16 @@
 
 
 #Utilities (Utility;)
+##Onedriver
+[ -f /usr/share/applications/onedriver.desktop ] && sudo desktop-file-edit \
+    --set-name 'OneDrive' --set-key 'Name[en_US]' --set-value 'OneDrive' --set-key 'Name[zh_CN]' --set-value 'OneDrive' \
+    --set-generic-name 'Cloud Storage' --set-key 'GenericName[en_US]' --set-value 'Cloud Storage' --set-key 'GenericName[zh_CN]' --set-value '云储存空间' \
+    --set-comment 'OneDrive Client' --set-key 'Comment[en_US]' --set-value 'OneDrive Client' --set-key 'Comment[zh_CN]' --set-value 'OneDrive 客户端' \
+    --set-key 'Exec' --set-value '/usr/bin/onedriver-launcher' \
+    --set-icon '/opt/icon/onedrive.png' \
+    --set-key 'Type' --set-value 'Application' \
+    --remove-key 'Categories' --add-category 'Utility;' \
+/usr/share/applications/onedriver.desktop
 ##WiFi Hotspot
 [ -f /usr/share/applications/wihotspot.desktop ] && sudo desktop-file-edit \
     --set-name 'WiFi Hotspot' --set-key 'Name[en_US]' --set-value 'WiFi Hotspot' --set-key 'Name[zh_CN]' --set-value '无线热点' \
