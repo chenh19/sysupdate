@@ -162,6 +162,14 @@
     --set-comment 'Google Chrome Web Browser' --set-key 'Comment[en_US]' --set-value 'Google Chrome Web Browser' --set-key 'Comment[zh_CN]' --set-value '谷歌浏览器' \
     --remove-key 'Categories' --add-category 'Network;' \
 /usr/share/applications/google-chrome.desktop
+##Thunderbird
+[ -f /usr/share/applications/thunderbird.desktop ] && sudo desktop-file-edit \
+    --set-name 'Thunderbird' --set-key 'Name[en_US]' --set-value 'Thunderbird' --set-key 'Name[zh_CN]' --set-value '邮箱' \
+    --set-generic-name 'Email Client' --set-key 'GenericName[en_US]' --set-value 'Email Client' --set-key 'GenericName[zh_CN]' --set-value '邮件客户端' \
+    --set-comment 'Read/Write Mail/News with Thunderbird' --set-key 'Comment[en_US]' --set-value 'Read/Write Mail/News with Thunderbird' --set-key 'Comment[zh_CN]' --set-value '阅读邮件或新闻' \
+    --set-key 'Exec' --set-value 'bash /opt/Thunderbird/thunderbird.sh' \
+    --remove-key 'Categories' --add-category 'Network;' \
+/usr/share/applications/thunderbird.desktop
 ##Evolution
 [ -f /usr/share/applications/org.gnome.Evolution.desktop ] && sudo desktop-file-edit \
     --set-name 'Evolution' --set-key 'Name[en_US]' --set-value 'Evolution' --set-key 'Name[zh_CN]' --set-value '邮箱' \
@@ -219,6 +227,7 @@
     --set-key 'X-KDE-Username' --set-value '' \
     --remove-key 'Categories' --add-category 'Network;' \
 /usr/share/applications/com.tencent.WeChat.desktop
+
 
 
 #Office (Office;)
