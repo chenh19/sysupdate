@@ -29,6 +29,13 @@
     --set-comment 'JupyterLab Desktop Client' --set-key 'Comment[en_US]' --set-value 'JupyterLab Desktop Client' --set-key 'Comment[zh_CN]' --set-value 'JupyterLab桌面客户端' \
     --remove-key 'Categories' --add-category 'Development;' \
 /usr/share/applications/jupyterlab-desktop.desktop
+##VirtualBox
+[ -f /usr/share/applications/virtualbox.desktop ] && sudo desktop-file-edit \
+    --set-name 'VirtualBox' --set-key 'Name[en_US]' --set-value 'VirtualBox' --set-key 'Name[zh_CN]' --set-value 'VirtualBox' \
+    --set-generic-name 'Virtualization Software' --set-key 'GenericName[en_US]' --set-value 'Virtualization Software' --set-key 'GenericName[zh_CN]' --set-value '虚拟机软件' \
+    --set-comment 'Run virtual systems' --set-key 'Comment[en_US]' --set-value 'Run virtual systems' --set-key 'Comment[zh_CN]' --set-value '运行虚拟机' \
+    --remove-key 'Categories' --add-category 'Development;' \
+/usr/share/applications/virtualbox.desktop
 
 
 #Science & Math (Science;)
@@ -600,13 +607,6 @@
     --set-comment 'POP/IMAP/SMTP/Caldav/Carddav/LDAP Exchange Gateway' --set-key 'Comment[en_US]' --set-value 'POP/IMAP/SMTP/Caldav/Carddav/LDAP Exchange Gateway' --set-key 'Comment[zh_CN]' --set-value 'POP/IMAP/SMTP/Caldav/Carddav/LDAP Exchange 网关' \
     --remove-key 'Categories' --add-category 'Utility;' \
 /usr/share/applications/davmail.desktop
-##VirtualBox
-[ -f /usr/share/applications/virtualbox.desktop ] && sudo desktop-file-edit \
-    --set-name 'VirtualBox' --set-key 'Name[en_US]' --set-value 'VirtualBox' --set-key 'Name[zh_CN]' --set-value 'VirtualBox' \
-    --set-generic-name 'Virtualization Software' --set-key 'GenericName[en_US]' --set-value 'Virtualization Software' --set-key 'GenericName[zh_CN]' --set-value '虚拟机软件' \
-    --set-comment 'Run virtual systems' --set-key 'Comment[en_US]' --set-value 'Run virtual systems' --set-key 'Comment[zh_CN]' --set-value '运行虚拟机' \
-    --remove-key 'Categories' --add-category 'Utility;' \
-/usr/share/applications/virtualbox.desktop
 
 
 #System (System;)
