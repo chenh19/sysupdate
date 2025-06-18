@@ -1,5 +1,5 @@
 # System update commands
-*Current version: v2.7.9*
+*Current version: v2.8.0*
 
 ## Introduction
 - This tool is intended for easy system and developing environment update.
