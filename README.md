@@ -1,5 +1,5 @@
 # System update commands
-*Current version: v2.8.1*
+*Current version: v2.9.0*
 
 ## Introduction
 - This tool is intended for easy system and developing environment update.
@@ -25,4 +25,9 @@ sysupdate
 - **R update:**
 ```
 rupdate
+```
+
+- **Python update:**
+```
+pyupdate
 ```
