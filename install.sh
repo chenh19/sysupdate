@@ -22,27 +22,18 @@ if ! dpkg -l | grep -q "^ii.*desktop-file-utils" ; then sudo apt-get install des
 # write update script
 wget -qO- https://raw.githubusercontent.com/chenh19/sysupdate/main/.head > ~/.update.sh
 
-# ask whether to include R update
+# R update
 if command -v R &> /dev/null; then
     wget -qO- https://raw.githubusercontent.com/chenh19/sysupdate/main/.update.R > ~/.update.R
     if ! grep -q "alias rupdate='sudo Rscript ~/.update.R'" ~/.bashrc ; then echo -e "alias rupdate='sudo Rscript ~/.update.R'" >> ~/.bashrc ; fi
 fi
 
-# ask whether to include Python update
-#echo ""
-#read -n1 -s -r -p "$(echo -e $TEXT_YELLOW'Would you like to include Python packages update by Conda? [y/n/c]'$TEXT_RESET)"$' \n' choice
-#case "$choice" in
-    #y|Y ) echo -e 'conda update --all -y && echo ""' >> ~/.update.sh;;
-    #* )   ;;
-#esac
-
-# ask whether to include kernel update
-#echo ""
-#read -n1 -s -r -p "$(echo -e $TEXT_YELLOW'Would you like to include Linux kernel update by UKUU? [y/n/c]'$TEXT_RESET)"$' \n' choice
-#case "$choice" in
-    #y|Y ) echo -e 'sudo ukuu --scripted --install-latest && echo ""' >> ~/.update.sh;;
-    #* )   ;;
-#esac
+# conda update
+[ -f ~/miniconda3/etc/profile.d/conda.sh ] && source ~/miniconda3/etc/profile.d/conda.sh
+if command -v conda &> /dev/null; then
+    echo -e 'source ~/miniconda3/etc/profile.d/conda.sh\nconda update --all -y && echo ""' > ~/.conda_update.sh
+    if ! grep -q "alias pyupdate='bash ~/.conda_update.sh'" ~/.bashrc ; then echo -e "alias pyupdate='bash ~/.conda_update.sh'" >> ~/.bashrc ; fi
+fi
 
 # finish
 wget -qO- https://raw.githubusercontent.com/chenh19/sysupdate/main/.tail >> ~/.update.sh
