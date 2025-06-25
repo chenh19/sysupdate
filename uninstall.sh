@@ -15,12 +15,15 @@ case "$choice" in
         # remove alias
         if grep -q "alias sysupdate='bash ~/.update.sh'" ~/.bashrc ; then sed -i '/alias sysupdate=/d' ~/.bashrc ; fi
         if grep -q "alias rupdate='sudo Rscript ~/.update.R'" ~/.bashrc ; then sed -i '/alias rupdate=/d' ~/.bashrc ; fi
+        if grep -q "alias pyupdate='bash ~/.conda_update.sh'" ~/.bashrc ; then sed -i '/alias pyupdate=/d' ~/.bashrc ; fi
         sleep 1
 
         # remove shell scripts
         [ -f ~/.update.R ] && rm ~/.update.R
         [ -f ~/.update.sh ] && rm ~/.update.sh
+        [ -f ~/.conda_update.sh ] && rm ~/.conda_update.sh
         [ -f ~/.shortcut.sh ] && rm ~/.shortcut.sh
+        
         sleep 1
 
         # notify end
