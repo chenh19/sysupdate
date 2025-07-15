@@ -31,7 +31,7 @@ fi
 # conda update
 [ -f ~/miniconda3/etc/profile.d/conda.sh ] && source ~/miniconda3/etc/profile.d/conda.sh
 if command -v conda &> /dev/null; then
-    echo -e '#!/bin/bash\nsource ~/miniconda3/etc/profile.d/conda.sh\nconda update --all -y' > ~/.conda_update.sh
+    echo -e '#!/bin/bash\nsource ~/miniconda3/etc/profile.d/conda.sh\nconda tos accept --override-channels --channel defaults >/dev/null 2>&1\nconda update --all -y 2>&1 | grep -vi "Terms of Service accepted"' > ~/.conda_update.sh
     if ! grep -q "alias pyupdate='bash ~/.conda_update.sh'" ~/.bashrc ; then echo -e "alias pyupdate='bash ~/.conda_update.sh'" >> ~/.bashrc ; fi
 fi
 
