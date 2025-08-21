@@ -333,6 +333,9 @@
     --set-name 'qView' --set-key 'Name[en_US]' --set-value 'qView' --set-key 'Name[zh_CN]' --set-value '图片浏览器' \
     --set-generic-name 'Image Viewer' --set-key 'GenericName[en_US]' --set-value 'Image Viewer' --set-key 'GenericName[zh_CN]' --set-value '图片浏览工具' \
     --set-comment 'Practical and Minimal Image Viewer' --set-key 'Comment[en_US]' --set-value 'Practical and Minimal Image Viewer' --set-key 'Comment[zh_CN]' --set-value '简易图像查看器' \
+    --set-key 'Exec' --set-value '/opt/qView/qview.AppImage' \
+    --set-icon '/opt/icon/qview.png' \
+    --set-key 'Type' --set-value 'Application' \
     --set-key 'StartupNotify' --set-value 'false' \
     --remove-key 'Categories' --add-category 'AudioVideo;' \
 /usr/share/applications/com.interversehq.qView.desktop
