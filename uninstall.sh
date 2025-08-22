@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# This script uninstalls sysupdate
 
 # set terminal font color
 TEXT_YELLOW="$(tput bold)$(tput setaf 3)"
