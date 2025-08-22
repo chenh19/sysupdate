@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 #This script edits start menu shortcuts
 
 #Development (Development;)
