@@ -110,6 +110,7 @@
     --set-name 'YouTube' --set-key 'Name[en_US]' --set-value 'YouTube' --set-key 'Name[zh_CN]' --set-value '网络视频下载器' \
     --set-generic-name '4K Video Downloader' --set-key 'GenericName[en_US]' --set-value '4K Video Downloader' --set-key 'GenericName[zh_CN]' --set-value '4k网络视频下载工具' \
     --set-comment 'Download Videos from YouTube and Bilibili' --set-key 'Comment[en_US]' --set-value 'Download Videos from YouTube and Bilibili' --set-key 'Comment[zh_CN]' --set-value '下载YouTueb和Bilibili高清视频' \
+    --set-icon '4kvideodownloaderplus' \
     --remove-key 'Categories' --add-category 'Network;' \
 /usr/share/applications/4kvideodownloaderplus.desktop
 ##BaiduYun
