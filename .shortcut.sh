@@ -203,7 +203,6 @@
     --set-name 'WeChat' --set-key 'Name[en_US]' --set-value 'WeChat' --set-key 'Name[zh_CN]' --set-value '微信' \
     --set-generic-name 'Instant Messaging' --set-key 'GenericName[en_US]' --set-value 'Instant Messaging' --set-key 'GenericName[zh_CN]' --set-value '个人即时通讯' \
     --set-comment 'WeChat Universal' --set-key 'Comment[en_US]' --set-value 'WeChat Universal' --set-key 'Comment[zh_CN]' --set-value '微信桌面版' \
-    --set-icon '/opt/icon/wechat.png' \
     --remove-key 'Categories' --add-category 'Network;' \
 /usr/share/applications/wechat.desktop
 ##WeChat Deepin (Wine)
@@ -221,7 +220,7 @@
     --set-generic-name 'Instant Messaging' --set-key 'GenericName[en_US]' --set-value 'Instant Messaging' --set-key 'GenericName[zh_CN]' --set-value '个人即时通讯' \
     --set-comment 'WeChat Universal' --set-key 'Comment[en_US]' --set-value 'WeChat Universal' --set-key 'Comment[zh_CN]' --set-value '微信统信版' \
     --set-key 'Exec' --set-value '/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=wechat --file-forwarding com.tencent.WeChat @@u %U @@' \
-    --set-icon '/opt/icon/wechat.png' \
+    --set-icon 'com.tencent.WeChat' \
     --set-key 'NoDisplay' --set-value 'false' \
     --set-key 'Path' --set-value '' \
     --set-key 'StartupNotify' --set-value 'true' \
