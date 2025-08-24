@@ -221,7 +221,7 @@
     --set-generic-name 'Instant Messaging' --set-key 'GenericName[en_US]' --set-value 'Instant Messaging' --set-key 'GenericName[zh_CN]' --set-value '个人即时通讯' \
     --set-comment 'WeChat Universal' --set-key 'Comment[en_US]' --set-value 'WeChat Universal' --set-key 'Comment[zh_CN]' --set-value '微信统信版' \
     --set-key 'Exec' --set-value '/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=wechat --file-forwarding com.tencent.WeChat @@u %U @@' \
-    --set-icon 'com.tencent.WeChat' \
+    --set-icon '/opt/icon/wechat.png' \
     --set-key 'NoDisplay' --set-value 'false' \
     --set-key 'Path' --set-value '' \
     --set-key 'StartupNotify' --set-value 'true' \
