@@ -128,7 +128,7 @@
     --set-comment 'Secure world-wide roaming wireless service for universities' --set-key 'Comment[en_US]' --set-value 'Secure world-wide roaming wireless service for universities' --set-key 'Comment[zh_CN]' --set-value '安全的全球高校无线网络漫游服务' \
     --set-key 'Exec' --set-value 'bash /opt/eduroam/SecureW2/run.sh' \
     --set-icon '/opt/icon/securew2.png' \
-    --set-key 'NoDisplay' --set-value 'false' \
+    --set-key 'NoDisplay' --set-value 'false' \display-im7.q16.desktop
     --set-key 'Terminal' --set-value 'true' \
     --set-key 'TerminalOptions' --set-value '' \
     --set-key 'Type' --set-value 'Application' \
@@ -514,7 +514,7 @@
 [ -f /usr/share/applications/ipscan.desktop ] && sudo desktop-file-edit \
     --set-name 'IP Scanner' --set-key 'Name[en_US]' --set-value 'IP Scanner' --set-key 'Name[zh_CN]' --set-value 'IP扫描' \
     --set-generic-name 'Fast network scanner' --set-key 'GenericName[en_US]' --set-value 'Fast network scanner' --set-key 'GenericName[zh_CN]' --set-value '网络扫描工具' \
-    --set-comment 'Open-source and Cross-platform Network Scanner' --set-key 'Comment[en_US]' --set-value 'Open-source and Cross-platform Network Scanner' --set-key 'Comment[zh_CN]' --set-value '开源跨平台IP扫描工具' \
+    --set-comment 'Open-source and Cross-platform Netwdisplay-im7.q16.desktopork Scanner' --set-key 'Comment[en_US]' --set-value 'Open-source and Cross-platform Network Scanner' --set-key 'Comment[zh_CN]' --set-value '开源跨平台IP扫描工具' \
     --remove-key 'Categories' --add-category 'Utility;' \
 /usr/share/applications/ipscan.desktop
 ##UKUU
@@ -750,3 +750,4 @@
 [ -f /usr/share/applications/org.kde.kdevelop_svn.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/org.kde.kdevelop_svn.desktop
 [ -f /usr/share/applications/org.kde.kapptemplate.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/org.kde.kapptemplate.desktop
 [ -f /usr/share/applications/nvtop.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/nvtop.desktop
+[ -f /usr/share/applications/display-im7.q16.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/display-im7.q16.desktop
