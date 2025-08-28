@@ -38,6 +38,7 @@ fi
 # finish
 wget -qO- https://raw.githubusercontent.com/chenh19/sysupdate/main/.tail >> ~/.update.sh
 wget -qO- https://raw.githubusercontent.com/chenh19/sysupdate/main/.shortcut.sh > ~/.shortcut.sh
+wget -qO- https://raw.githubusercontent.com/chenh19/sysupdate/refs/heads/main/.size-restore.sh > ~/.size-restore.sh
 
 # notify end
 echo -e " \n${TEXT_GREEN}System update commands configured! Please reopen terminal before using the commands. ${TEXT_RESET} \n" && sleep 1
