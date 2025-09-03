@@ -46,7 +46,7 @@ done
 MATRIX=(
   "800,600,arkstaterc"
   "800,600,konsolestaterc"
-  "875,675,kwritestaterc"
+  "835,675,kwritestaterc"
 )
 for entry in "${MATRIX[@]}"; do
     IFS=, read -r WIDTH HEIGHT FILE <<< "$entry"
