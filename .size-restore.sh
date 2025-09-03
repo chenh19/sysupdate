@@ -37,8 +37,6 @@ for FILE in "${MATRIX[@]}"; do
     fi
 done
 
-unset DIR
-
 ######################################################################################
 
 # config files in ~/.local/state/
@@ -105,4 +103,3 @@ for FILE in "${MATRIX[@]}"; do
     fi
 done
 
-unset DIR
