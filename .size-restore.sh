@@ -20,7 +20,8 @@
 
 ######################################################################################
 
-DIR="$HOME/.config/"
+# config files in ~/.config/
+DIR="$HOME/.config"
 
 # maxmized windows [MainWindow]
 MATRIX=(
@@ -40,6 +41,7 @@ unset DIR
 
 ######################################################################################
 
+# config files in ~/.local/state/
 DIR="$HOME/.local/state"
 
 # window sizes [State]
