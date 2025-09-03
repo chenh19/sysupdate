@@ -44,7 +44,7 @@ done
 
 # window sizes [MainWindow]
 MATRIX=(
-  "817,600,arkstaterc"
+  "800,600,arkstaterc"
   "803,536,konsolestaterc"
   "832,618,kwritestaterc"
 )
