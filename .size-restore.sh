@@ -20,6 +20,26 @@
 
 ######################################################################################
 
+DIR="$HOME/.config/"
+
+# maxmized windows [MainWindow]
+MATRIX=(
+  "kritarc"
+)
+for FILE in "${MATRIX[@]}"; do
+    TARGET="$DIR/$FILE"
+    if [[ -f "$TARGET" ]]; then
+        mapfile -t PREFIXES < <(awk 'BEGIN{IGNORECASE=1} /^\s*\[MainWindow\]/ {f=1; next} /^\[/ {f=0} f && /^\s*([0-9]+x[0-9]+ screen|[0-9]+ screens):/ {split($0,a,":"); gsub(/^[ \t]+|[ \t]+$/,"",a[1]); print a[1]}' "$TARGET" | sort -u)
+        for prefix in "${PREFIXES[@]}"; do
+            kwriteconfig6 --file "$TARGET" --group "MainWindow" --key "${prefix}: Window-Maximized" --type bool true
+        done
+    fi
+done
+
+unset DIR
+
+######################################################################################
+
 DIR="$HOME/.local/state"
 
 # window sizes [State]
@@ -68,12 +88,13 @@ done
 # maxmized windows [MainWindow]
 MATRIX=(
   "discoverstaterc"
+  "kdenlivestaterc"
+  "kdevelopstaterc"
   "okularstaterc"
   "systemsettingsstaterc"
 )
 for FILE in "${MATRIX[@]}"; do
     TARGET="$DIR/$FILE"
-    #FILE="systemsettingsstaterc"
     if [[ -f "$TARGET" ]]; then
         mapfile -t PREFIXES < <(awk 'BEGIN{IGNORECASE=1} /^\s*\[MainWindow\]/ {f=1; next} /^\[/ {f=0} f && /^\s*([0-9]+x[0-9]+ screen|[0-9]+ screens):/ {split($0,a,":"); gsub(/^[ \t]+|[ \t]+$/,"",a[1]); print a[1]}' "$TARGET" | sort -u)
         for prefix in "${PREFIXES[@]}"; do
@@ -81,3 +102,5 @@ for FILE in "${MATRIX[@]}"; do
         done
     fi
 done
+
+unset DIR
