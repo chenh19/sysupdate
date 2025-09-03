@@ -10,11 +10,17 @@
 #arkstaterc
 #konsolestaterc
 #kwritestaterc
+#katestaterc
 
 ######################################################################################
 
 # set maxmized
+
+# krita
+
 #discoverstaterc
+#kdenlivestaterc
+#kdevelopstaterc
 #okularstaterc
 #systemsettingsstaterc
 
@@ -102,4 +108,3 @@ for FILE in "${MATRIX[@]}"; do
         done
     fi
 done
-
