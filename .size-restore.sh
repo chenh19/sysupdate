@@ -702,11 +702,11 @@ for entry in "${MATRIX[@]}"; do
     if [[ -f "$TARGET" ]]; then
         mapfile -t WIDTH_KEYS < <(awk '/\[State\]/ {flag=1; next} /^\[/ {flag=0} flag && /screen: Width|screens: Width/ {split($0,a,"="); print a[1]}' "$TARGET")
         for key in "${WIDTH_KEYS[@]}"; do
-            kwriteconfig5 --file "$TARGET" --group "State" --key "$key" --type string "$WIDTH"
+            kwriteconfig6 --file "$TARGET" --group "State" --key "$key" --type string "$WIDTH"
         done
         mapfile -t HEIGHT_KEYS < <(awk '/\[State\]/ {flag=1; next} /^\[/ {flag=0} flag && /screen: Height|screens: Height/ {split($0,a,"="); print a[1]}' "$TARGET")
         for key in "${HEIGHT_KEYS[@]}"; do
-            kwriteconfig5 --file "$TARGET" --group "State" --key "$key" --type string "$HEIGHT"
+            kwriteconfig6 --file "$TARGET" --group "State" --key "$key" --type string "$HEIGHT"
         done
         sed -i '/: Window-Maximized/d' "$TARGET"
     fi
@@ -725,11 +725,11 @@ for entry in "${MATRIX[@]}"; do
     if [[ -f "$TARGET" ]]; then
         mapfile -t WIDTH_KEYS < <(awk '/\[MainWindow\]/ {flag=1; next} /^\[/ {flag=0} flag && /screen: Width|screens: Width/ {split($0,a,"="); print a[1]}' "$TARGET")
         for key in "${WIDTH_KEYS[@]}"; do
-            kwriteconfig5 --file "$TARGET" --group "MainWindow" --key "$key" --type string "$WIDTH"
+            kwriteconfig6 --file "$TARGET" --group "MainWindow" --key "$key" --type string "$WIDTH"
         done
         mapfile -t HEIGHT_KEYS < <(awk '/\[MainWindow\]/ {flag=1; next} /^\[/ {flag=0} flag && /screen: Height|screens: Height/ {split($0,a,"="); print a[1]}' "$TARGET")
         for key in "${HEIGHT_KEYS[@]}"; do
-            kwriteconfig5 --file "$TARGET" --group "MainWindow" --key "$key" --type string "$HEIGHT"
+            kwriteconfig6 --file "$TARGET" --group "MainWindow" --key "$key" --type string "$HEIGHT"
         done
         sed -i '/: Window-Maximized/d' "$TARGET"
     fi
