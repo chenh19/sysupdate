@@ -531,6 +531,13 @@
     --set-generic-name 'POP/IMAP/SMTP/Caldav/Carddav/LDAP Exchange Gateway' --set-key 'GenericName[en_US]' --set-value 'POP/IMAP/SMTP/Caldav/Carddav/LDAP Exchange Gateway' --set-key 'GenericName[zh_CN]' --set-value 'POP/IMAP/SMTP/Caldav/Carddav/LDAP Exchange 网关' \
     --remove-key 'Categories' --add-category 'Utility;' \
 /usr/share/applications/davmail.desktop
+##Sweeper
+[ -f /usr/share/applications/org.kde.sweeper.desktop ] && sudo desktop-file-edit \
+    --set-name 'Sweeper' --set-key 'Name[en_US]' --set-value 'Sweeper' --set-key 'Name[zh_CN]' --set-value '系统清理' \
+    --set-comment 'System Cleaner' --set-key 'Comment[en_US]' --set-value 'System Cleaner' --set-key 'Comment[zh_CN]' --set-value '系统清理工具' \
+    --set-generic-name 'Removing Unused Temporary Files' --set-key 'GenericName[en_US]' --set-value 'Removing Unused Temporary Files' --set-key 'GenericName[zh_CN]' --set-value '清理系统缓存文件' \
+    --remove-key 'Categories' --add-category 'Utility;' \
+/usr/share/applications/org.kde.sweeper.desktop
 
 
 #System (System;)
