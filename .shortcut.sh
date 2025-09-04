@@ -122,19 +122,6 @@
     --set-key 'Exec' --set-value '/opt/baidunetdisk/baidunetdisk --no-sandbox %U' \
     --remove-key 'Categories' --add-category 'Network;' \
 /usr/share/applications/baidunetdisk.desktop
-##SecureW2
-[ -f /usr/share/applications/securew2.desktop ] && sudo desktop-file-edit \
-    --set-name 'University WiFi' --set-key 'Name[en_US]' --set-value 'University WiFi' --set-key 'Name[zh_CN]' --set-value '校园网WiFi' \
-    --set-comment 'SecureW2 Eduroam' --set-key 'Comment[en_US]' --set-value 'SecureW2 Eduroam' --set-key 'Comment[zh_CN]' --set-value 'Eduroam高校网络' \
-    --set-generic-name 'Secure world-wide roaming wireless service for universities' --set-key 'GenericName[en_US]' --set-value 'Secure world-wide roaming wireless service for universities' --set-key 'GenericName[zh_CN]' --set-value '安全的全球高校无线网络漫游服务' \
-    --set-key 'Exec' --set-value 'bash /opt/eduroam/SecureW2/run.sh' \
-    --set-icon '/opt/icon/securew2.png' \
-    --set-key 'NoDisplay' --set-value 'false' \display-im7.q16.desktop
-    --set-key 'Terminal' --set-value 'true' \
-    --set-key 'TerminalOptions' --set-value '' \
-    --set-key 'Type' --set-value 'Application' \
-    --remove-key 'Categories' --add-category 'Network;' \
-/usr/share/applications/securew2.desktop
 ##Cisco Anyconnect
 [ -f /usr/share/applications/com.cisco.anyconnect.gui.desktop ] && sudo desktop-file-edit \
     --set-name 'University VPN' --set-key 'Name[en_US]' --set-value 'University VPN' --set-key 'Name[zh_CN]' --set-value '校园网VPN' \
