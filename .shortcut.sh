@@ -70,7 +70,6 @@
     --set-name 'PyMOL' --set-key 'Name[en_US]' --set-value 'PyMOL' --set-key 'Name[zh_CN]' --set-value 'PyMOL' \
     --set-comment 'Molecular Modeller' --set-key 'Comment[en_US]' --set-value 'Molecular Modeller' --set-key 'Comment[zh_CN]' --set-value '三维分子模型' \
     --set-generic-name 'Model Molecular Structures and Produce High-quality Images' --set-key 'GenericName[en_US]' --set-value 'Model Molecular Structures and Produce High-quality Images' --set-key 'GenericName[zh_CN]' --set-value '分子三维结构分析工具' \
-    --set-icon '/opt/icon/pymol.png' \
     --remove-key 'Categories' --add-category 'Science;' \
 /usr/share/applications/pymol.desktop
 ##Snapgene-Viewer
