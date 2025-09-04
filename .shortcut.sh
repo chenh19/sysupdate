@@ -13,6 +13,7 @@
 [ -f /usr/share/applications/org.kde.kdevelop.desktop ] && sudo desktop-file-edit \
     --set-name 'KDevelop' --set-key 'Name[en_US]' --set-value 'KDevelop' --set-key 'Name[zh_CN]' --set-value 'KDevelop' \
     --set-comment 'Integrated Development Environment' --set-key 'Comment[en_US]' --set-value 'Integrated Development Environment' --set-key 'Comment[zh_CN]' --set-value '集成开发环境' \
+    --set-generic-name 'Free and Open-Source IDE' --set-key 'GenericName[en_US]' --set-value 'Free and Open-Source IDE' --set-key 'GenericName[zh_CN]' --set-value '开源集成开发环境' \
     --remove-key 'Categories' --add-category 'Development;' \
 /usr/share/applications/org.kde.kdevelop.desktop
 ##DB Browser for SQLite
@@ -532,8 +533,8 @@
 ##Solaar
 [ -f /usr/share/applications/solaar.desktop ] && sudo desktop-file-edit \
     --set-name 'Solaar' --set-key 'Name[en_US]' --set-value 'Solaar' --set-key 'Name[zh_CN]' --set-value '罗技外设' \
-    --set-comment 'Logitech Peripherals Manager' --set-key 'Comment[en_US]' --set-value 'Logitech Peripherals Manager' --set-key 'Comment[zh_CN]' --set-value '罗技外设管理工具' \
-    --set-generic-name 'Logitech Peripherals Manager' --set-key 'GenericName[en_US]' --set-value 'Logitech Peripherals Manager' --set-key 'GenericName[zh_CN]' --set-value '罗技外设管理工具' \
+    --set-comment 'Logitech Peripherals Manager' --set-key 'Comment[en_US]' --set-value 'Logitech Peripherals Manager' --set-key 'Comment[zh_CN]' --set-value '罗技外设管理' \
+    --set-generic-name 'Logitech Peripherals Managing Tool' --set-key 'GenericName[en_US]' --set-value 'Logitech Peripherals Managing Tool' --set-key 'GenericName[zh_CN]' --set-value '罗技外设管理工具' \
     --remove-key 'Categories' --add-category 'Utility;' \
 /usr/share/applications/solaar.desktop
 ##DavMail
@@ -609,8 +610,8 @@
 ##Help
 [ -f /usr/share/applications/org.kde.khelpcenter.desktop ] && sudo desktop-file-edit \
     --set-name 'Help' --set-key 'Name[en_US]' --set-value 'Help' --set-key 'Name[zh_CN]' --set-value '帮助' \
-    --set-comment '' --set-key 'Comment[en_US]' --set-value '' --set-key 'Comment[zh_CN]' --set-value '' \
-    --set-generic-name '' --set-key 'GenericName[en_US]' --set-value '' --set-key 'GenericName[zh_CN]' --set-value '' \
+    --set-comment 'Help & Support' --set-key 'Comment[en_US]' --set-value 'Help & Support' --set-key 'Comment[zh_CN]' --set-value '帮助与支持' \
+    --set-generic-name 'Search and Read KDE Documentation' --set-key 'GenericName[en_US]' --set-value 'Search and Read KDE Documentation' --set-key 'GenericName[zh_CN]' --set-value '搜索和阅读KDE帮助文件' \
 /usr/share/applications/org.kde.khelpcenter.desktop
 
 
