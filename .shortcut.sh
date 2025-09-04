@@ -199,42 +199,13 @@
     --set-generic-name 'Zoom Video Conference' --set-key 'Comment[en_US]' --set-value 'Zoom Video Conference' --set-key 'Comment[zh_CN]' --set-value 'Zoom视频会议' \
     --remove-key 'Categories' --add-category 'Network;' \
 /usr/share/applications/Zoom.desktop
-##WeChat Universal (deb)
+##WeChat
 [ -f /usr/share/applications/wechat.desktop ] && sudo desktop-file-edit \
     --set-name 'WeChat' --set-key 'Name[en_US]' --set-value 'WeChat' --set-key 'Name[zh_CN]' --set-value '微信' \
     --set-comment 'Instant Messaging' --set-key 'GenericName[en_US]' --set-value 'Instant Messaging' --set-key 'GenericName[zh_CN]' --set-value '个人即时通讯' \
     --set-generic-name 'WeChat Universal' --set-key 'Comment[en_US]' --set-value 'WeChat Universal' --set-key 'Comment[zh_CN]' --set-value '微信桌面版' \
     --remove-key 'Categories' --add-category 'Network;' \
 /usr/share/applications/wechat.desktop
-##WeChat Deepin (Wine)
-[ -f /usr/share/applications/com.qq.weixin.deepin.desktop ] && sudo desktop-file-edit \
-    --set-name 'WeChat' --set-key 'Name[en_US]' --set-value 'WeChat' --set-key 'Name[zh_CN]' --set-value '微信' \
-    --set-comment 'Instant Messaging' --set-key 'GenericName[en_US]' --set-value 'Instant Messaging' --set-key 'GenericName[zh_CN]' --set-value '个人即时通讯' \
-    --set-generic-name 'Deepin Wine WeChat Client' --set-key 'Comment[en_US]' --set-value 'Deepin Wine WeChat Client' --set-key 'Comment[zh_CN]' --set-value '微信深度版' \
-    --set-icon '/opt/icon/wechat.png' \
-    --remove-key 'Categories' --add-category 'Network;' \
-/usr/share/applications/com.qq.weixin.deepin.desktop
-##Wechat Universal (flatpak)
-[ -f /var/lib/flatpak/app/com.tencent.WeChat/current/active/export/share/applications/com.tencent.WeChat.desktop ] && sudo mv -f /var/lib/flatpak/app/com.tencent.WeChat/current/active/export/share/applications/com.tencent.WeChat.desktop /usr/share/applications/
-[ -f /usr/share/applications/com.tencent.WeChat.desktop ] && sudo desktop-file-edit \
-    --set-name 'WeChat' --set-key 'Name[en_US]' --set-value 'WeChat' --set-key 'Name[zh_CN]' --set-value '微信' \
-    --set-comment 'Instant Messaging' --set-key 'GenericName[en_US]' --set-value 'Instant Messaging' --set-key 'GenericName[zh_CN]' --set-value '个人即时通讯' \
-    --set-generic-name 'WeChat Universal' --set-key 'Comment[en_US]' --set-value 'WeChat Universal' --set-key 'Comment[zh_CN]' --set-value '微信统信版' \
-    --set-key 'Exec' --set-value '/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=wechat --file-forwarding com.tencent.WeChat @@u %U @@' \
-    --set-icon 'com.tencent.WeChat' \
-    --set-key 'NoDisplay' --set-value 'false' \
-    --set-key 'Path' --set-value '' \
-    --set-key 'StartupNotify' --set-value 'true' \
-    --set-key 'StartupWMClass' --set-value 'WeChat' \
-    --set-key 'Terminal' --set-value 'false' \
-    --set-key 'TerminalOptions' --set-value '' \
-    --set-key 'Type' --set-value 'Application' \
-    --set-key 'X-Flatpak' --set-value 'com.tencent.WeChat' \
-    --set-key 'X-KDE-FormFactor' --set-value 'desktop;tablet;handset;' \
-    --set-key 'X-KDE-SubstituteUID' --set-value 'false' \
-    --set-key 'X-KDE-Username' --set-value '' \
-    --remove-key 'Categories' --add-category 'Network;' \
-/usr/share/applications/com.tencent.WeChat.desktop
 
 
 #Office (Office;)
@@ -558,46 +529,6 @@
     --set-generic-name 'Manage disks, partitions and file systems' --set-key 'Comment[en_US]' --set-value 'Manage disks, partitions and file systems' --set-key 'Comment[zh_CN]' --set-value '管理磁盘分区与文件系统' \
     --remove-key 'Categories' --add-category 'Utility;' \
 /usr/share/applications/org.kde.partitionmanager.desktop
-## clock (flatpak)
-[ -f /var/lib/flatpak/app/org.kde.kclock/current/active/export/share/applications/org.kde.kclock.desktop ] && sudo mv -f /var/lib/flatpak/app/org.kde.kclock/current/active/export/share/applications/org.kde.kclock.desktop /usr/share/applications/
-[ -f /usr/share/applications/org.kde.kclock.desktop ] && sudo desktop-file-edit \
-    --set-name 'Clock' --set-key 'Name[en_US]' --set-value 'Clock' --set-key 'Name[zh_CN]' --set-value '时钟' \
-    --set-comment 'Clock Application' --set-key 'GenericName[en_US]' --set-value 'Clock Application' --set-key 'GenericName[zh_CN]' --set-value '时钟应用' \
-    --set-generic-name 'Clock Application' --set-key 'Comment[en_US]' --set-value 'Clock Application' --set-key 'Comment[zh_CN]' --set-value '时钟应用' \
-    --set-key 'Exec' --set-value '/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=kclock org.kde.kclock' \
-    --set-icon 'org.kde.kclock' \
-    --set-key 'NoDisplay' --set-value 'false' \
-    --set-key 'Path' --set-value '' \
-    --set-key 'StartupNotify' --set-value 'true' \
-    --set-key 'Terminal' --set-value 'false' \
-    --set-key 'TerminalOptions' --set-value '' \
-    --set-key 'Type' --set-value 'Application' \
-    --set-key 'X-Flatpak' --set-value 'org.kde.kclock' \
-    --set-key 'X-KDE-FormFactor' --set-value 'desktop;tablet;handset;' \
-    --set-key 'X-KDE-SubstituteUID' --set-value 'false' \
-    --set-key 'X-KDE-Username' --set-value '' \
-    --remove-key 'Categories' --add-category 'Utility;' \
-/usr/share/applications/org.kde.kclock.desktop
-## weather (flatpak)
-[ -f /var/lib/flatpak/app/org.kde.kweather/current/active/export/share/applications/org.kde.kweather.desktop ] && sudo mv -f /var/lib/flatpak/app/org.kde.kweather/current/active/export/share/applications/org.kde.kweather.desktop /usr/share/applications/
-[ -f /usr/share/applications/org.kde.kweather.desktop ] && sudo desktop-file-edit \
-    --set-name 'Weather' --set-key 'Name[en_US]' --set-value 'Weather' --set-key 'Name[zh_CN]' --set-value '天气' \
-    --set-comment 'Weather Forecast' --set-key 'GenericName[en_US]' --set-value 'Weather Forecast' --set-key 'GenericName[zh_CN]' --set-value '天气预报' \
-    --set-generic-name 'Weather Forecast' --set-key 'Comment[en_US]' --set-value 'Weather Forecast' --set-key 'Comment[zh_CN]' --set-value '天气预报' \
-    --set-key 'Exec' --set-value '/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=kweather org.kde.kweather' \
-    --set-icon 'org.kde.kweather' \
-    --set-key 'NoDisplay' --set-value 'false' \
-    --set-key 'Path' --set-value '' \
-    --set-key 'StartupNotify' --set-value 'true' \
-    --set-key 'Terminal' --set-value 'false' \
-    --set-key 'TerminalOptions' --set-value '' \
-    --set-key 'Type' --set-value 'Application' \
-    --set-key 'X-Flatpak' --set-value 'org.kde.kweather' \
-    --set-key 'X-KDE-FormFactor' --set-value 'desktop;tablet;handset;' \
-    --set-key 'X-KDE-SubstituteUID' --set-value 'false' \
-    --set-key 'X-KDE-Username' --set-value '' \
-    --remove-key 'Categories' --add-category 'Utility;' \
-/usr/share/applications/org.kde.kweather.desktop
 ##Solaar
 [ -f /usr/share/applications/solaar.desktop ] && sudo desktop-file-edit \
     --set-name 'Solaar' --set-key 'Name[en_US]' --set-value 'Solaar' --set-key 'Name[zh_CN]' --set-value '罗技外设' \
@@ -636,13 +567,6 @@
     --set-generic-name 'System Resources' --set-key 'Comment[en_US]' --set-value 'System Resources' --set-key 'Comment[zh_CN]' --set-value '系统资源管理工具' \
     --remove-key 'Categories' --add-category 'System;' \
 /usr/share/applications/org.kde.plasma-systemmonitor.desktop
-##Laptop-Model-Tools
-[ -f /usr/share/applications/laptop-mode-tools.desktop ] && sudo desktop-file-edit \
-    --set-name 'Laptop Model Tools' --set-key 'Name[en_US]' --set-value 'Laptop Model Tools' --set-key 'Name[zh_CN]' --set-value '笔记本电源工具' \
-    --set-comment 'Power Saving Configuration' --set-key 'GenericName[en_US]' --set-value 'Power Saving Configuration' --set-key 'GenericName[zh_CN]' --set-value '省电设置' \
-    --set-generic-name 'Power Saving Configuration Tool' --set-key 'Comment[en_US]' --set-value 'Power Saving Configuration Tool' --set-key 'Comment[zh_CN]' --set-value '省电设置工具' \
-    --remove-key 'Categories' --add-category 'System;' \
-/usr/share/applications/laptop-mode-tools.desktop
 ##Dolphin
 [ -f /usr/share/applications/org.kde.dolphin.desktop ] && sudo desktop-file-edit \
     --set-name 'Dolphin' --set-key 'Name[en_US]' --set-value 'Dolphin' --set-key 'Name[zh_CN]' --set-value '文件' \
