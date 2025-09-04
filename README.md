@@ -2,8 +2,7 @@
 *Current version: v3.0.0*
 
 ## Introduction
-- This tool is intended for easy system and developing environment update.
-- You may choose whether to include specific updates.
+- This tool streamlines system updates for Debian and derivative systems.
 
 ## How to setup
 - **Install:** connect to internet and execute the below command in terminal
