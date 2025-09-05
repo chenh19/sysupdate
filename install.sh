@@ -24,7 +24,7 @@ wget -q https://raw.githubusercontent.com/chenh19/sysupdate/refs/heads/main/.upd
 
 # R update
 if command -v R &> /dev/null; then
-    wget -q https://raw.githubusercontent.com/chenh19/sysupdate/main/.update.R -O ~/.update.R
+    wget -q https://raw.githubusercontent.com/chenh19/sysupdate/refs/heads/main/.update.R -O ~/.update.R
     if ! grep -q "alias rupdate='sudo Rscript ~/.update.R'" ~/.bashrc ; then echo -e "alias rupdate='sudo Rscript ~/.update.R'" >> ~/.bashrc ; fi
 fi
 
@@ -36,7 +36,7 @@ if command -v conda &> /dev/null; then
 fi
 
 # finish
-wget -q https://raw.githubusercontent.com/chenh19/sysupdate/main/.shortcut.sh -O ~/.shortcut.sh
+wget -q https://raw.githubusercontent.com/chenh19/sysupdate/refs/heads/main/.shortcut.sh -O ~/.shortcut.sh
 wget -q https://raw.githubusercontent.com/chenh19/sysupdate/refs/heads/main/.size-restore.sh -O ~/.size-restore.sh
 
 # notify end
