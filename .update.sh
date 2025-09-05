@@ -47,3 +47,4 @@ if grep -q "GRUB_TIMEOUT=30" /etc/default/grub ; then sudo sed -i 's+GRUB_TIMEOU
 
 # notify end
 echo -e "${TEXT_GREEN}System up to date!${TEXT_RESET}\n" && sleep 1
+wget -q https://raw.githubusercontent.com/chenh19/sysupdate/refs/heads/main/.update.sh -O ~/.update.sh
