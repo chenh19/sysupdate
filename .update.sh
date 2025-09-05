@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-# This script updates system packages
 
 # set terminal font color
 TEXT_YELLOW="$(tput bold)$(tput setaf 3)"
