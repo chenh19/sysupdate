@@ -15,7 +15,7 @@ echo -e "${TEXT_YELLOW}Configuring system update command...${TEXT_RESET}\n" && s
 if ! grep -q "alias sysupdate='bash ~/.update.sh'" ~/.bashrc ; then echo -e "alias sysupdate='bash ~/.update.sh'" >> ~/.bashrc ; fi
 
 # install necessary deb packages
-sudo apt update -qq
+sudo apt update -qq >/dev/null 2>&1
 if ! dpkg -l | grep -q "^ii.*wget" ; then sudo apt install wget -y && sleep 1 ; fi
 if ! dpkg -l | grep -q "^ii.*desktop-file-utils" ; then sudo apt install desktop-file-utils -y && sleep 1 ; fi
 
