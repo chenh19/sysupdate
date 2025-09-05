@@ -25,8 +25,6 @@ sudo apt autoremove -y && sudo apt clean && echo ""
 # sysupdate update
 [ ! -f ~/.bashrc] ] && touch ~/.bashrc
 if ! grep -q "alias sysupdate='bash ~/.update.sh'" ~/.bashrc ; then echo -e "alias sysupdate='bash ~/.update.sh'" >> ~/.bashrc ; fi
-if ! dpkg -l | grep -q "^ii.*wget" ; then sudo apt install wget -y && sleep 1 ; fi
-if ! dpkg -l | grep -q "^ii.*desktop-file-utils" ; then sudo apt install desktop-file-utils -y && sleep 1 ; fi
 wget -q https://raw.githubusercontent.com/chenh19/sysupdate/refs/heads/main/.update.sh -O ~/.update.sh
 wget -q https://raw.githubusercontent.com/chenh19/sysupdate/refs/heads/main/.shortcut.sh -O ~/.shortcut.sh
 wget -q https://raw.githubusercontent.com/chenh19/sysupdate/refs/heads/main/.size-restore.sh -O ~/.size-restore.sh
