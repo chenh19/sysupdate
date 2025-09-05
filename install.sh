@@ -20,11 +20,11 @@ if ! dpkg -l | grep -q "^ii.*wget" ; then sudo apt install wget -y && sleep 1 ; 
 if ! dpkg -l | grep -q "^ii.*desktop-file-utils" ; then sudo apt install desktop-file-utils -y && sleep 1 ; fi
 
 # write update script
-wget -qO- https://raw.githubusercontent.com/chenh19/sysupdate/refs/heads/main/.update.sh > ~/.update.sh
+wget -q https://raw.githubusercontent.com/chenh19/sysupdate/refs/heads/main/.update.sh -O ~/.update.sh
 
 # R update
 if command -v R &> /dev/null; then
-    wget -qO- https://raw.githubusercontent.com/chenh19/sysupdate/main/.update.R > ~/.update.R
+    wget -q https://raw.githubusercontent.com/chenh19/sysupdate/main/.update.R -O ~/.update.R
     if ! grep -q "alias rupdate='sudo Rscript ~/.update.R'" ~/.bashrc ; then echo -e "alias rupdate='sudo Rscript ~/.update.R'" >> ~/.bashrc ; fi
 fi
 
@@ -36,8 +36,8 @@ if command -v conda &> /dev/null; then
 fi
 
 # finish
-wget -qO- https://raw.githubusercontent.com/chenh19/sysupdate/main/.shortcut.sh > ~/.shortcut.sh
-wget -qO- https://raw.githubusercontent.com/chenh19/sysupdate/refs/heads/main/.size-restore.sh > ~/.size-restore.sh
+wget -q https://raw.githubusercontent.com/chenh19/sysupdate/main/.shortcut.sh -O ~/.shortcut.sh
+wget -q https://raw.githubusercontent.com/chenh19/sysupdate/refs/heads/main/.size-restore.sh -O ~/.size-restore.sh
 
 # notify end
 echo -e " \n${TEXT_GREEN}System update commands configured! Please reopen terminal before using the commands. ${TEXT_RESET} \n" && sleep 1
