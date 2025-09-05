@@ -24,6 +24,7 @@ case "$choice" in
         [ -f ~/.update.sh ] && rm ~/.update.sh
         [ -f ~/.conda_update.sh ] && rm ~/.conda_update.sh
         [ -f ~/.shortcut.sh ] && rm ~/.shortcut.sh
+        [ -f ~/.size-restore.sh ] && rm ~/.size-restore.sh
         
         sleep 1
 
