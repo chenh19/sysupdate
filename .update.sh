@@ -9,7 +9,7 @@ until [[ $? -eq 0 ]] ; do
     echo ""
     wget -q --spider http://google.com
 done
-echo -e "${TEXT_YELLOW}Updating system...${TEXT_RESET} \n" && sleep 1
+echo -e "${TEXT_YELLOW}Updating system...${TEXT_RESET}\n" && sleep 1
 sudo apt update && sudo apt full-upgrade -y
 #sudo apt -t $(lsb_release -cs)-backports --with-new-pkgs upgrade -y
 sudo apt autoremove -y && sudo apt clean && echo ""
@@ -26,8 +26,8 @@ if [ -f /var/run/reboot-required ]; then
   read -n1 -s -r -p "$(echo -e $TEXT_YELLOW'System reboot required, would you like to reboot the system now? [y/n]'$TEXT_RESET)"$'\n' choice
   case "$choice" in
     y|Y ) sudo echo ""
-          echo -e "${TEXT_YELLOW}Rebooting in 5 seconds...${TEXT_RESET} \n" && sleep 5
+          echo -e "${TEXT_YELLOW}Rebooting in 5 seconds...${TEXT_RESET}\n" && sleep 5
           systemctl reboot;;
-      * ) echo -e " \n${TEXT_YELLOW}Please reboot the system manually later.${TEXT_RESET} \n" && sleep 1;;
+      * ) echo -e "\n${TEXT_YELLOW}Please reboot the system manually later.${TEXT_RESET}\n" && sleep 1;;
   esac
 fi
