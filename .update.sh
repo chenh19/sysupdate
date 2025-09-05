@@ -23,7 +23,7 @@ if grep -q "GRUB_TIMEOUT=30" /etc/default/grub ; then sudo sed -i 's+GRUB_TIMEOU
 [ -f ~/.size-restore.sh ] && bash ~/.size-restore.sh >/dev/null 2>&1
 echo -e "${TEXT_GREEN}System up to date!${TEXT_RESET}\n" && sleep 1
 if [ -f /var/run/reboot-required ]; then
-  read -n1 -s -r -p "$(echo -e $TEXT_YELLOW'System reboot required, would you like to reboot the system now? [y/n]'$TEXT_RESET)"$' \n' choice
+  read -n1 -s -r -p "$(echo -e $TEXT_YELLOW'System reboot required, would you like to reboot the system now? [y/n]'$TEXT_RESET)"$'\n' choice
   case "$choice" in
     y|Y ) sudo echo ""
           echo -e "${TEXT_YELLOW}Rebooting in 5 seconds...${TEXT_RESET} \n" && sleep 5
