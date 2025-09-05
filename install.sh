@@ -38,4 +38,4 @@ if command -v conda &> /dev/null; then
 fi
 
 # notify end
-echo -e "\n${TEXT_GREEN}System update commands configured! Please reopen terminal before using the commands. ${TEXT_RESET}\n" && sleep 1
+echo -e "${TEXT_GREEN}System update commands configured! Please reopen terminal before using the commands. ${TEXT_RESET}\n" && sleep 1
