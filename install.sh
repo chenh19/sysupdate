@@ -8,7 +8,7 @@ TEXT_RESET="$(tput sgr0)"
 
 # notify start
 sudo echo ""
-echo -e "${TEXT_YELLOW}Configuring system update command...${TEXT_RESET} \n" && sleep 1
+echo -e "${TEXT_YELLOW}Configuring system update command...${TEXT_RESET}\n" && sleep 1
 
 # add alias in bash configuration
 [ ! -f ~/.bashrc] ] && touch ~/.bashrc
@@ -38,4 +38,4 @@ if command -v conda &> /dev/null; then
 fi
 
 # notify end
-echo -e " \n${TEXT_GREEN}System update commands configured! Please reopen terminal before using the commands. ${TEXT_RESET} \n" && sleep 1
+echo -e "\n${TEXT_GREEN}System update commands configured! Please reopen terminal before using the commands. ${TEXT_RESET}\n" && sleep 1
