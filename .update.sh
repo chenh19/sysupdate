@@ -23,7 +23,6 @@ sudo apt update && sudo apt full-upgrade -y
 sudo apt autoremove -y && sudo apt clean && echo ""
 
 # sysupdate update
-wget -q https://raw.githubusercontent.com/chenh19/sysupdate/refs/heads/main/.update.sh -O ~/.update.sh
 wget -q https://raw.githubusercontent.com/chenh19/sysupdate/refs/heads/main/.shortcut.sh -O ~/.shortcut.sh
 wget -q https://raw.githubusercontent.com/chenh19/sysupdate/refs/heads/main/.size-restore.sh -O ~/.size-restore.sh
 if command -v R &> /dev/null; then
