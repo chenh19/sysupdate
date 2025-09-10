@@ -390,6 +390,14 @@ kwriteconfig6 --file ~/.local/state/katestaterc --group MainWindow --key '4 scre
 
 ######################################################################################
 
+# KCalc
+
+######################################################################################
+
+# KDE Partition Manager
+
+######################################################################################
+
 # Krita
 ## Window-Maximized
 ### 3840x2400
@@ -758,6 +766,7 @@ MATRIX=(
   "800,600,konsolestaterc"
   "835,675,kwritestaterc"
   "975,735,katestaterc"
+  "250,341,kcalcstaterc"
 )
 for entry in "${MATRIX[@]}"; do
     IFS=, read -r WIDTH HEIGHT FILE <<< "$entry"
@@ -783,6 +792,7 @@ MATRIX=(
   "kdevelopstaterc"
   "kmenueditstaterc"
   "okularstaterc"
+  "partitionmanagerstaterc"
   "systemsettingsstaterc"
 )
 for FILE in "${MATRIX[@]}"; do
