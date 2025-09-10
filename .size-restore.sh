@@ -351,7 +351,7 @@ kwriteconfig6 --file ~/.local/state/katestaterc --group MainWindow --key '2160x1
 kwriteconfig6 --file ~/.local/state/katestaterc --group MainWindow --key '2 screens: Width' --type string "975" # 2 screens
 kwriteconfig6 --file ~/.local/state/katestaterc --group MainWindow --key '3 screens: Width' --type string "975" # 3 screens
 kwriteconfig6 --file ~/.local/state/katestaterc --group MainWindow --key '4 screens: Width' --type string "975" # 4 screens
-## Kwrite window height 735
+## Kate window height 735
 ### 3840x2400
 kwriteconfig6 --file ~/.local/state/katestaterc --group MainWindow --key '3840x2400 screen: Height' --type string "735" #1.0
 kwriteconfig6 --file ~/.local/state/katestaterc --group MainWindow --key '2560x1600 screen: Height' --type string "735" #1.5
@@ -391,10 +391,78 @@ kwriteconfig6 --file ~/.local/state/katestaterc --group MainWindow --key '4 scre
 ######################################################################################
 
 # KCalc
-
-######################################################################################
-
-# KDE Partition Manager
+## KCalc window width 250
+### 3840x2400
+kwriteconfig6 --file ~/.local/state/kcalcstaterc --group MainWindow --key '3840x2400 screen: Width' --type string "250" #1.0
+kwriteconfig6 --file ~/.local/state/kcalcstaterc --group MainWindow --key '2560x1600 screen: Width' --type string "250" #1.5
+kwriteconfig6 --file ~/.local/state/kcalcstaterc --group MainWindow --key '1920x1200 screen: Width' --type string "250" #2.0
+kwriteconfig6 --file ~/.local/state/kcalcstaterc --group MainWindow --key '1536x960 screen: Width' --type string "250" #2.5
+### 3840x2160
+kwriteconfig6 --file ~/.local/state/kcalcstaterc --group MainWindow --key '3840x2160 screen: Width' --type string "250" #1.0
+kwriteconfig6 --file ~/.local/state/kcalcstaterc --group MainWindow --key '2560x1440 screen: Width' --type string "250" #1.5
+kwriteconfig6 --file ~/.local/state/kcalcstaterc --group MainWindow --key '1920x1080 screen: Width' --type string "250" #2.0
+kwriteconfig6 --file ~/.local/state/kcalcstaterc --group MainWindow --key '1536x864 screen: Width' --type string "250" #2.5
+### 3000x2000
+kwriteconfig6 --file ~/.local/state/kcalcstaterc --group MainWindow --key '3000x2000 screen: Width' --type string "250" #1.0
+kwriteconfig6 --file ~/.local/state/kcalcstaterc --group MainWindow --key '1500x1000 screen: Width' --type string "250" #2.0
+kwriteconfig6 --file ~/.local/state/kcalcstaterc --group MainWindow --key '1200x800 screen: Width' --type string "250" #2.5
+### 3200x1800
+kwriteconfig6 --file ~/.local/state/kcalcstaterc --group MainWindow --key '3200x1800 screen: Width' --type string "250" #1.0
+kwriteconfig6 --file ~/.local/state/kcalcstaterc --group MainWindow --key '1600x900 screen: Width' --type string "250" #2.0
+kwriteconfig6 --file ~/.local/state/kcalcstaterc --group MainWindow --key '1280x720 screen: Width' --type string "250" #2.5
+### 2880x1800
+kwriteconfig6 --file ~/.local/state/kcalcstaterc --group MainWindow --key '2880x1800 screen: Width' --type string "250" #1.0
+kwriteconfig6 --file ~/.local/state/kcalcstaterc --group MainWindow --key '1440x900 screen: Width' --type string "250" #2.0
+kwriteconfig6 --file ~/.local/state/kcalcstaterc --group MainWindow --key '1152x720 screen: Width' --type string "250" #2.5
+### 2560x1600
+kwriteconfig6 --file ~/.local/state/kcalcstaterc --group MainWindow --key '1707x1067 screen: Width' --type string "250" #1.5
+kwriteconfig6 --file ~/.local/state/kcalcstaterc --group MainWindow --key '1280x800 screen: Width' --type string "250" #2.0
+kwriteconfig6 --file ~/.local/state/kcalcstaterc --group MainWindow --key '1024x675 screen: Width' --type string "250" #2.5
+### 2560x1440
+kwriteconfig6 --file ~/.local/state/kcalcstaterc --group MainWindow --key '1707x960 screen: Width' --type string "250" #1.5
+kwriteconfig6 --file ~/.local/state/kcalcstaterc --group MainWindow --key '1024x640 screen: Width' --type string "250" #2.5
+### 2160x1350
+kwriteconfig6 --file ~/.local/state/kcalcstaterc --group MainWindow --key '2160x1350 screen: Width' --type string "250" #1.0
+### multiple
+kwriteconfig6 --file ~/.local/state/kcalcstaterc --group MainWindow --key '2 screens: Width' --type string "250" # 2 screens
+kwriteconfig6 --file ~/.local/state/kcalcstaterc --group MainWindow --key '3 screens: Width' --type string "250" # 3 screens
+kwriteconfig6 --file ~/.local/state/kcalcstaterc --group MainWindow --key '4 screens: Width' --type string "250" # 4 screens
+## KCalc window height 341
+### 3840x2400
+kwriteconfig6 --file ~/.local/state/kcalcstaterc --group MainWindow --key '3840x2400 screen: Height' --type string "341" #1.0
+kwriteconfig6 --file ~/.local/state/kcalcstaterc --group MainWindow --key '2560x1600 screen: Height' --type string "341" #1.5
+kwriteconfig6 --file ~/.local/state/kcalcstaterc --group MainWindow --key '1920x1200 screen: Height' --type string "341" #2.0
+kwriteconfig6 --file ~/.local/state/kcalcstaterc --group MainWindow --key '1536x960 screen: Height' --type string "341" #2.5
+### 3840x2160
+kwriteconfig6 --file ~/.local/state/kcalcstaterc --group MainWindow --key '3840x2160 screen: Height' --type string "341" #1.0
+kwriteconfig6 --file ~/.local/state/kcalcstaterc --group MainWindow --key '2560x1440 screen: Height' --type string "341" #1.5
+kwriteconfig6 --file ~/.local/state/kcalcstaterc --group MainWindow --key '1920x1080 screen: Height' --type string "341" #2.0
+kwriteconfig6 --file ~/.local/state/kcalcstaterc --group MainWindow --key '1536x864 screen: Height' --type string "341" #2.5
+### 3000x2000
+kwriteconfig6 --file ~/.local/state/kcalcstaterc --group MainWindow --key '3000x2000 screen: Height' --type string "341" #1.0
+kwriteconfig6 --file ~/.local/state/kcalcstaterc --group MainWindow --key '1500x1000 screen: Height' --type string "341" #2.0
+kwriteconfig6 --file ~/.local/state/kcalcstaterc --group MainWindow --key '1200x800 screen: Height' --type string "341" #2.5
+### 3200x1800
+kwriteconfig6 --file ~/.local/state/kcalcstaterc --group MainWindow --key '3200x1800 screen: Height' --type string "341" #1.0
+kwriteconfig6 --file ~/.local/state/kcalcstaterc --group MainWindow --key '1600x900 screen: Height' --type string "341" #2.0
+kwriteconfig6 --file ~/.local/state/kcalcstaterc --group MainWindow --key '1280x720 screen: Height' --type string "341" #2.5
+### 2880x1800
+kwriteconfig6 --file ~/.local/state/kcalcstaterc --group MainWindow --key '2880x1800 screen: Height' --type string "341" #1.0
+kwriteconfig6 --file ~/.local/state/kcalcstaterc --group MainWindow --key '1440x900 screen: Height' --type string "341" #2.0
+kwriteconfig6 --file ~/.local/state/kcalcstaterc --group MainWindow --key '1152x720 screen: Height' --type string "341" #2.5
+### 2560x1600
+kwriteconfig6 --file ~/.local/state/kcalcstaterc --group MainWindow --key '1707x1067 screen: Height' --type string "341" #1.5
+kwriteconfig6 --file ~/.local/state/kcalcstaterc --group MainWindow --key '1280x800 screen: Height' --type string "341" #2.0
+kwriteconfig6 --file ~/.local/state/kcalcstaterc --group MainWindow --key '1024x675 screen: Height' --type string "341" #2.5
+### 2560x1440
+kwriteconfig6 --file ~/.local/state/kcalcstaterc --group MainWindow --key '1707x960 screen: Height' --type string "341" #1.5
+kwriteconfig6 --file ~/.local/state/kcalcstaterc --group MainWindow --key '1024x640 screen: Height' --type string "341" #2.5
+### 2160x1350
+kwriteconfig6 --file ~/.local/state/kcalcstaterc --group MainWindow --key '2160x1350 screen: Height' --type string "341" #1.0
+### multiple
+kwriteconfig6 --file ~/.local/state/kcalcstaterc --group MainWindow --key '2 screens: Height' --type string "341"
+kwriteconfig6 --file ~/.local/state/kcalcstaterc --group MainWindow --key '3 screens: Height' --type string "341"
+kwriteconfig6 --file ~/.local/state/kcalcstaterc --group MainWindow --key '4 screens: Height' --type string "341"
 
 ######################################################################################
 
@@ -675,6 +743,46 @@ kwriteconfig6 --file ~/.local/state/okularstaterc --group MainWindow --key '2160
 kwriteconfig6 --file ~/.local/state/okularstaterc --group MainWindow --key '2 screens: Window-Maximized' --type bool "true" # 2 screens
 kwriteconfig6 --file ~/.local/state/okularstaterc --group MainWindow --key '3 screens: Window-Maximized' --type bool "true" # 3 screens
 kwriteconfig6 --file ~/.local/state/okularstaterc --group MainWindow --key '4 screens: Window-Maximized' --type bool "true" # 4 screens
+
+######################################################################################
+
+# KDE Partition Manager
+## Window-Maximized
+### 3840x2400
+kwriteconfig6 --file ~/.local/state/partitionmanagerstaterc --group MainWindow --key '3840x2400 screen: Window-Maximized' --type bool "true" #1.0
+kwriteconfig6 --file ~/.local/state/partitionmanagerstaterc --group MainWindow --key '2560x1600 screen: Window-Maximized' --type bool "true" #1.5
+kwriteconfig6 --file ~/.local/state/partitionmanagerstaterc --group MainWindow --key '1920x1200 screen: Window-Maximized' --type bool "true" #2.0
+kwriteconfig6 --file ~/.local/state/partitionmanagerstaterc --group MainWindow --key '1536x960 screen: Window-Maximized' --type bool "true" #2.5
+### 3840x2160
+kwriteconfig6 --file ~/.local/state/partitionmanagerstaterc --group MainWindow --key '3840x2160 screen: Window-Maximized' --type bool "true" #1.0
+kwriteconfig6 --file ~/.local/state/partitionmanagerstaterc --group MainWindow --key '2560x1440 screen: Window-Maximized' --type bool "true" #1.5
+kwriteconfig6 --file ~/.local/state/partitionmanagerstaterc --group MainWindow --key '1920x1080 screen: Window-Maximized' --type bool "true" #2.0
+kwriteconfig6 --file ~/.local/state/partitionmanagerstaterc --group MainWindow --key '1536x864 screen: Window-Maximized' --type bool "true" #2.5
+### 3000x2000
+kwriteconfig6 --file ~/.local/state/partitionmanagerstaterc --group MainWindow --key '3000x2000 screen: Window-Maximized' --type bool "true" #1.0
+kwriteconfig6 --file ~/.local/state/partitionmanagerstaterc --group MainWindow --key '1500x1000 screen: Window-Maximized' --type bool "true" #2.0
+kwriteconfig6 --file ~/.local/state/partitionmanagerstaterc --group MainWindow --key '1200x800 screen: Window-Maximized' --type bool "true" #2.5
+### 3200x1800
+kwriteconfig6 --file ~/.local/state/partitionmanagerstaterc --group MainWindow --key '3200x1800 screen: Window-Maximized' --type bool "true" #1.0
+kwriteconfig6 --file ~/.local/state/partitionmanagerstaterc --group MainWindow --key '1600x900 screen: Window-Maximized' --type bool "true" #2.0
+kwriteconfig6 --file ~/.local/state/partitionmanagerstaterc --group MainWindow --key '1280x720 screen: Window-Maximized' --type bool "true" #2.5
+### 2880x1800
+kwriteconfig6 --file ~/.local/state/partitionmanagerstaterc --group MainWindow --key '2880x1800 screen: Window-Maximized' --type bool "true" #1.0
+kwriteconfig6 --file ~/.local/state/partitionmanagerstaterc --group MainWindow --key '1440x900 screen: Window-Maximized' --type bool "true" #2.0
+kwriteconfig6 --file ~/.local/state/partitionmanagerstaterc --group MainWindow --key '1152x720 screen: Window-Maximized' --type bool "true" #2.5
+### 2560x1600
+kwriteconfig6 --file ~/.local/state/partitionmanagerstaterc --group MainWindow --key '1707x1067 screen: Window-Maximized' --type bool "true" #1.5
+kwriteconfig6 --file ~/.local/state/partitionmanagerstaterc --group MainWindow --key '1280x800 screen: Window-Maximized' --type bool "true" #2.0
+kwriteconfig6 --file ~/.local/state/partitionmanagerstaterc --group MainWindow --key '1024x675 screen: Window-Maximized' --type bool "true" #2.5
+### 2560x1440
+kwriteconfig6 --file ~/.local/state/partitionmanagerstaterc --group MainWindow --key '1707x960 screen: Window-Maximized' --type bool "true" #1.5
+kwriteconfig6 --file ~/.local/state/partitionmanagerstaterc --group MainWindow --key '1024x640 screen: Window-Maximized' --type bool "true" #2.5
+### 2160x1350
+kwriteconfig6 --file ~/.local/state/partitionmanagerstaterc --group MainWindow --key '2160x1350 screen: Window-Maximized' --type bool "true" #1.0
+### multiple
+kwriteconfig6 --file ~/.local/state/partitionmanagerstaterc --group MainWindow --key '2 screens: Window-Maximized' --type bool "true" # 2 screens
+kwriteconfig6 --file ~/.local/state/partitionmanagerstaterc --group MainWindow --key '3 screens: Window-Maximized' --type bool "true" # 3 screens
+kwriteconfig6 --file ~/.local/state/partitionmanagerstaterc --group MainWindow --key '4 screens: Window-Maximized' --type bool "true" # 4 screens
 
 ######################################################################################
 
