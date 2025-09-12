@@ -301,6 +301,7 @@
     --set-name 'VLC' --set-key 'Name[en_US]' --set-value 'VLC' --set-key 'Name[zh_CN]' --set-value '视频播放器' \
     --set-comment 'Media player' --set-key 'Comment[en_US]' --set-value 'Media player' --set-key 'Comment[zh_CN]' --set-value '多媒体播放器' \
     --set-generic-name 'Read, capture, broadcast your multimedia streams' --set-key 'GenericName[en_US]' --set-value 'Read, capture, broadcast your multimedia streams' --set-key 'GenericName[zh_CN]' --set-value '读取、捕获、广播您的多媒体流' \
+    --set-key 'StartupNotify' --set-value 'false' \
     --remove-key 'Categories' --add-category 'AudioVideo;' \
 /usr/share/applications/vlc.desktop
 ##Gwenview
