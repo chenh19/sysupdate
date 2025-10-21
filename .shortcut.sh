@@ -6,6 +6,7 @@
     --set-name 'RStudio' --set-key 'Name[en_US]' --set-value 'RStudio' --set-key 'Name[zh_CN]' --set-value 'RStudio' \
     --set-comment 'R Development' --set-key 'Comment[en_US]' --set-value 'R Development' --set-key 'Comment[zh_CN]' --set-value 'R语言开发' \
     --set-generic-name 'R Programming IDE' --set-key 'GenericName[en_US]' --set-value 'R Programming IDE' --set-key 'GenericName[zh_CN]' --set-value 'R语言开发工具' \
+    --set-key 'StartupNotify' --set-value 'false' \
     --remove-key 'Categories' --add-category 'Development;' \
 /usr/share/applications/rstudio.desktop
 ##KDevelop
