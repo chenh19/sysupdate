@@ -669,3 +669,4 @@
 [ -f /usr/share/applications/org.kde.kapptemplate.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/org.kde.kapptemplate.desktop
 [ -f /usr/share/applications/nvtop.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/nvtop.desktop
 [ -f /usr/share/applications/display-im7.q16.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/display-im7.q16.desktop
+[ -f /usr/share/applications/micro.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/micro.desktop
