@@ -538,6 +538,13 @@
     --set-generic-name 'Removing Unused Temporary Files' --set-key 'GenericName[en_US]' --set-value 'Removing Unused Temporary Files' --set-key 'GenericName[zh_CN]' --set-value '清理系统缓存文件' \
     --remove-key 'Categories' --add-category 'Utility;' \
 /usr/share/applications/org.kde.sweeper.desktop
+##WinBoat
+[ -f /usr/share/applications/winboat.desktop ] && sudo desktop-file-edit \
+    --set-name 'WinBoat' --set-key 'Name[en_US]' --set-value 'WinBoat' --set-key 'Name[zh_CN]' --set-value 'WinBoat' \
+    --set-comment 'Windows for Penguins' --set-key 'Comment[en_US]' --set-value 'Windows for Penguins' --set-key 'Comment[zh_CN]' --set-value '容器Windows' \
+    --set-generic-name 'Run Windows apps on Linux with seamless integration' --set-key 'GenericName[en_US]' --set-value 'Run Windows apps on Linux with seamless integration' --set-key 'GenericName[zh_CN]' --set-value 'Windows无缝集成' \
+    --remove-key 'Categories' --add-category 'Utility;' \
+/usr/share/applications/winboat.desktop
 
 
 #System (System;)
