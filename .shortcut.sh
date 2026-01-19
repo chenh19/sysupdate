@@ -617,9 +617,7 @@
 
 
 #Hidde
-[ -f /usr/share/applications/com.google.Chrome.desktop ] && sudo desktop-file-edit --group="Desktop Entry" --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/com.google.Chrome.desktop
-[ -f /usr/share/applications/com.google.Chrome.desktop ] && sudo desktop-file-edit --group="Desktop Action new-window" --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/com.google.Chrome.desktop
-[ -f /usr/share/applications/com.google.Chrome.desktop ] && sudo desktop-file-edit --group="Desktop Action new-private-window" --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/com.google.Chrome.desktop
+[ -f /usr/share/applications/com.google.Chrome.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/com.google.Chrome.desktop
 [ -f /usr/share/applications/org.kde.khelpcenter.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/org.kde.khelpcenter.desktop
 [ -f /usr/share/applications/cnsetuputil2l.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/cnsetuputil2l.desktop
 [ -f /usr/share/applications/debian-uxterm.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/debian-uxterm.desktop
