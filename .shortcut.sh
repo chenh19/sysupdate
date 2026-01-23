@@ -616,7 +616,7 @@
 /usr/share/applications/org.kde.khelpcenter.desktop
 
 
-#Hidde
+#Hidden
 [ -f /usr/share/applications/com.google.Chrome.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/com.google.Chrome.desktop
 [ -f /usr/share/applications/org.kde.khelpcenter.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/org.kde.khelpcenter.desktop
 [ -f /usr/share/applications/cnsetuputil2l.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/cnsetuputil2l.desktop
@@ -680,3 +680,11 @@
 [ -f /usr/share/applications/micro.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/micro.desktop
 [ -f /usr/share/applications/xfreerdp3.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/xfreerdp3.desktop
 [ -f /usr/share/applications/winetricks.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/winetricks.desktop
+
+
+#Desktop
+if grep -q "plugin=org.kde.plasma.showdesktop" ~/.config/plasma-org.kde.plasma.desktop-appletsrc; then
+    cp -f /usr/share/applications/org.kde.dolphin.desktop ~/Desktop/Dolphin.desktop && chmod +x ~/Desktop/Dolphin.desktop && sleep 1
+    cp -f /usr/share/applications/google-chrome.desktop ~/Desktop/Chrome.desktop && chmod +x ~/Desktop/Chrome.desktop && sleep 1
+    echo -e "[Desktop Entry]\nEmptyIcon=user-trash\nIcon=user-trash-full\nName=Trash\nType=Link\nURL[\$e]=trash:/" > ~/Desktop/Trash.desktop && sleep 1
+fi
