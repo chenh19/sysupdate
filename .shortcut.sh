@@ -155,7 +155,7 @@
     --set-name 'Chrome' --set-key 'Name[en_US]' --set-value 'Chrome' --set-key 'Name[zh_CN]' --set-value '网页浏览器' \
     --set-comment 'Web Browser' --set-key 'Comment[en_US]' --set-value 'Web Browser' --set-key 'Comment[zh_CN]' --set-value '浏览互联网' \
     --set-generic-name 'Google Chrome Web Browser' --set-key 'GenericName[en_US]' --set-value 'Google Chrome Web Browser' --set-key 'GenericName[zh_CN]' --set-value '谷歌浏览器' \
-    --set-key 'Exec' --set-value '/usr/bin/google-chrome-stable --ozone-platform=wayland --enable-features=UseOzonePlatform,TouchpadOverscrollHistoryNavigation %U' \
+    --set-key 'Exec' --set-value '/usr/bin/google-chrome-stable --ozone-platform=wayland --enable-features=UseOzonePlatform,TouchpadOverscrollHistoryNavigation --disable-features=WaylandWindowDecorations %U' \
     --remove-key 'Categories' --add-category 'Network;' \
 /usr/share/applications/google-chrome.desktop
 ##Thunderbird
