@@ -21,7 +21,7 @@ wget -q https://raw.githubusercontent.com/chenh19/sysupdate/refs/heads/main/.sho
 wget -q https://raw.githubusercontent.com/chenh19/sysupdate/refs/heads/main/.size-restore.sh -O ~/.size-restore.sh
 
 # system update alias
-[ ! -f ~/.bashrc] ] && touch ~/.bashrc
+[ ! -f ~/.bashrc ] && touch ~/.bashrc
 tail -c 1 ~/.bashrc | read -r _ || echo >> ~/.bashrc
 if ! grep -q "alias sysupdate='bash ~/.update.sh'" ~/.bashrc ; then echo -e "alias sysupdate='bash ~/.update.sh'" >> ~/.bashrc ; fi
 
