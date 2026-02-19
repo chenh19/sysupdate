@@ -10,10 +10,6 @@ TEXT_RESET="$(tput sgr0)"
 sudo echo ""
 echo -e "${TEXT_YELLOW}Configuring system update command...${TEXT_RESET}\n" && sleep 1
 
-# add alias in bash configuration
-[ ! -f ~/.bashrc] ] && touch ~/.bashrc
-if ! grep -q "alias sysupdate='bash ~/.update.sh'" ~/.bashrc ; then echo -e "alias sysupdate='bash ~/.update.sh'" >> ~/.bashrc ; fi
-
 # install necessary deb packages
 sudo apt update -qq >/dev/null 2>&1
 if ! dpkg -l | grep -q "^ii.*wget" ; then sudo apt install wget -y && sleep 1 ; fi
@@ -24,13 +20,18 @@ wget -q https://raw.githubusercontent.com/chenh19/sysupdate/refs/heads/main/.upd
 wget -q https://raw.githubusercontent.com/chenh19/sysupdate/refs/heads/main/.shortcut.sh -O ~/.shortcut.sh
 wget -q https://raw.githubusercontent.com/chenh19/sysupdate/refs/heads/main/.size-restore.sh -O ~/.size-restore.sh
 
-# R update
+# system update alias
+[ ! -f ~/.bashrc] ] && touch ~/.bashrc
+tail -c 1 ~/.bashrc | read -r _ || echo >> ~/.bashrc
+if ! grep -q "alias sysupdate='bash ~/.update.sh'" ~/.bashrc ; then echo -e "alias sysupdate='bash ~/.update.sh'" >> ~/.bashrc ; fi
+
+# R update alias
 if command -v R &> /dev/null; then
     wget -q https://raw.githubusercontent.com/chenh19/sysupdate/refs/heads/main/.update.R -O ~/.update.R
     if ! grep -q "alias rupdate='sudo Rscript ~/.update.R'" ~/.bashrc ; then echo -e "alias rupdate='sudo Rscript ~/.update.R'" >> ~/.bashrc ; fi
 fi
 
-# conda update
+# conda update alias
 [ -f ~/miniconda3/etc/profile.d/conda.sh ] && source ~/miniconda3/etc/profile.d/conda.sh
 if command -v conda &> /dev/null; then
     wget -q https://raw.githubusercontent.com/chenh19/sysupdate/refs/heads/main/.conda_update.sh -O ~/.conda_update.sh
