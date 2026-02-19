@@ -15,7 +15,7 @@ sudo apt update -qq >/dev/null 2>&1
 if ! dpkg -l | grep -q "^ii.*wget" ; then sudo apt install wget -y && sleep 1 ; fi
 if ! dpkg -l | grep -q "^ii.*desktop-file-utils" ; then sudo apt install desktop-file-utils -y && sleep 1 ; fi
 
-# system update
+# system update scripts
 wget -q https://raw.githubusercontent.com/chenh19/sysupdate/refs/heads/main/.update.sh -O ~/.update.sh
 wget -q https://raw.githubusercontent.com/chenh19/sysupdate/refs/heads/main/.shortcut.sh -O ~/.shortcut.sh
 wget -q https://raw.githubusercontent.com/chenh19/sysupdate/refs/heads/main/.size-restore.sh -O ~/.size-restore.sh
