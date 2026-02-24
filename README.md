@@ -1,5 +1,5 @@
 # System update commands
-*Current version: v3.2.0*
+*Current version: v3.3.0*
 
 ## Introduction
 - This tool streamlines system updates for Debian and derivative systems.
