@@ -427,6 +427,12 @@ sudo desktop-file-edit \
     --set-icon '/opt/icon/2048.png' \
     --remove-key 'Categories' --add-category 'Game;' \
 /usr/share/applications/2048-qt.desktop
+##steam
+[ -f /usr/share/applications/steam.desktop ] && sudo desktop-file-edit \
+    --set-name 'Steam' --set-key 'Name[en_US]' --set-value 'Steam' --set-key 'Name[zh_CN]' --set-value 'Steam' \
+    --set-comment 'Steam Gaming Platform' --set-key 'Comment[en_US]' --set-value 'Steam Gaming Platform' --set-key 'Comment[zh_CN]' --set-value 'Steam游戏平台' \
+    --remove-key 'Categories' --add-category 'Game;' \
+/usr/share/applications/steam.desktop
 
 
 #Utilities (Utility;)
