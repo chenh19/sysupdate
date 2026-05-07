@@ -136,6 +136,13 @@
     --set-icon '/opt/icon/teamviewer.png' \
     --remove-key 'Categories' --add-category 'Network;' \
 /usr/share/applications/com.teamviewer.TeamViewer.desktop
+##AnyDesk
+[ -f /usr/share/applications/anydesk.desktop ] && sudo desktop-file-edit \
+    --set-name 'AnyDesk' --set-key 'Name[en_US]' --set-value 'AnyDesk' --set-key 'Name[zh_CN]' --set-value '远程协助' \
+    --set-comment 'Remote Control Tool' --set-key 'Comment[en_US]' --set-value 'Remote Control Tool' --set-key 'Comment[zh_CN]' --set-value '远程控制工具' \
+    --set-generic-name 'Remote Desktop Software' --set-key 'GenericName[en_US]' --set-value 'Remote Desktop Software' --set-key 'GenericName[zh_CN]' --set-value '远程桌面协助工具' \
+    --remove-key 'Categories' --add-category 'Network;' \
+/usr/share/applications/anydesk.desktop
 ##FreeDownloadManager
 [ -f /usr/share/applications/freedownloadmanager.desktop ] && sudo desktop-file-edit \
     --set-name 'Download' --set-key 'Name[en_US]' --set-value 'Download' --set-key 'Name[zh_CN]' --set-value '下载工具' \
