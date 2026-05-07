@@ -364,7 +364,6 @@
     --remove-key 'Categories' --add-category 'AudioVideo;' \
 /usr/share/applications/org.kde.kdenlive.desktop
 ##iOpenPod
-[ ! -f /usr/share/applications/iopenpod.desktop ] && sudo touch /usr/share/applications/iopenpod.desktop
 sudo desktop-file-edit \
     --set-name 'iOpenPod' --set-key 'Name[en_US]' --set-value 'iOpenPod' --set-key 'Name[zh_CN]' --set-value 'iOpenPod' \
     --set-comment 'Open-source iPod Sync Tool' --set-key 'Comment[en_US]' --set-value 'Open-source iPod Sync Tool' --set-key 'Comment[zh_CN]' --set-value '开源iPod同步工具' \
