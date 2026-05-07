@@ -420,6 +420,13 @@ sudo desktop-file-edit \
     --set-comment 'Go Board Game' --set-key 'Comment[en_US]' --set-value 'Go Board Game' --set-key 'Comment[zh_CN]' --set-value '围棋游戏' \
     --remove-key 'Categories' --add-category 'Game;' \
 /usr/share/applications/org.kde.kigo.desktop
+##2048
+[ -f /usr/share/applications/2048-qt.desktop ] && sudo desktop-file-edit \
+    --set-name '2048' --set-key 'Name[en_US]' --set-value '2048' --set-key 'Name[zh_CN]' --set-value '2048' \
+    --set-comment '2048 Puzzle Game' --set-key 'Comment[en_US]' --set-value '2048 Puzzle Game' --set-key 'Comment[zh_CN]' --set-value '2048数字益智游戏' \
+    --set-icon '/opt/icon/2048.png' \
+    --remove-key 'Categories' --add-category 'Game;' \
+/usr/share/applications/2048-qt.desktop
 
 
 #Utilities (Utility;)
