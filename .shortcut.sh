@@ -696,6 +696,7 @@ sudo desktop-file-edit \
 [ -f /usr/share/applications/micro.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/micro.desktop
 [ -f /usr/share/applications/xfreerdp3.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/xfreerdp3.desktop
 [ -f /usr/share/applications/winetricks.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/winetricks.desktop
+[ -f /usr/share/applications/system-config-printer.desktop ] && sudo desktop-file-edit --set-key 'NoDisplay' --set-value 'true' /usr/share/applications/system-config-printer.desktop
 
 
 #Desktop
