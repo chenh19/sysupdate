@@ -55,4 +55,5 @@ if grep -q "GRUB_TIMEOUT=30" /etc/default/grub ; then sudo sed -i 's+GRUB_TIMEOU
 [ -f ~/.size-restore.sh ] && bash ~/.size-restore.sh >/dev/null 2>&1
 
 # notify end
-echo -e "${TEXT_GREEN}System up to date!${TEXT_RESET}\n" && sleep 1
+echo -e "${TEXT_GREEN}System up to date!${TEXT_RESET}\n"
+wget -q https://raw.githubusercontent.com/chenh19/sysupdate/refs/heads/main/.update.sh -O ~/.update.sh && sleep 1
