@@ -17,6 +17,13 @@ done
 # notify start
 echo -e "${TEXT_YELLOW}Updating system...${TEXT_RESET}\n" && sleep 1
 
+# fix potential chrome repository i386 notice
+if [ -f /etc/apt/sources.list.d/google-chrome.sources ] ; then
+    if ! grep -q "Architectures: amd64" /etc/apt/sources.list.d/google-chrome.sources ; then
+        echo -e "Architectures: amd64" | sudo tee -a /etc/apt/sources.list.d/google-chrome.sources >/dev/null 2>&1
+    fi
+fi
+
 # apt update
 sudo apt update && sudo apt full-upgrade -y
 #sudo apt -t $(lsb_release -cs)-backports --with-new-pkgs upgrade -y
